@@ -118,14 +118,14 @@ Check setup
     System:
 
             python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python 
-            python_version         : 3.11.9     
+            python_version         : 3.11.10    
             machine                : x86_64     
             system                 : Darwin     
 
 
     Gammapy package:
 
-            version                : 1.3.dev1110+g29931fb8f6 
+            version                : 1.3.dev1205+g00f44f94ac 
             path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy 
 
 
@@ -142,7 +142,7 @@ Check setup
             matplotlib             : 3.9.2      
             pandas                 : not installed 
             healpy                 : 1.17.3     
-            iminuit                : 2.30.0     
+            iminuit                : 2.30.1     
             sherpa                 : 4.16.1     
             naima                  : 0.10.0     
             emcee                  : 3.1.6      
@@ -325,8 +325,8 @@ MSH 1552
             parameters:
                 selection_optional: all
         metadata:
-            creator: Gammapy 1.3.dev1110+g29931fb8f6
-            date: '2024-10-07T16:04:51.131828'
+            creator: Gammapy 1.3.dev1205+g00f44f94ac
+            date: '2024-10-11T13:07:16.638935'
             origin: null
     
 
@@ -370,10 +370,6 @@ create the config
 
  .. code-block:: none
 
-    Setting logging config: {'level': 'INFO', 'filename': None, 'filemode': None, 'format': None, 'datefmt': None}
-    Fetching observations.
-    Observations selected: 20 out of 20.
-    Number of selected observations: 20
     AnalysisConfig
 
         general:
@@ -480,8 +476,8 @@ create the config
             parameters:
                 selection_optional: all
         metadata:
-            creator: Gammapy 1.3.dev1110+g29931fb8f6
-            date: '2024-10-07T16:04:51.161636'
+            creator: Gammapy 1.3.dev1205+g00f44f94ac
+            date: '2024-10-11T13:07:16.666860'
             origin: null
     
 
@@ -502,75 +498,6 @@ Data extraction
 
 
 
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    Creating reference dataset and makers.
-    Creating the background Maker.
-    No background maker set. Check configuration.
-    Start the data reduction loop.
-    Computing dataset for observation 20136
-    Running MapDatasetMaker
-    Running SafeMaskMaker
-    Computing dataset for observation 20137
-    Running MapDatasetMaker
-    Running SafeMaskMaker
-    Computing dataset for observation 20151
-    Running MapDatasetMaker
-    Running SafeMaskMaker
-    Computing dataset for observation 20282
-    Running MapDatasetMaker
-    Running SafeMaskMaker
-    Computing dataset for observation 20283
-    Running MapDatasetMaker
-    Running SafeMaskMaker
-    Computing dataset for observation 20301
-    Running MapDatasetMaker
-    Running SafeMaskMaker
-    Computing dataset for observation 20302
-    Running MapDatasetMaker
-    Running SafeMaskMaker
-    Computing dataset for observation 20303
-    Running MapDatasetMaker
-    Running SafeMaskMaker
-    Computing dataset for observation 20322
-    Running MapDatasetMaker
-    Running SafeMaskMaker
-    Computing dataset for observation 20323
-    Running MapDatasetMaker
-    Running SafeMaskMaker
-    Computing dataset for observation 20324
-    Running MapDatasetMaker
-    Running SafeMaskMaker
-    Computing dataset for observation 20325
-    Running MapDatasetMaker
-    Running SafeMaskMaker
-    Computing dataset for observation 20343
-    Running MapDatasetMaker
-    Running SafeMaskMaker
-    Computing dataset for observation 20344
-    Running MapDatasetMaker
-    Running SafeMaskMaker
-    Computing dataset for observation 20345
-    Running MapDatasetMaker
-    Running SafeMaskMaker
-    Computing dataset for observation 20346
-    Running MapDatasetMaker
-    Running SafeMaskMaker
-    Computing dataset for observation 20365
-    Running MapDatasetMaker
-    Running SafeMaskMaker
-    Computing dataset for observation 20366
-    Running MapDatasetMaker
-    Running SafeMaskMaker
-    Computing dataset for observation 20367
-    Running MapDatasetMaker
-    Running SafeMaskMaker
-    Computing dataset for observation 20368
-    Running MapDatasetMaker
-    Running SafeMaskMaker
 
 
 
@@ -842,13 +769,6 @@ to be a standard normal distribution.
    :srcset: /tutorials/analysis-2d/images/sphx_glr_ring_background_003.png
    :class: sphx-glr-single-img
 
-
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    Both actual and predicted relative reductions in the sum of squares
-      are at most 0.000000
 
 
 

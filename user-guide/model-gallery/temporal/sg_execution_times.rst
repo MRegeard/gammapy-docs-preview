@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**00:00.691** total execution time for 9 files **from user-guide/model-gallery/temporal**:
+**00:00.657** total execution time for 9 files **from user-guide/model-gallery/temporal**:
 
 .. container::
 
@@ -36,26 +36,26 @@ Computation times
      - 00:00.100
      - 0.0
    * - :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_template_phase_temporal.py` (``plot_template_phase_temporal.py``)
-     - 00:00.093
-     - 0.0
-   * - :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_expdecay_temporal.py` (``plot_expdecay_temporal.py``)
-     - 00:00.079
-     - 0.0
-   * - :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_template_temporal.py` (``plot_template_temporal.py``)
-     - 00:00.075
-     - 0.0
-   * - :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_constant_temporal.py` (``plot_constant_temporal.py``)
-     - 00:00.075
-     - 0.0
-   * - :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_generalized_gaussian_temporal.py` (``plot_generalized_gaussian_temporal.py``)
-     - 00:00.069
-     - 0.0
-   * - :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_gaussian_temporal.py` (``plot_gaussian_temporal.py``)
-     - 00:00.069
+     - 00:00.082
      - 0.0
    * - :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_sine_temporal.py` (``plot_sine_temporal.py``)
+     - 00:00.075
+     - 0.0
+   * - :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_template_temporal.py` (``plot_template_temporal.py``)
+     - 00:00.073
+     - 0.0
+   * - :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_expdecay_temporal.py` (``plot_expdecay_temporal.py``)
      - 00:00.068
      - 0.0
+   * - :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_gaussian_temporal.py` (``plot_gaussian_temporal.py``)
+     - 00:00.067
+     - 0.0
+   * - :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_generalized_gaussian_temporal.py` (``plot_generalized_gaussian_temporal.py``)
+     - 00:00.067
+     - 0.0
    * - :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_linear_temporal.py` (``plot_linear_temporal.py``)
-     - 00:00.064
+     - 00:00.065
+     - 0.0
+   * - :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_constant_temporal.py` (``plot_constant_temporal.py``)
+     - 00:00.060
      - 0.0

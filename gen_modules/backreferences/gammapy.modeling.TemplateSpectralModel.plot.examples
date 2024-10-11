@@ -36,6 +36,27 @@ Examples using ``gammapy.modeling.TemplateSpectralModel.plot``
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="This model is defined by custom tabular values.">
+
+.. only:: html
+
+  .. image:: /user-guide/model-gallery/spectral/images/thumb/sphx_glr_plot_template_spectral_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_user-guide_model-gallery_spectral_plot_template_spectral.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Template spectral model</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_user-guide_model-gallery_spectral_plot_template_spectral.py`
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="This model parametrises a log parabola spectral correction with a norm parameter.">
 
 .. only:: html
@@ -75,27 +96,6 @@ Examples using ``gammapy.modeling.TemplateSpectralModel.plot``
 .. only:: not html
 
  * :ref:`sphx_glr_user-guide_model-gallery_spectral_plot_powerlaw_norm_spectral.py`
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="This model is defined by custom tabular values.">
-
-.. only:: html
-
-  .. image:: /user-guide/model-gallery/spectral/images/thumb/sphx_glr_plot_template_spectral_thumb.png
-    :alt:
-
-  :ref:`sphx_glr_user-guide_model-gallery_spectral_plot_template_spectral.py`
-
-.. raw:: html
-
-      <div class="sphx-glr-thumbnail-title">Template spectral model</div>
-    </div>
-
-
-.. only:: not html
-
- * :ref:`sphx_glr_user-guide_model-gallery_spectral_plot_template_spectral.py`
 
 .. raw:: html
 

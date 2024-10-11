@@ -305,13 +305,22 @@
    "name": "display"
   }
  ],
- "https://bitbucket.org/hess_software/hess-open-source-tools/src/master/": [
+ "hess-open-tools": [
   {
    "is_class": false,
    "is_explicit": true,
-   "module": "https://bitbucket",
-   "module_short": "https://bitbucket",
-   "name": "org/hess_software/hess-open-source-tools/src/master/"
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "hess-open-tools"
+  }
+ ],
+ "https://cchesswiki.in2p3.fr/en/hess/working_groups/analysis_and_reconstruction_working_group/ar_active_tasks/hess_fits_data": [
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "https://cchesswiki.in2p3",
+   "module_short": "https://cchesswiki.in2p3",
+   "name": "fr/en/hess/working_groups/analysis_and_reconstruction_working_group/ar_active_tasks/hess_fits_data"
   }
  ],
  "https://docs.gammapy.org/dev/getting-started/index.html#quickstart-setup": [
@@ -330,15 +339,6 @@
    "module": "https://gamma-astro-data-formats.readthedocs",
    "module_short": "https://gamma-astro-data-formats.readthedocs",
    "name": "io/"
-  }
- ],
- "https://hess-confluence.desy.de/confluence/display/HESS/HESS+FITS+data": [
-  {
-   "is_class": false,
-   "is_explicit": true,
-   "module": "https://hess-confluence.desy",
-   "module_short": "https://hess-confluence.desy",
-   "name": "de/confluence/display/HESS/HESS+FITS+data"
   }
  ],
  "https://www.mpi-hd.mpg.de/hfm/HESS/": [

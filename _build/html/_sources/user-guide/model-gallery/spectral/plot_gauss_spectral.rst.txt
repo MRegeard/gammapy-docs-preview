@@ -10,8 +10,8 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_user-guide_model-gallery_spectral_plot_gauss_spectral.py>`
-        to download the full example code or to run this example in your browser via Binder
+        :ref:`Go to the end <sphx_glr_download_user-guide_model-gallery_spectral_plot_gauss_spectral.py>`
+        to download the full example code. or to run this example in your browser via Binder
 
 .. rst-class:: sphx-glr-example-title
 
@@ -38,7 +38,7 @@ Here is an example plot of the model:
 
 .. GENERATED FROM PYTHON SOURCE LINES 20-31
 
-.. code-block:: python3
+.. code-block:: Python
 
 
     from astropy import units as u
@@ -77,7 +77,7 @@ Here is an example YAML file using the model:
 
 .. GENERATED FROM PYTHON SOURCE LINES 35-40
 
-.. code-block:: python3
+.. code-block:: Python
 
 
     model = SkyModel(spectral_model=model, name="gaussian-model")
@@ -107,6 +107,10 @@ Here is an example YAML file using the model:
             -   name: sigma
                 value: 0.2
                 unit: TeV
+    metadata:
+        creator: Gammapy 1.3.dev1205+g00f44f94ac
+        date: '2024-10-11T13:05:43.575394'
+        origin: null
 
 
 
@@ -119,21 +123,24 @@ Here is an example YAML file using the model:
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
-
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/gammapy/gammapy-webpage/master?urlpath=lab/tree/notebooks/dev/user-guide/model-gallery/spectral/plot_gauss_spectral.ipynb
+        :target: https://mybinder.org/v2/gh/gammapy/gammapy-webpage/main?urlpath=lab/tree/notebooks/dev/user-guide/model-gallery/spectral/plot_gauss_spectral.ipynb
         :alt: Launch binder
         :width: 150 px
+
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
+
+      :download:`Download Jupyter notebook: plot_gauss_spectral.ipynb <plot_gauss_spectral.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: plot_gauss_spectral.py <plot_gauss_spectral.py>`
 
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
+    .. container:: sphx-glr-download sphx-glr-download-zip
 
-      :download:`Download Jupyter notebook: plot_gauss_spectral.ipynb <plot_gauss_spectral.ipynb>`
+      :download:`Download zipped: plot_gauss_spectral.zip <plot_gauss_spectral.zip>`
 
 
 .. only:: html

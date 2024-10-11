@@ -115,37 +115,37 @@ Check setup
 
     System:
 
-            python_executable      : /Users/mregeard/anaconda3/envs/gammapy-dev/bin/python 
-            python_version         : 3.11.9     
+            python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python 
+            python_version         : 3.11.10    
             machine                : x86_64     
             system                 : Darwin     
 
 
     Gammapy package:
 
-            version                : 1.3.dev468+g4c56d91f9e.d20240613 
-            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/gammapy 
+            version                : 1.3.dev1205+g00f44f94ac 
+            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy 
 
 
     Other packages:
 
             numpy                  : 1.26.4     
-            scipy                  : 1.13.1     
-            astropy                : 6.1.0      
-            regions                : 0.9        
+            scipy                  : 1.14.1     
+            astropy                : 5.2.2      
+            regions                : 0.10       
             click                  : 8.1.7      
-            yaml                   : 6.0.1      
-            IPython                : 8.25.0     
-            jupyterlab             : 3.5.3      
-            matplotlib             : 3.8.4      
-            pandas                 : 2.2.2      
-            healpy                 : 1.16.6     
-            iminuit                : 2.25.2     
+            yaml                   : 6.0.2      
+            IPython                : 8.28.0     
+            jupyterlab             : not installed 
+            matplotlib             : 3.9.2      
+            pandas                 : not installed 
+            healpy                 : 1.17.3     
+            iminuit                : 2.30.1     
             sherpa                 : 4.16.1     
             naima                  : 0.10.0     
             emcee                  : 3.1.6      
             corner                 : 2.2.2      
-            ray                    : 2.24.0     
+            ray                    : 2.37.0     
 
 
     Gammapy environment variables:
@@ -344,8 +344,8 @@ For now we let’s use the datasets serialization only to read the 3D
 
  .. code-block:: none
 
-    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/gammapy/utils/scripts.py:65: UserWarning: Checksum verification failed for /Users/mregeard/Workspace/dev/code/gammapy/gammapy-data/fermi-3fhl-crab/Fermi-LAT-3FHL_datasets.yaml.
-      warnings.warn(f"Checksum verification failed for {filename}.", UserWarning)
+    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy/utils/scripts.py:66: UserWarning: Checksum verification failed.
+      warnings.warn("Checksum verification failed.", UserWarning)
     Models
 
     Component 0: SkyModel
@@ -356,7 +356,7 @@ For now we let’s use the datasets serialization only to read the 3D
       Spatial  model type       : PointSpatialModel
       Temporal model type       : 
       Parameters:
-        amplitude                     :   1.82e-02   +/- 3.0e-03 1 / (TeV s cm2)
+        amplitude                     :   1.82e-02   +/- 3.0e-03 1 / (cm2 s TeV)
         reference             (frozen):      0.000       TeV         
         alpha                         :      1.652   +/-    0.06             
         beta                          :      0.039   +/-    0.01             
@@ -407,7 +407,7 @@ We get the Crab model in order to share it with the other datasets
       Spatial  model type       : PointSpatialModel
       Temporal model type       : 
       Parameters:
-        amplitude                     :   1.82e-02   +/- 3.0e-03 1 / (TeV s cm2)
+        amplitude                     :   1.82e-02   +/- 3.0e-03 1 / (cm2 s TeV)
         reference             (frozen):      0.000       TeV         
         alpha                         :      1.652   +/-    0.06             
         beta                          :      0.039   +/-    0.01             
@@ -583,8 +583,8 @@ from these files.
 
  .. code-block:: none
 
-    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/gammapy/utils/scripts.py:65: UserWarning: Checksum verification failed for crab-3datasets/crab_10GeV_100TeV_datasets.yaml.
-      warnings.warn(f"Checksum verification failed for {filename}.", UserWarning)
+    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy/utils/scripts.py:66: UserWarning: Checksum verification failed.
+      warnings.warn("Checksum verification failed.", UserWarning)
     Datasets
     --------
 
@@ -646,8 +646,8 @@ each instrument
             method     : migrad
             success    : True
             message    : Optimization terminated successfully.
-            nfev       : 302
-            total stat : -12697.22
+            nfev       : 316
+            total stat : -12697.23
 
     CovarianceResult
 
@@ -684,12 +684,12 @@ Let’s display only the parameters of the Crab spectral model
 
     LogParabolaSpectralModel
 
-    type    name     value         unit        error   min max frozen is_norm link prior
-    ---- --------- ---------- -------------- --------- --- --- ------ ------- ---- -----
-         amplitude 3.9740e-03 TeV-1 s-1 cm-2 3.125e-04 nan nan  False    True           
-         reference 5.0548e-05            TeV 0.000e+00 nan nan   True   False           
-             alpha 1.2634e+00                1.707e-02 nan nan  False   False           
-              beta 6.1321e-02                9.447e-04 nan nan  False   False           
+    type    name     value         unit        error   min max frozen link prior
+    ---- --------- ---------- -------------- --------- --- --- ------ ---- -----
+         amplitude 3.9729e-03 cm-2 s-1 TeV-1 3.122e-04 nan nan  False           
+         reference 5.0548e-05            TeV 0.000e+00 nan nan   True           
+             alpha 1.2633e+00                1.706e-02 nan nan  False           
+              beta 6.1323e-02                9.443e-04 nan nan  False           
 
 
 
@@ -788,6 +788,10 @@ instrument.
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: analysis_mwl.py <analysis_mwl.py>`
+
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: analysis_mwl.zip <analysis_mwl.zip>`
 
 
 .. only:: html

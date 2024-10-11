@@ -142,14 +142,14 @@ Check setup
     System:
 
             python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python 
-            python_version         : 3.11.9     
+            python_version         : 3.11.10    
             machine                : x86_64     
             system                 : Darwin     
 
 
     Gammapy package:
 
-            version                : 1.3.dev1110+g29931fb8f6 
+            version                : 1.3.dev1205+g00f44f94ac 
             path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy 
 
 
@@ -166,7 +166,7 @@ Check setup
             matplotlib             : 3.9.2      
             pandas                 : not installed 
             healpy                 : 1.17.3     
-            iminuit                : 2.30.0     
+            iminuit                : 2.30.1     
             sherpa                 : 4.16.1     
             naima                  : 0.10.0     
             emcee                  : 3.1.6      
@@ -626,7 +626,7 @@ Here, we rebin 4 adjacent bins together, to get 30 min bins
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 18.124 seconds)
+   **Total running time of the script:** (0 minutes 18.495 seconds)
 
 
 .. _sphx_glr_download_tutorials_analysis-time_light_curve_flare.py:

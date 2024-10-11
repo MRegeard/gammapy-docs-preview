@@ -88,14 +88,14 @@ Check setup
     System:
 
             python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python 
-            python_version         : 3.11.9     
+            python_version         : 3.11.10    
             machine                : x86_64     
             system                 : Darwin     
 
 
     Gammapy package:
 
-            version                : 1.3.dev1110+g29931fb8f6 
+            version                : 1.3.dev1205+g00f44f94ac 
             path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy 
 
 
@@ -112,7 +112,7 @@ Check setup
             matplotlib             : 3.9.2      
             pandas                 : not installed 
             healpy                 : 1.17.3     
-            iminuit                : 2.30.0     
+            iminuit                : 2.30.1     
             sherpa                 : 4.16.1     
             naima                  : 0.10.0     
             emcee                  : 3.1.6      
@@ -1198,7 +1198,7 @@ generated:
 
  .. code-block:: none
 
-    VFur0WMX
+    iEnc7Jce
 
 
 
@@ -1392,7 +1392,7 @@ existing FITS file:
 
     SkyModel
 
-      Name                      : IEbNBTbA
+      Name                      : sTOBHLAa
       Datasets names            : None
       Spectral model type       : PowerLawNormSpectralModel
       Spatial  model type       : TemplateSpatialModel
@@ -1530,7 +1530,7 @@ multiple model components, Gammapy has a `~gammapy.modeling.models.Models` class
 
     Component 1: SkyModel
 
-      Name                      : IEbNBTbA
+      Name                      : sTOBHLAa
       Datasets names            : None
       Spectral model type       : PowerLawNormSpectralModel
       Spatial  model type       : TemplateSpatialModel
@@ -1616,7 +1616,7 @@ To see which models are available you can use the ``.names`` attribute:
 
  .. code-block:: none
 
-    ['my-source', 'IEbNBTbA']
+    ['my-source', 'sTOBHLAa']
 
 
 
@@ -1717,7 +1717,7 @@ format:
                 value: 2.0
                 unit: d
             scale: utc
-    -   name: IEbNBTbA
+    -   name: sTOBHLAa
         type: SkyModel
         spectral:
             type: PowerLawNormSpectralModel
@@ -1786,8 +1786,8 @@ format:
                 unit: d
             scale: utc
     metadata:
-        creator: Gammapy 1.3.dev1110+g29931fb8f6
-        date: '2024-10-07T16:06:56.397218'
+        creator: Gammapy 1.3.dev1205+g00f44f94ac
+        date: '2024-10-11T13:09:41.776157'
         origin: null
 
 
@@ -1864,8 +1864,8 @@ amplitudes:
 
  .. code-block:: none
 
-    Parameter(name='index', value=2.3, factor=2.3, scale=1.0, unit=Unit(dimensionless), min=1.0, max=5.0, frozen=False, prior=None, id=0x140e48310)
-    Parameter(name='index', value=2.3, factor=2.3, scale=1.0, unit=Unit(dimensionless), min=1.0, max=5.0, frozen=False, prior=None, id=0x140e48310)
+    Parameter(name='index', value=2.3, factor=2.3, scale=1.0, unit=Unit(dimensionless), min=1.0, max=5.0, frozen=False, prior=None, id=0x140a138d0)
+    Parameter(name='index', value=2.3, factor=2.3, scale=1.0, unit=Unit(dimensionless), min=1.0, max=5.0, frozen=False, prior=None, id=0x140a138d0)
 
 
 
@@ -1904,7 +1904,7 @@ In the YAML files the shared parameter is flagged by the additional
                 value: 2.3
                 min: 1.0
                 max: 5.0
-                link: index@Sh0glwiN
+                link: index@CkwGtFfU
             -   name: amplitude
                 value: 2.7e-12
                 unit: cm-2 s-1 TeV-1
@@ -1920,7 +1920,7 @@ In the YAML files the shared parameter is flagged by the additional
                 value: 2.3
                 min: 1.0
                 max: 5.0
-                link: index@Sh0glwiN
+                link: index@CkwGtFfU
             -   name: amplitude
                 value: 1.0e-12
                 unit: cm-2 s-1 TeV-1
@@ -1928,8 +1928,8 @@ In the YAML files the shared parameter is flagged by the additional
                 value: 1.0
                 unit: TeV
     metadata:
-        creator: Gammapy 1.3.dev1110+g29931fb8f6
-        date: '2024-10-07T16:06:56.499606'
+        creator: Gammapy 1.3.dev1205+g00f44f94ac
+        date: '2024-10-11T13:09:41.904440'
         origin: null
 
 

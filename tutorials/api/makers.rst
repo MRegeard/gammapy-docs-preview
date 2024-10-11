@@ -91,14 +91,14 @@ Check setup
     System:
 
             python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python 
-            python_version         : 3.11.9     
+            python_version         : 3.11.10    
             machine                : x86_64     
             system                 : Darwin     
 
 
     Gammapy package:
 
-            version                : 1.3.dev1110+g29931fb8f6 
+            version                : 1.3.dev1205+g00f44f94ac 
             path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy 
 
 
@@ -115,7 +115,7 @@ Check setup
             matplotlib             : 3.9.2      
             pandas                 : not installed 
             healpy                 : 1.17.3     
-            iminuit                : 2.30.0     
+            iminuit                : 2.30.1     
             sherpa                 : 4.16.1     
             naima                  : 0.10.0     
             emcee                  : 3.1.6      
@@ -174,7 +174,7 @@ object. This is illustrated in the following example:
     MapDataset
     ----------
 
-      Name                            : -38TG_a_ 
+      Name                            : Usl-pZmb 
 
       Total counts                    : 0 
       Total background counts         : 0.00
@@ -345,7 +345,7 @@ observational data using the `~gammapy.makers.MapDatasetMaker`:
     MapDataset
     ----------
 
-      Name                            : g1BxT_hG 
+      Name                            : Q5_7FNWn 
 
       Total counts                    : 2016 
       Total background counts         : 1866.72
@@ -597,7 +597,7 @@ dataset per observation is stacked into a larger map.
     MapDataset
     ----------
 
-      Name                            : qNyu7FpK 
+      Name                            : k8MtS7PJ 
 
       Total counts                    : 7972 
       Total background counts         : 7555.42
@@ -672,30 +672,30 @@ allow to use multiple processes on run.
     Dataset 0: 
 
       Type       : MapDataset
-      Name       : SY7ubGUQ
+      Name       : bvxITBNM
       Instrument : HESS
-      Models     : ['SY7ubGUQ-bkg']
+      Models     : ['bvxITBNM-bkg']
 
     Dataset 1: 
 
       Type       : MapDataset
-      Name       : gMbzroUw
+      Name       : cyW0EEiB
       Instrument : HESS
-      Models     : ['gMbzroUw-bkg']
+      Models     : ['cyW0EEiB-bkg']
 
     Dataset 2: 
 
       Type       : MapDataset
-      Name       : uRzfJVDA
+      Name       : J8s7jVG3
       Instrument : HESS
-      Models     : ['uRzfJVDA-bkg']
+      Models     : ['J8s7jVG3-bkg']
 
     Dataset 3: 
 
       Type       : MapDataset
-      Name       : mZu_6Qt-
+      Name       : K5cVTxlU
       Instrument : HESS
-      Models     : ['mZu_6Qt--bkg']
+      Models     : ['K5cVTxlU-bkg']
 
 
 
@@ -957,7 +957,7 @@ use `get_by_coord`
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 10.257 seconds)
+   **Total running time of the script:** (0 minutes 10.450 seconds)
 
 
 .. _sphx_glr_download_tutorials_api_makers.py:

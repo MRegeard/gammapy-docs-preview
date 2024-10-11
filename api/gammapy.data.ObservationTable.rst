@@ -80,7 +80,6 @@ ObservationTable
       ~ObservationTable.select_range
       ~ObservationTable.select_sky_circle
       ~ObservationTable.select_time_range
-      ~ObservationTable.setdefault
       ~ObservationTable.show_in_browser
       ~ObservationTable.show_in_notebook
       ~ObservationTable.sort
@@ -160,7 +159,6 @@ ObservationTable
    .. automethod:: select_range
    .. automethod:: select_sky_circle
    .. automethod:: select_time_range
-   .. automethod:: setdefault
    .. automethod:: show_in_browser
    .. automethod:: show_in_notebook
    .. automethod:: sort

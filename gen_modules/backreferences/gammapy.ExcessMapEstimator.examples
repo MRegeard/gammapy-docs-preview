@@ -99,6 +99,27 @@ Examples using ``gammapy.ExcessMapEstimator``
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Create and apply masks maps.">
+
+.. only:: html
+
+  .. image:: /tutorials/api/images/thumb/sphx_glr_mask_maps_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_api_mask_maps.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Mask maps</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_api_mask_maps.py`
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="This tutorial provides an overview of the Estimator API. All estimators live in the gammapy.estimators sub-module, offering a range of algorithms and classes for high-level flux and significance estimation. This is accomplished through a common functionality allowing the estimation of flux points, light curves, flux maps and profiles via a common API.">
 
 .. only:: html

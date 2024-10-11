@@ -1,10 +1,3 @@
-<!--
-# -*- coding: utf-8 -*-
-# Licensed under a 3-clause BSD style license - see LICENSE.rst
-#
-# Gammapy documentation layout configuration file.
--->
-
 
 <!DOCTYPE html>
 
@@ -36,8 +29,8 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
-    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css?v=7f9a90b1" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css?v=d2d258e8" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css?v=f4aeca0c" />
@@ -54,11 +47,11 @@
     <script src="../_static/jquery.js?v=5d32c60e"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
     <script src="../_static/documentation_options.js?v=1f75dfce"></script>
-    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=30646c52"></script>
-    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user-guide/estimators';</script>
     <script>
@@ -67,36 +60,15 @@
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
         </script>
+    <script src="../_static/matomo.js?v=52704cab"></script>
     <link rel="icon" href="../_static/gammapy_logo.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="High Level Analysis Interface" href="hli.html" />
     <link rel="prev" title="Modeling and Fitting (DL4 to DL5)" href="modeling.html" />
-
-   
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="08 Oct 2024"/>
-
-   <!-- Matomo -->
-
-   <script>
-     var _paq = window._paq = window._paq || [];
-     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-     _paq.push(['trackPageView']);
-     _paq.push(['enableLinkTracking']);
-     (function() {
-     var u="https://apcstatview.in2p3.fr/";
-     _paq.push(['setTrackerUrl', u+'matomo.php']);
-     _paq.push(['setSiteId', '3']);
-     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-     })();
-   </script>
-
-   <!-- End Matomo Code -->
-
-
+    <meta name="docbuild:last-update" content="11 Oct 2024"/>
   </head>
   
   
@@ -904,15 +876,22 @@ well. For now the correct interpretation of the results is left to the user.</p>
 </section>
 <section id="using-gammapy-estimators">
 <h2>Using gammapy.estimators<a class="headerlink" href="#using-gammapy-estimators" title="Link to this heading">#</a></h2>
-<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="Build a list of significant excesses in a Fermi-LAT map."><img alt="" src="../_images/sphx_glr_detect_thumb.png" />
-<p><a class="reference internal" href="../tutorials/analysis-2d/detect.html#sphx-glr-tutorials-analysis-2d-detect-py"><span class="std std-ref">Source detection and significance maps</span></a></p>
-  <div class="sphx-glr-thumbnail-title">Source detection and significance maps</div>
-</div><div class="sphx-glr-thumbcontainer" tooltip="This tutorial provides an overview of the Estimator API. All estimators live in the gammapy.estimators sub-module, offering a range of algorithms and classes for high-level flux and significance estimation. This is accomplished through a common functionality allowing the estimation of flux points, light curves, flux maps and profiles via a common API."><img alt="" src="../_images/sphx_glr_estimators_thumb.png" />
+<div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="This tutorial provides an overview of the Estimator API. All estimators live in the gammapy.estimators sub-module, offering a range of algorithms and classes for high-level flux and significance estimation. This is accomplished through a common functionality allowing the estimation of flux points, light curves, flux maps and profiles via a common API."><img alt="" src="../_images/sphx_glr_estimators_thumb.png" />
 <p><a class="reference internal" href="../tutorials/api/estimators.html#sphx-glr-tutorials-api-estimators-py"><span class="std std-ref">Estimators</span></a></p>
   <div class="sphx-glr-thumbnail-title">Estimators</div>
-</div></div><p>#.. minigallery:: gammapy.estimators.LightCurveEstimator
-#    :add-heading:</p>
-</section>
+</div></div><div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="Perform a full region based on-off spectral analysis and fit the resulting datasets."><img alt="" src="../_images/sphx_glr_spectral_analysis_thumb.png" />
+<p><a class="reference internal" href="../tutorials/analysis-1d/spectral_analysis.html#sphx-glr-tutorials-analysis-1d-spectral-analysis-py"><span class="std std-ref">Spectral analysis</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Spectral analysis</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Joint 3D analysis using 3D Fermi datasets, a H.E.S.S. reduced spectrum and HAWC flux points."><img alt="" src="../_images/sphx_glr_analysis_mwl_thumb.png" />
+<p><a class="reference internal" href="../tutorials/analysis-3d/analysis_mwl.html#sphx-glr-tutorials-analysis-3d-analysis-mwl-py"><span class="std std-ref">Multi instrument joint 3D and 1D analysis</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Multi instrument joint 3D and 1D analysis</div>
+</div></div><div class="sphx-glr-thumbnails"><div class="sphx-glr-thumbcontainer" tooltip="Compute per-observation and nightly fluxes of four Crab nebula observations."><img alt="" src="../_images/sphx_glr_light_curve_thumb.png" />
+<p><a class="reference internal" href="../tutorials/analysis-time/light_curve.html#sphx-glr-tutorials-analysis-time-light-curve-py"><span class="std std-ref">Light curves</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Light curves</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Compute the light curve of a PKS 2155-304 flare on 10 minutes time intervals."><img alt="" src="../_images/sphx_glr_light_curve_flare_thumb.png" />
+<p><a class="reference internal" href="../tutorials/analysis-time/light_curve_flare.html#sphx-glr-tutorials-analysis-time-light-curve-flare-py"><span class="std std-ref">Light curves for flares</span></a></p>
+  <div class="sphx-glr-thumbnail-title">Light curves for flares</div>
+</div></div></section>
 </section>
 
 
@@ -989,19 +968,28 @@ well. For now the correct interpretation of the results is left to the user.</p>
   </p>
 </div>
       
-        <div class="footer-item">
-
-  <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.0.2.
-    <br/>
-  </p>
-</div>
+    </div>
+  
+  
+    <div class="footer-items__center">
+      
+        <div class="footer-item"><p class="last-updated">
+  Last updated on 11 Oct 2024.
+  <br/>
+</p></div>
       
     </div>
   
   
-  
     <div class="footer-items__end">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.0.
+    <br/>
+  </p>
+</div>
       
         <div class="footer-item">
 <p class="theme-version">

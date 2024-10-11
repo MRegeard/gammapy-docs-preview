@@ -1,10 +1,3 @@
-<!--
-# -*- coding: utf-8 -*-
-# Licensed under a 3-clause BSD style license - see LICENSE.rst
-#
-# Gammapy documentation layout configuration file.
--->
-
 
 <!DOCTYPE html>
 
@@ -36,8 +29,8 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
-    <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css?v=7f9a90b1" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=d2d258e8" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
@@ -54,11 +47,11 @@
     <script src="../../_static/jquery.js?v=5d32c60e"></script>
     <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
     <script src="../../_static/documentation_options.js?v=1f75dfce"></script>
-    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=30646c52"></script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/analysis-2d/modeling_2D';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.15.4';
@@ -66,36 +59,15 @@
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
         </script>
+    <script src="../../_static/matomo.js?v=52704cab"></script>
     <link rel="icon" href="../../_static/gammapy_logo.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Basic image exploration and fitting" href="../analysis-3d/cta_data_analysis.html" />
+    <link rel="next" title="3D detailed analysis" href="../analysis-3d/analysis_3d.html" />
     <link rel="prev" title="Ring background map" href="ring_background.html" />
-
-   
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="08 Oct 2024"/>
-
-   <!-- Matomo -->
-
-   <script>
-     var _paq = window._paq = window._paq || [];
-     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-     _paq.push(['trackPageView']);
-     _paq.push(['enableLinkTracking']);
-     (function() {
-     var u="https://apcstatview.in2p3.fr/";
-     _paq.push(['setTrackerUrl', u+'matomo.php']);
-     _paq.push(['setSiteId', '3']);
-     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-     })();
-   </script>
-
-   <!-- End Matomo Code -->
-
-
+    <meta name="docbuild:last-update" content="11 Oct 2024"/>
   </head>
   
   
@@ -527,7 +499,7 @@ document.write(`
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../data/hess.html">H.E.S.S. with Gammapy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../data/cta.html">CTA with Gammapy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/cta.html">CTAO with Gammapy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../data/fermi_lat.html">Fermi-LAT with Gammapy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../data/hawc.html">HAWC with Gammapy</a></li>
 </ul>
@@ -537,10 +509,10 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="../analysis-1d/spectral_analysis_hli.html">Spectral analysis with the HLI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis-1d/spectral_analysis_rad_max.html">Spectral analysis with energy-dependent directional cuts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis-1d/extended_source_spectral_analysis.html">Spectral analysis of extended sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-1d/spectrum_simulation.html">1D spectrum simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-1d/sed_fitting.html">Flux point fitting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis-1d/ebl.html">Account for spectral absorption due to the EBL</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="../analysis-1d/sed_fitting.html">Flux point fitting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../analysis-1d/spectrum_simulation.html">1D spectrum simulation</a></li>
 </ul>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="detect.html">Source detection and significance maps</a></li>
@@ -548,20 +520,22 @@ document.write(`
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">2D map fitting</a></li>
 </ul>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../analysis-3d/cta_data_analysis.html">Basic image exploration and fitting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis-3d/analysis_3d.html">3D detailed analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../analysis-3d/flux_profiles.html">Flux Profile Estimation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-3d/cta_data_analysis.html">Basic image exploration and fitting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis-3d/energy_dependent_estimation.html">Morphological energy dependence estimation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis-3d/analysis_mwl.html">Multi instrument joint 3D and 1D analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis-3d/simulate_3d.html">3D map simulation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis-3d/event_sampling.html">Event sampling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis-3d/event_sampling_nrg_depend_models.html">Sample a source with energy-dependent temporal evolution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-3d/flux_profiles.html">Flux Profile Estimation</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../analysis-time/light_curve.html">Light curves</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis-time/light_curve_flare.html">Light curves for flares</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../analysis-time/pulsar_analysis.html">Pulsar analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-time/variability_estimation.html">Estimation of time variability in a lightcurve</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-time/time_resolved_spectroscopy.html">Time resolved spectroscopy estimator</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis-time/light_curve_simulation.html">Simulating and fitting a time varying source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-time/pulsar_analysis.html">Pulsar analysis</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../api/irfs.html">Using Gammapy IRFs</a></li>
@@ -682,7 +656,7 @@ an integrated power law.</p>
 <h2>Setup<a class="headerlink" href="#setup" title="Link to this heading">#</a></h2>
 <p>As usual, we’ll start with some general imports…</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
-<span class="kn">from</span> <span class="nn">gammapy.analysis</span> <span class="kn">import</span> <span class="n">Analysis</span><span class="p">,</span> <span class="n">AnalysisConfig</span>
+<span class="kn">from</span> <span class="nn">gammapy.analysis</span> <span class="kn">import</span> <a href="../../api/gammapy.analysis.Analysis.html#gammapy.analysis.Analysis" title="gammapy.analysis.Analysis" class="sphx-glr-backref-module-gammapy-analysis sphx-glr-backref-type-py-class"><span class="n">Analysis</span></a><span class="p">,</span> <a href="../../api/gammapy.analysis.AnalysisConfig.html#gammapy.analysis.AnalysisConfig" title="gammapy.analysis.AnalysisConfig" class="sphx-glr-backref-module-gammapy-analysis sphx-glr-backref-type-py-class"><span class="n">AnalysisConfig</span></a>
 </pre></div>
 </div>
 </section>
@@ -695,37 +669,37 @@ an integrated power law.</p>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>System:
 
-        python_executable      : /Users/mregeard/anaconda3/envs/gammapy-dev/bin/python
-        python_version         : 3.11.9
+        python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python
+        python_version         : 3.11.10
         machine                : x86_64
         system                 : Darwin
 
 
 Gammapy package:
 
-        version                : 1.3.dev468+g4c56d91f9e.d20240613
-        path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/gammapy
+        version                : 1.3.dev1205+g00f44f94ac
+        path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy
 
 
 Other packages:
 
         numpy                  : 1.26.4
-        scipy                  : 1.13.1
-        astropy                : 6.1.0
-        regions                : 0.9
+        scipy                  : 1.14.1
+        astropy                : 5.2.2
+        regions                : 0.10
         click                  : 8.1.7
-        yaml                   : 6.0.1
-        IPython                : 8.25.0
-        jupyterlab             : 3.5.3
-        matplotlib             : 3.8.4
-        pandas                 : 2.2.2
-        healpy                 : 1.16.6
-        iminuit                : 2.25.2
+        yaml                   : 6.0.2
+        IPython                : 8.28.0
+        jupyterlab             : not installed
+        matplotlib             : 3.9.2
+        pandas                 : not installed
+        healpy                 : 1.17.3
+        iminuit                : 2.30.1
         sherpa                 : 4.16.1
         naima                  : 0.10.0
         emcee                  : 3.1.6
         corner                 : 2.2.2
-        ray                    : 2.24.0
+        ray                    : 2.37.0
 
 
 Gammapy environment variables:
@@ -738,95 +712,155 @@ Gammapy environment variables:
 <h2>Creating the config file<a class="headerlink" href="#creating-the-config-file" title="Link to this heading">#</a></h2>
 <p>Now, we create a config file for out analysis. You may load this from
 disc if you have a pre-defined config file.</p>
-<p>Here, we use 3 simulated CTA runs of the galactic center.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">config</span> <span class="o">=</span> <span class="n">AnalysisConfig</span><span class="p">()</span>
+<p>Here, we use 3 simulated CTAO runs of the galactic center.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../../api/gammapy.analysis.AnalysisConfig.html#gammapy.analysis.AnalysisConfig" title="gammapy.analysis.AnalysisConfig" class="sphx-glr-backref-module-gammapy-analysis sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">config</span></a> <span class="o">=</span> <a href="../../api/gammapy.analysis.AnalysisConfig.html#gammapy.analysis.AnalysisConfig" title="gammapy.analysis.AnalysisConfig" class="sphx-glr-backref-module-gammapy-analysis sphx-glr-backref-type-py-class"><span class="n">AnalysisConfig</span></a><span class="p">()</span>
 <span class="c1"># Selecting the observations</span>
-<span class="n">config</span><span class="o">.</span><span class="n">observations</span><span class="o">.</span><span class="n">datastore</span> <span class="o">=</span> <span class="s2">&quot;$GAMMAPY_DATA/cta-1dc/index/gps/&quot;</span>
-<span class="n">config</span><span class="o">.</span><span class="n">observations</span><span class="o">.</span><span class="n">obs_ids</span> <span class="o">=</span> <span class="p">[</span><span class="mi">110380</span><span class="p">,</span> <span class="mi">111140</span><span class="p">,</span> <span class="mi">111159</span><span class="p">]</span>
+<a href="https://docs.python.org/3/library/pathlib.html#pathlib.PosixPath" title="pathlib.PosixPath" class="sphx-glr-backref-module-pathlib sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">config</span><span class="o">.</span><span class="n">observations</span><span class="o">.</span><span class="n">datastore</span></a> <span class="o">=</span> <span class="s2">&quot;$GAMMAPY_DATA/cta-1dc/index/gps/&quot;</span>
+<a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">config</span><span class="o">.</span><span class="n">observations</span><span class="o">.</span><span class="n">obs_ids</span></a> <span class="o">=</span> <span class="p">[</span><span class="mi">110380</span><span class="p">,</span> <span class="mi">111140</span><span class="p">,</span> <span class="mi">111159</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>Technically, gammapy implements 2D analysis as a special case of 3D
 analysis (one bin in energy). So, we must specify the type of
 analysis as <em>3D</em>, and define the geometry of the analysis.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">type</span> <span class="o">=</span> <span class="s2">&quot;3d&quot;</span>
-<span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">geom</span><span class="o">.</span><span class="n">wcs</span><span class="o">.</span><span class="n">skydir</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">type</span></a> <span class="o">=</span> <span class="s2">&quot;3d&quot;</span>
+<a href="../../api/gammapy.analysis.AnalysisConfig.html#gammapy.analysis.AnalysisConfig" title="gammapy.analysis.AnalysisConfig" class="sphx-glr-backref-module-gammapy-analysis sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">config</span></a><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">geom</span><span class="o">.</span><span class="n">wcs</span><span class="o">.</span><span class="n">skydir</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">&quot;lon&quot;</span><span class="p">:</span> <span class="s2">&quot;0 deg&quot;</span><span class="p">,</span>
     <span class="s2">&quot;lat&quot;</span><span class="p">:</span> <span class="s2">&quot;0 deg&quot;</span><span class="p">,</span>
     <span class="s2">&quot;frame&quot;</span><span class="p">:</span> <span class="s2">&quot;galactic&quot;</span><span class="p">,</span>
 <span class="p">}</span>  <span class="c1"># The WCS geometry - centered on the galactic center</span>
-<span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">geom</span><span class="o">.</span><span class="n">wcs</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;width&quot;</span><span class="p">:</span> <span class="s2">&quot;8 deg&quot;</span><span class="p">,</span> <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="s2">&quot;6 deg&quot;</span><span class="p">}</span>
-<span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">geom</span><span class="o">.</span><span class="n">wcs</span><span class="o">.</span><span class="n">binsize</span> <span class="o">=</span> <span class="s2">&quot;0.02 deg&quot;</span>
+<a href="../../api/gammapy.analysis.AnalysisConfig.html#gammapy.analysis.AnalysisConfig" title="gammapy.analysis.AnalysisConfig" class="sphx-glr-backref-module-gammapy-analysis sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">config</span></a><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">geom</span><span class="o">.</span><span class="n">wcs</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;width&quot;</span><span class="p">:</span> <span class="s2">&quot;8 deg&quot;</span><span class="p">,</span> <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="s2">&quot;6 deg&quot;</span><span class="p">}</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.coordinates.Angle.html#astropy.coordinates.Angle" title="astropy.coordinates.Angle" class="sphx-glr-backref-module-astropy-coordinates sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">geom</span><span class="o">.</span><span class="n">wcs</span><span class="o">.</span><span class="n">binsize</span></a> <span class="o">=</span> <span class="s2">&quot;0.02 deg&quot;</span>
 
 <span class="c1"># The FoV radius to use for cutouts</span>
-<span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">geom</span><span class="o">.</span><span class="n">selection</span><span class="o">.</span><span class="n">offset_max</span> <span class="o">=</span> <span class="mf">2.5</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">deg</span>
-<span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">safe_mask</span><span class="o">.</span><span class="n">methods</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;offset-max&quot;</span><span class="p">]</span>
-<span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">safe_mask</span><span class="o">.</span><span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;offset_max&quot;</span><span class="p">:</span> <span class="s2">&quot;2.5 deg&quot;</span><span class="p">}</span>
-<span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">background</span><span class="o">.</span><span class="n">method</span> <span class="o">=</span> <span class="s2">&quot;fov_background&quot;</span>
-<span class="n">config</span><span class="o">.</span><span class="n">fit</span><span class="o">.</span><span class="n">fit_range</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;min&quot;</span><span class="p">:</span> <span class="s2">&quot;0.1 TeV&quot;</span><span class="p">,</span> <span class="s2">&quot;max&quot;</span><span class="p">:</span> <span class="s2">&quot;30.0 TeV&quot;</span><span class="p">}</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.coordinates.Angle.html#astropy.coordinates.Angle" title="astropy.coordinates.Angle" class="sphx-glr-backref-module-astropy-coordinates sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">geom</span><span class="o">.</span><span class="n">selection</span><span class="o">.</span><span class="n">offset_max</span></a> <span class="o">=</span> <span class="mf">2.5</span> <span class="o">*</span> <a href="https://docs.astropy.org/en/latest/api/astropy.units.Unit.html#astropy.units.Unit" title="astropy.units.Unit" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">u</span><span class="o">.</span><span class="n">deg</span></a>
+<a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">safe_mask</span><span class="o">.</span><span class="n">methods</span></a> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;offset-max&quot;</span><span class="p">]</span>
+<a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">safe_mask</span><span class="o">.</span><span class="n">parameters</span></a> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;offset_max&quot;</span><span class="p">:</span> <span class="s2">&quot;2.5 deg&quot;</span><span class="p">}</span>
+<a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">background</span><span class="o">.</span><span class="n">method</span></a> <span class="o">=</span> <span class="s2">&quot;fov_background&quot;</span>
+<a href="../../api/gammapy.analysis.AnalysisConfig.html#gammapy.analysis.AnalysisConfig" title="gammapy.analysis.AnalysisConfig" class="sphx-glr-backref-module-gammapy-analysis sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">config</span></a><span class="o">.</span><span class="n">fit</span><span class="o">.</span><span class="n">fit_range</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;min&quot;</span><span class="p">:</span> <span class="s2">&quot;0.1 TeV&quot;</span><span class="p">,</span> <span class="s2">&quot;max&quot;</span><span class="p">:</span> <span class="s2">&quot;30.0 TeV&quot;</span><span class="p">}</span>
 
 <span class="c1"># We now fix the energy axis for the counts map - (the reconstructed energy binning)</span>
-<span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">geom</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">energy</span><span class="o">.</span><span class="n">min</span> <span class="o">=</span> <span class="s2">&quot;0.1 TeV&quot;</span>
-<span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">geom</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">energy</span><span class="o">.</span><span class="n">max</span> <span class="o">=</span> <span class="s2">&quot;10 TeV&quot;</span>
-<span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">geom</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">energy</span><span class="o">.</span><span class="n">nbins</span> <span class="o">=</span> <span class="mi">1</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">geom</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">energy</span><span class="o">.</span><span class="n">min</span></a> <span class="o">=</span> <span class="s2">&quot;0.1 TeV&quot;</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">geom</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">energy</span><span class="o">.</span><span class="n">max</span></a> <span class="o">=</span> <span class="s2">&quot;10 TeV&quot;</span>
+<a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">geom</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">energy</span><span class="o">.</span><span class="n">nbins</span></a> <span class="o">=</span> <span class="mi">1</span>
 
-<span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">geom</span><span class="o">.</span><span class="n">wcs</span><span class="o">.</span><span class="n">binsize_irf</span> <span class="o">=</span> <span class="s2">&quot;0.2 deg&quot;</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.coordinates.Angle.html#astropy.coordinates.Angle" title="astropy.coordinates.Angle" class="sphx-glr-backref-module-astropy-coordinates sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">config</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">geom</span><span class="o">.</span><span class="n">wcs</span><span class="o">.</span><span class="n">binsize_irf</span></a> <span class="o">=</span> <span class="s2">&quot;0.2 deg&quot;</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><a href="../../api/gammapy.analysis.AnalysisConfig.html#gammapy.analysis.AnalysisConfig" title="gammapy.analysis.AnalysisConfig" class="sphx-glr-backref-module-gammapy-analysis sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">config</span></a><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>AnalysisConfig
 
     general:
-        log: {level: info, filename: null, filemode: null, format: null, datefmt: null}
+        log:
+            level: info
+            filename: null
+            filemode: null
+            format: null
+            datefmt: null
         outdir: .
         n_jobs: 1
         datasets_file: null
         models_file: null
     observations:
         datastore: /Users/mregeard/Workspace/dev/code/gammapy/gammapy-data/cta-1dc/index/gps
-        obs_ids: [110380, 111140, 111159]
+        obs_ids:
+        - 110380
+        - 111140
+        - 111159
         obs_file: null
-        obs_cone: {frame: null, lon: null, lat: null, radius: null}
-        obs_time: {start: null, stop: null}
-        required_irf: [aeff, edisp, psf, bkg]
+        obs_cone:
+            frame: null
+            lon: null
+            lat: null
+            radius: null
+        obs_time:
+            start: null
+            stop: null
+        required_irf:
+        - aeff
+        - edisp
+        - psf
+        - bkg
     datasets:
         type: 3d
         stack: true
         geom:
             wcs:
-                skydir: {frame: galactic, lon: 0.0 deg, lat: 0.0 deg}
+                skydir:
+                    frame: galactic
+                    lon: 0.0 deg
+                    lat: 0.0 deg
                 binsize: 0.02 deg
-                width: {width: 8.0 deg, height: 6.0 deg}
+                width:
+                    width: 8.0 deg
+                    height: 6.0 deg
                 binsize_irf: 0.2 deg
-            selection: {offset_max: 2.5 deg}
+            selection:
+                offset_max: 2.5 deg
             axes:
-                energy: {min: 0.1 TeV, max: 10.0 TeV, nbins: 1}
-                energy_true: {min: 0.5 TeV, max: 20.0 TeV, nbins: 16}
-        map_selection: [counts, exposure, background, psf, edisp]
+                energy:
+                    min: 0.1 TeV
+                    max: 10.0 TeV
+                    nbins: 1
+                energy_true:
+                    min: 0.5 TeV
+                    max: 20.0 TeV
+                    nbins: 16
+        map_selection:
+        - counts
+        - exposure
+        - background
+        - psf
+        - edisp
         background:
             method: fov_background
             exclusion: null
             parameters: {}
         safe_mask:
-            methods: [offset-max]
-            parameters: {offset_max: 2.5 deg}
-        on_region: {frame: null, lon: null, lat: null, radius: null}
+            methods:
+            - offset-max
+            parameters:
+                offset_max: 2.5 deg
+        on_region:
+            frame: null
+            lon: null
+            lat: null
+            radius: null
         containment_correction: true
     fit:
-        fit_range: {min: 0.1 TeV, max: 30.0 TeV}
+        fit_range:
+            min: 0.1 TeV
+            max: 30.0 TeV
     flux_points:
-        energy: {min: null, max: null, nbins: null}
+        energy:
+            min: null
+            max: null
+            nbins: null
         source: source
-        parameters: {selection_optional: all}
+        parameters:
+            selection_optional: all
     excess_map:
         correlation_radius: 0.1 deg
         parameters: {}
-        energy_edges: {min: null, max: null, nbins: null}
+        energy_edges:
+            min: null
+            max: null
+            nbins: null
     light_curve:
-        time_intervals: {start: null, stop: null}
-        energy_edges: {min: null, max: null, nbins: null}
+        time_intervals:
+            start: null
+            stop: null
+        energy_edges:
+            min: null
+            max: null
+            nbins: null
         source: source
-        parameters: {selection_optional: all}
+        parameters:
+            selection_optional: all
+    metadata:
+        creator: Gammapy 1.3.dev1205+g00f44f94ac
+        date: &#39;2024-10-11T13:07:24.691100&#39;
+        origin: null
 </pre></div>
 </div>
 </section>
@@ -834,18 +868,18 @@ analysis as <em>3D</em>, and define the geometry of the analysis.</p>
 <h2>Getting the reduced dataset<a class="headerlink" href="#getting-the-reduced-dataset" title="Link to this heading">#</a></h2>
 <p>We now use the config file and create a single <code class="xref py py-obj docutils literal notranslate"><span class="pre">MapDataset</span></code> containing
 <code class="xref py py-obj docutils literal notranslate"><span class="pre">counts</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">background</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">exposure</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">psf</span></code> and <code class="xref py py-obj docutils literal notranslate"><span class="pre">edisp</span></code> maps.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">analysis</span> <span class="o">=</span> <span class="n">Analysis</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
-<span class="n">analysis</span><span class="o">.</span><span class="n">get_observations</span><span class="p">()</span>
-<span class="n">analysis</span><span class="o">.</span><span class="n">get_datasets</span><span class="p">()</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../../api/gammapy.analysis.Analysis.html#gammapy.analysis.Analysis" title="gammapy.analysis.Analysis" class="sphx-glr-backref-module-gammapy-analysis sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">analysis</span></a> <span class="o">=</span> <a href="../../api/gammapy.analysis.Analysis.html#gammapy.analysis.Analysis" title="gammapy.analysis.Analysis" class="sphx-glr-backref-module-gammapy-analysis sphx-glr-backref-type-py-class"><span class="n">Analysis</span></a><span class="p">(</span><a href="../../api/gammapy.analysis.AnalysisConfig.html#gammapy.analysis.AnalysisConfig" title="gammapy.analysis.AnalysisConfig" class="sphx-glr-backref-module-gammapy-analysis sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">config</span></a><span class="p">)</span>
+<a href="../../api/gammapy.analysis.Analysis.html#gammapy.analysis.Analysis.get_observations" title="gammapy.analysis.Analysis.get_observations" class="sphx-glr-backref-module-gammapy-analysis sphx-glr-backref-type-py-method"><span class="n">analysis</span><span class="o">.</span><span class="n">get_observations</span></a><span class="p">()</span>
+<a href="../../api/gammapy.analysis.Analysis.html#gammapy.analysis.Analysis.get_datasets" title="gammapy.analysis.Analysis.get_datasets" class="sphx-glr-backref-module-gammapy-analysis sphx-glr-backref-type-py-method"><span class="n">analysis</span><span class="o">.</span><span class="n">get_datasets</span></a><span class="p">()</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">analysis</span><span class="o">.</span><span class="n">datasets</span><span class="p">[</span><span class="s2">&quot;stacked&quot;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><a href="../../api/gammapy.datasets.Datasets.html#gammapy.datasets.Datasets" title="gammapy.datasets.Datasets" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">analysis</span><span class="o">.</span><span class="n">datasets</span></a><span class="p">[</span><span class="s2">&quot;stacked&quot;</span><span class="p">])</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/Users/mregeard/anaconda3/envs/gammapy-dev/lib/python3.11/site-packages/astropy/units/core.py:2157: UnitsWarning: &#39;1/s/MeV/sr&#39; did not parse as fits unit: Numeric factor not supported by FITS If this is meant to be a custom unit, define it with &#39;u.def_unit&#39;. To have it recognized inside a file reader or other code, enable it with &#39;u.add_enabled_units&#39;. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/astropy/units/core.py:2097: UnitsWarning: &#39;1/s/MeV/sr&#39; did not parse as fits unit: Numeric factor not supported by FITS If this is meant to be a custom unit, define it with &#39;u.def_unit&#39;. To have it recognized inside a file reader or other code, enable it with &#39;u.add_enabled_units&#39;. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html
   warnings.warn(msg, UnitsWarning)
-/Users/mregeard/anaconda3/envs/gammapy-dev/lib/python3.11/site-packages/astropy/units/core.py:2157: UnitsWarning: &#39;1/s/MeV/sr&#39; did not parse as fits unit: Numeric factor not supported by FITS If this is meant to be a custom unit, define it with &#39;u.def_unit&#39;. To have it recognized inside a file reader or other code, enable it with &#39;u.add_enabled_units&#39;. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html
+/Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/astropy/units/core.py:2097: UnitsWarning: &#39;1/s/MeV/sr&#39; did not parse as fits unit: Numeric factor not supported by FITS If this is meant to be a custom unit, define it with &#39;u.def_unit&#39;. To have it recognized inside a file reader or other code, enable it with &#39;u.add_enabled_units&#39;. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html
   warnings.warn(msg, UnitsWarning)
-/Users/mregeard/anaconda3/envs/gammapy-dev/lib/python3.11/site-packages/astropy/units/core.py:2157: UnitsWarning: &#39;1/s/MeV/sr&#39; did not parse as fits unit: Numeric factor not supported by FITS If this is meant to be a custom unit, define it with &#39;u.def_unit&#39;. To have it recognized inside a file reader or other code, enable it with &#39;u.add_enabled_units&#39;. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html
+/Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/astropy/units/core.py:2097: UnitsWarning: &#39;1/s/MeV/sr&#39; did not parse as fits unit: Numeric factor not supported by FITS If this is meant to be a custom unit, define it with &#39;u.def_unit&#39;. To have it recognized inside a file reader or other code, enable it with &#39;u.add_enabled_units&#39;. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html
   warnings.warn(msg, UnitsWarning)
 MapDataset
 ----------
@@ -878,11 +912,11 @@ MapDataset
 energy. The exposure and IRF maps are in true energy, and hence, have a
 different binning based upon the binning of the IRFs. We need not bother
 about them presently.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">analysis</span><span class="o">.</span><span class="n">datasets</span><span class="p">[</span><span class="s2">&quot;stacked&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">counts</span><span class="p">)</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><a href="../../api/gammapy.datasets.Datasets.html#gammapy.datasets.Datasets" title="gammapy.datasets.Datasets" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">analysis</span><span class="o">.</span><span class="n">datasets</span></a><span class="p">[</span><span class="s2">&quot;stacked&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">counts</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">analysis</span><span class="o">.</span><span class="n">datasets</span><span class="p">[</span><span class="s2">&quot;stacked&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">background</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><a href="../../api/gammapy.datasets.Datasets.html#gammapy.datasets.Datasets" title="gammapy.datasets.Datasets" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">analysis</span><span class="o">.</span><span class="n">datasets</span></a><span class="p">[</span><span class="s2">&quot;stacked&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">background</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">analysis</span><span class="o">.</span><span class="n">datasets</span><span class="p">[</span><span class="s2">&quot;stacked&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">exposure</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><a href="../../api/gammapy.datasets.Datasets.html#gammapy.datasets.Datasets" title="gammapy.datasets.Datasets" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">analysis</span><span class="o">.</span><span class="n">datasets</span></a><span class="p">[</span><span class="s2">&quot;stacked&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">exposure</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>WcsNDMap
@@ -914,8 +948,8 @@ WcsNDMap
 </pre></div>
 </div>
 <p>We can have a quick look of these maps in the following way:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">analysis</span><span class="o">.</span><span class="n">datasets</span><span class="p">[</span><span class="s2">&quot;stacked&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">counts</span><span class="o">.</span><span class="n">reduce_over_axes</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">vmax</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">add_cbar</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../../api/gammapy.datasets.Datasets.html#gammapy.datasets.Datasets" title="gammapy.datasets.Datasets" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">analysis</span><span class="o">.</span><span class="n">datasets</span></a><span class="p">[</span><span class="s2">&quot;stacked&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">counts</span><span class="o">.</span><span class="n">reduce_over_axes</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">vmax</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">add_cbar</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
 <img src="../../_images/sphx_glr_modeling_2D_001.png" srcset="../../_images/sphx_glr_modeling_2D_001.png" alt="modeling 2D" class = "sphx-glr-single-img"/></section>
@@ -925,7 +959,7 @@ WcsNDMap
 thing to note here is the dummy spectral model - an integrated powerlaw
 with only free normalisation</strong>. Here, we use its YAML definition to load
 it:</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">model_config</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">model_config</span></a> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">components:</span>
 <span class="s2">- name: GC-1</span>
 <span class="s2">  type: SkyModel</span>
@@ -959,30 +993,30 @@ it:</p>
 <span class="s2">      frozen: true</span>
 <span class="s2">&quot;&quot;&quot;</span>
 
-<span class="n">analysis</span><span class="o">.</span><span class="n">set_models</span><span class="p">(</span><span class="n">model_config</span><span class="p">)</span>
+<a href="../../api/gammapy.analysis.Analysis.html#gammapy.analysis.Analysis.set_models" title="gammapy.analysis.Analysis.set_models" class="sphx-glr-backref-module-gammapy-analysis sphx-glr-backref-type-py-method"><span class="n">analysis</span><span class="o">.</span><span class="n">set_models</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">model_config</span></a><span class="p">)</span>
 </pre></div>
 </div>
 <p>We will freeze the parameters of the background</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">analysis</span><span class="o">.</span><span class="n">datasets</span><span class="p">[</span><span class="s2">&quot;stacked&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">background_model</span><span class="o">.</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;tilt&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">frozen</span> <span class="o">=</span> <span class="kc">True</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../../api/gammapy.datasets.Datasets.html#gammapy.datasets.Datasets" title="gammapy.datasets.Datasets" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">analysis</span><span class="o">.</span><span class="n">datasets</span></a><span class="p">[</span><span class="s2">&quot;stacked&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">background_model</span><span class="o">.</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;tilt&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">frozen</span> <span class="o">=</span> <span class="kc">True</span>
 
 <span class="c1"># To run the fit</span>
-<span class="n">analysis</span><span class="o">.</span><span class="n">run_fit</span><span class="p">()</span>
+<a href="../../api/gammapy.analysis.Analysis.html#gammapy.analysis.Analysis.run_fit" title="gammapy.analysis.Analysis.run_fit" class="sphx-glr-backref-module-gammapy-analysis sphx-glr-backref-type-py-method"><span class="n">analysis</span><span class="o">.</span><span class="n">run_fit</span></a><span class="p">()</span>
 
 <span class="c1"># To see the best fit values along with the errors</span>
-<span class="n">display</span><span class="p">(</span><span class="n">analysis</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">to_parameters_table</span><span class="p">())</span>
+<span class="n">display</span><span class="p">(</span><a href="../../api/gammapy.analysis.Analysis.html#gammapy.analysis.Analysis.models" title="gammapy.analysis.Analysis.models" class="sphx-glr-backref-module-gammapy-analysis sphx-glr-backref-type-py-attribute"><span class="n">analysis</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">to_parameters_table</span></a><span class="p">())</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>   model    type    name      value      unit     error      min        max    frozen is_norm link prior
------------ ---- --------- ----------- -------- --------- ---------- --------- ------ ------- ---- -----
-       GC-1      amplitude  4.1501e-11 s-1 cm-2 2.224e-12        nan       nan  False    True
-       GC-1          index  2.0000e+00          0.000e+00        nan       nan   True   False
-       GC-1           emin  1.0000e-01      TeV 0.000e+00        nan       nan   True   False
-       GC-1           emax  1.0000e+01      TeV 0.000e+00        nan       nan   True   False
-       GC-1          lon_0 -4.7613e-02      deg 1.998e-03        nan       nan  False   False
-       GC-1          lat_0 -5.3566e-02      deg 1.983e-03 -9.000e+01 9.000e+01  False   False
-stacked-bkg           norm  9.9445e-01          3.411e-03        nan       nan  False    True
-stacked-bkg           tilt  0.0000e+00          0.000e+00        nan       nan   True   False
-stacked-bkg      reference  1.0000e+00      TeV 0.000e+00        nan       nan   True   False
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>   model    type    name      value      unit     error      min        max    frozen link prior
+----------- ---- --------- ----------- -------- --------- ---------- --------- ------ ---- -----
+       GC-1      amplitude  4.1624e-11 cm-2 s-1 2.220e-12        nan       nan  False
+       GC-1          index  2.0000e+00          0.000e+00        nan       nan   True
+       GC-1           emin  1.0000e-01      TeV 0.000e+00        nan       nan   True
+       GC-1           emax  1.0000e+01      TeV 0.000e+00        nan       nan   True
+       GC-1          lon_0 -5.4639e-02      deg 1.996e-03        nan       nan  False
+       GC-1          lat_0 -4.6394e-02      deg 1.980e-03 -9.000e+01 9.000e+01  False
+stacked-bkg           norm  9.9441e-01          3.411e-03        nan       nan  False
+stacked-bkg           tilt  0.0000e+00          0.000e+00        nan       nan   True
+stacked-bkg      reference  1.0000e+00      TeV 0.000e+00        nan       nan   True
 </pre></div>
 </div>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-tutorials-analysis-2d-modeling-2d-py">
@@ -995,6 +1029,9 @@ stacked-bkg      reference  1.0000e+00      TeV 0.000e+00        nan       nan  
 </div>
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/d58ab19eec70461756cbde5549642e51/modeling_2D.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">modeling_2D.py</span></code></a></p>
+</div>
+<div class="sphx-glr-download sphx-glr-download-zip docutils container">
+<p><a class="reference download internal" download="" href="../../_downloads/5d70733460edff98657b0fd5d0eb69e4/modeling_2D.zip"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">zipped:</span> <span class="pre">modeling_2D.zip</span></code></a></p>
 </div>
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
@@ -1075,19 +1112,28 @@ stacked-bkg      reference  1.0000e+00      TeV 0.000e+00        nan       nan  
   </p>
 </div>
       
-        <div class="footer-item">
-
-  <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.0.2.
-    <br/>
-  </p>
-</div>
+    </div>
+  
+  
+    <div class="footer-items__center">
+      
+        <div class="footer-item"><p class="last-updated">
+  Last updated on 11 Oct 2024.
+  <br/>
+</p></div>
       
     </div>
   
   
-  
     <div class="footer-items__end">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.0.
+    <br/>
+  </p>
+</div>
       
         <div class="footer-item">
 <p class="theme-version">

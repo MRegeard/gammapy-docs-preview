@@ -10,8 +10,8 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_user-guide_model-gallery_spatial_plot_template.py>`
-        to download the full example code or to run this example in your browser via Binder
+        :ref:`Go to the end <sphx_glr_download_user-guide_model-gallery_spatial_plot_template.py>`
+        to download the full example code. or to run this example in your browser via Binder
 
 .. rst-class:: sphx-glr-example-title
 
@@ -33,7 +33,7 @@ Here is an example plot of the model:
 
 .. GENERATED FROM PYTHON SOURCE LINES 14-31
 
-.. code-block:: python3
+.. code-block:: Python
 
 
     from gammapy.maps import Map
@@ -65,10 +65,10 @@ Here is an example plot of the model:
 
  .. code-block:: none
 
-    /Users/mregeard/anaconda3/envs/gammapy-dev/lib/python3.8/site-packages/astropy/wcs/wcs.py:551: FITSFixedWarning: RADECSYS= 'FK5' 
+    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/astropy/wcs/wcs.py:551: FITSFixedWarning: RADECSYS= 'FK5' 
     the RADECSYS keyword is deprecated, use RADESYSa.
       wcsprm = _wcs.Wcsprm(
-    /Users/mregeard/anaconda3/envs/gammapy-dev/lib/python3.8/site-packages/astropy/wcs/wcs.py:803: FITSFixedWarning: 'celfix' made the change 'Success'.
+    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/astropy/wcs/wcs.py:803: FITSFixedWarning: 'celfix' made the change 'Success'.
       warnings.warn(
 
 
@@ -82,7 +82,7 @@ Here is an example YAML file using the model:
 
 .. GENERATED FROM PYTHON SOURCE LINES 35-43
 
-.. code-block:: python3
+.. code-block:: Python
 
 
     pwl = PowerLawSpectralModel()
@@ -118,10 +118,20 @@ Here is an example YAML file using the model:
         spatial:
             type: TemplateSpatialModel
             frame: fk5
-            parameters: []
-            filename: /Users/mregeard/Workspace/data/gammapy-data/gammapy-datasets/dev/catalogs/fermi/Extended_archive_v18/Templates/RXJ1713_2016_250GeV.fits
+            parameters:
+            -   name: lon_0
+                value: 258.388
+                unit: deg
+            -   name: lat_0
+                value: -39.762199399999986
+                unit: deg
+            filename: /Users/mregeard/Workspace/dev/code/gammapy/gammapy-data/catalogs/fermi/Extended_archive_v18/Templates/RXJ1713_2016_250GeV.fits
             normalize: true
             unit: 1 / sr
+    metadata:
+        creator: Gammapy 1.3.dev1205+g00f44f94ac
+        date: '2024-10-11T13:05:22.744718'
+        origin: null
 
 
 
@@ -134,21 +144,24 @@ Here is an example YAML file using the model:
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
-
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/gammapy/gammapy-webpage/master?urlpath=lab/tree/notebooks/dev/user-guide/model-gallery/spatial/plot_template.ipynb
+        :target: https://mybinder.org/v2/gh/gammapy/gammapy-webpage/main?urlpath=lab/tree/notebooks/dev/user-guide/model-gallery/spatial/plot_template.ipynb
         :alt: Launch binder
         :width: 150 px
+
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
+
+      :download:`Download Jupyter notebook: plot_template.ipynb <plot_template.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: plot_template.py <plot_template.py>`
 
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
+    .. container:: sphx-glr-download sphx-glr-download-zip
 
-      :download:`Download Jupyter notebook: plot_template.ipynb <plot_template.ipynb>`
+      :download:`Download zipped: plot_template.zip <plot_template.zip>`
 
 
 .. only:: html

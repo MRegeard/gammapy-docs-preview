@@ -15,7 +15,28 @@ Examples using ``gammapy.data.Observations.select_time``
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Aim ---">
+    <div class="sphx-glr-thumbcontainer" tooltip="Compute the light curve of a PKS 2155-304 flare on 10 minutes time intervals.">
+
+.. only:: html
+
+  .. image:: /tutorials/analysis-time/images/thumb/sphx_glr_light_curve_flare_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_analysis-time_light_curve_flare.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Light curves for flares</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_analysis-time_light_curve_flare.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Perform spectral fits of a blazar in different time bins to investigate spectral changes during flares.">
 
 .. only:: html
 
@@ -26,7 +47,7 @@ Examples using ``gammapy.data.Observations.select_time``
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">A time resolved spectroscopy estimator</div>
+      <div class="sphx-glr-thumbnail-title">Time resolved spectroscopy estimator</div>
     </div>
 
 

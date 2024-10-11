@@ -437,7 +437,7 @@ with the original light curve start and end points.
  .. code-block:: none
 
 
-    <matplotlib.legend.Legend object at 0x138bdea50>
+    <matplotlib.legend.Legend object at 0x1407d3350>
 
 
 

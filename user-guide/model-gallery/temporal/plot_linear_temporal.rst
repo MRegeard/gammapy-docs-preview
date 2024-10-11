@@ -117,12 +117,12 @@ Here is an example YAML file using the model:
                 value: 0.5
                 unit: d-1
             -   name: t_ref
-                value: 60474.77856184955
+                value: 60594.44566238972
                 unit: d
             scale: utc
     metadata:
-        creator: Gammapy 1.3.dev468+g4c56d91f9e.d20240613
-        date: '2024-06-13T21:05:07.806867'
+        creator: Gammapy 1.3.dev1205+g00f44f94ac
+        date: '2024-10-11T13:05:45.294328'
         origin: null
 
 
@@ -150,6 +150,10 @@ Here is an example YAML file using the model:
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: plot_linear_temporal.py <plot_linear_temporal.py>`
+
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: plot_linear_temporal.zip <plot_linear_temporal.zip>`
 
 
 .. only:: html

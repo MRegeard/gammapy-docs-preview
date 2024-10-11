@@ -1,10 +1,3 @@
-<!--
-# -*- coding: utf-8 -*-
-# Licensed under a 3-clause BSD style license - see LICENSE.rst
-#
-# Gammapy documentation layout configuration file.
--->
-
 
 <!DOCTYPE html>
 
@@ -15,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>A time resolved spectroscopy estimator &#8212; gammapy vX.Y.Z</title>
+    <title>Time resolved spectroscopy estimator &#8212; gammapy vX.Y.Z</title>
   
   
   
@@ -36,8 +29,8 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
-    <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css?v=7f9a90b1" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=d2d258e8" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
@@ -54,46 +47,27 @@
     <script src="../../_static/jquery.js?v=5d32c60e"></script>
     <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
     <script src="../../_static/documentation_options.js?v=1f75dfce"></script>
-    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=30646c52"></script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/analysis-time/Time_resolved_spectroscopy';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/analysis-time/time_resolved_spectroscopy';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.15.4';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.gammapy.org/stable/switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
         </script>
+    <script src="../../_static/matomo.js?v=52704cab"></script>
     <link rel="icon" href="../../_static/gammapy_logo.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-
-   
+    <link rel="next" title="Simulating and fitting a time varying source" href="light_curve_simulation.html" />
+    <link rel="prev" title="Estimation of time variability in a lightcurve" href="variability_estimation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="08 Oct 2024"/>
-
-   <!-- Matomo -->
-
-   <script>
-     var _paq = window._paq = window._paq || [];
-     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-     _paq.push(['trackPageView']);
-     _paq.push(['enableLinkTracking']);
-     (function() {
-     var u="https://apcstatview.in2p3.fr/";
-     _paq.push(['setTrackerUrl', u+'matomo.php']);
-     _paq.push(['setSiteId', '3']);
-     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-     })();
-   </script>
-
-   <!-- End Matomo Code -->
-
-
+    <meta name="docbuild:last-update" content="11 Oct 2024"/>
   </head>
   
   
@@ -199,7 +173,7 @@
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="../index.html">
     Tutorials
   </a>
@@ -367,9 +341,7 @@ document.write(`
       
       
       
-        
-      
-      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -398,7 +370,7 @@ document.write(`
 </li>
 
 
-<li class="nav-item ">
+<li class="nav-item current active">
   <a class="nav-link nav-internal" href="../index.html">
     Tutorials
   </a>
@@ -515,6 +487,78 @@ document.write(`
     
   </div>
   
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../starting/overview.html">Data structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../starting/analysis_1.html">High level interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../starting/analysis_2.html">Low level API</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../data/hess.html">H.E.S.S. with Gammapy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/cta.html">CTAO with Gammapy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/fermi_lat.html">Fermi-LAT with Gammapy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/hawc.html">HAWC with Gammapy</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../analysis-1d/cta_sensitivity.html">Point source sensitivity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-1d/spectral_analysis.html">Spectral analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-1d/spectral_analysis_hli.html">Spectral analysis with the HLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-1d/spectral_analysis_rad_max.html">Spectral analysis with energy-dependent directional cuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-1d/extended_source_spectral_analysis.html">Spectral analysis of extended sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-1d/spectrum_simulation.html">1D spectrum simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-1d/sed_fitting.html">Flux point fitting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-1d/ebl.html">Account for spectral absorption due to the EBL</a></li>
+
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../analysis-2d/detect.html">Source detection and significance maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-2d/ring_background.html">Ring background map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-2d/modeling_2D.html">2D map fitting</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../analysis-3d/analysis_3d.html">3D detailed analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-3d/cta_data_analysis.html">Basic image exploration and fitting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-3d/energy_dependent_estimation.html">Morphological energy dependence estimation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-3d/analysis_mwl.html">Multi instrument joint 3D and 1D analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-3d/simulate_3d.html">3D map simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-3d/event_sampling.html">Event sampling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-3d/event_sampling_nrg_depend_models.html">Sample a source with energy-dependent temporal evolution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-3d/flux_profiles.html">Flux Profile Estimation</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="light_curve.html">Light curves</a></li>
+<li class="toctree-l1"><a class="reference internal" href="light_curve_flare.html">Light curves for flares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variability_estimation.html">Estimation of time variability in a lightcurve</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Time resolved spectroscopy estimator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="light_curve_simulation.html">Simulating and fitting a time varying source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulsar_analysis.html">Pulsar analysis</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../api/irfs.html">Using Gammapy IRFs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/models.html">Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/priors.html">Priors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/astro_dark_matter.html">Dark matter spatial and spectral models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/maps.html">Maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/mask_maps.html">Mask maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/datasets.html">Datasets - Reduced data, IRFs, models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/makers.html">Makers - Data reduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/catalog.html">Source catalogs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/observation_clustering.html">Observational clustering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/model_management.html">Modelling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/fitting.html">Fitting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/estimators.html">Estimators</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../scripts/survey_map.html">Survey Map Script</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
@@ -547,7 +591,10 @@ document.write(`
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page">A time...</li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Tutorials</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Time...</li>
   </ul>
 </nav>
 </div>
@@ -569,13 +616,10 @@ document.write(`
 <p><a class="reference internal" href="#sphx-glr-download-tutorials-analysis-time-time-resolved-spectroscopy-py"><span class="std std-ref">Go to the end</span></a>
 to download the full example code. or to run this example in your browser via Binder</p>
 </div>
-<section class="sphx-glr-example-title" id="a-time-resolved-spectroscopy-estimator">
-<span id="sphx-glr-tutorials-analysis-time-time-resolved-spectroscopy-py"></span><h1>A time resolved spectroscopy estimator<a class="headerlink" href="#a-time-resolved-spectroscopy-estimator" title="Link to this heading">#</a></h1>
-<section id="aim">
-<h2>Aim<a class="headerlink" href="#aim" title="Link to this heading">#</a></h2>
+<section class="sphx-glr-example-title" id="time-resolved-spectroscopy-estimator">
+<span id="sphx-glr-tutorials-analysis-time-time-resolved-spectroscopy-py"></span><h1>Time resolved spectroscopy estimator<a class="headerlink" href="#time-resolved-spectroscopy-estimator" title="Link to this heading">#</a></h1>
 <p>Perform spectral fits of a blazar in different time bins to investigate
 spectral changes during flares.</p>
-</section>
 <section id="context">
 <h2>Context<a class="headerlink" href="#context" title="Link to this heading">#</a></h2>
 <p>The <a class="reference internal" href="../../api/gammapy.estimators.LightCurveEstimator.html#gammapy.estimators.LightCurveEstimator" title="gammapy.estimators.LightCurveEstimator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LightCurveEstimator</span></code></a> in Gammapy (see
@@ -612,48 +656,48 @@ variability.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">logging</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">astropy.units</span> <span class="k">as</span> <span class="nn">u</span>
-<span class="kn">from</span> <span class="nn">astropy.coordinates</span> <span class="kn">import</span> <span class="n">Angle</span><span class="p">,</span> <span class="n">SkyCoord</span>
-<span class="kn">from</span> <span class="nn">astropy.table</span> <span class="kn">import</span> <span class="n">QTable</span>
-<span class="kn">from</span> <span class="nn">astropy.time</span> <span class="kn">import</span> <span class="n">Time</span>
-<span class="kn">from</span> <span class="nn">regions</span> <span class="kn">import</span> <span class="n">CircleSkyRegion</span>
+<span class="kn">from</span> <span class="nn">astropy.coordinates</span> <span class="kn">import</span> <a href="https://docs.astropy.org/en/latest/api/astropy.coordinates.Angle.html#astropy.coordinates.Angle" title="astropy.coordinates.Angle" class="sphx-glr-backref-module-astropy-coordinates sphx-glr-backref-type-py-class"><span class="n">Angle</span></a><span class="p">,</span> <a href="https://docs.astropy.org/en/latest/api/astropy.coordinates.SkyCoord.html#astropy.coordinates.SkyCoord" title="astropy.coordinates.SkyCoord" class="sphx-glr-backref-module-astropy-coordinates sphx-glr-backref-type-py-class"><span class="n">SkyCoord</span></a>
+<span class="kn">from</span> <span class="nn">astropy.table</span> <span class="kn">import</span> <a href="https://docs.astropy.org/en/latest/api/astropy.table.QTable.html#astropy.table.QTable" title="astropy.table.QTable" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class"><span class="n">QTable</span></a>
+<span class="kn">from</span> <span class="nn">astropy.time</span> <span class="kn">import</span> <a href="https://docs.astropy.org/en/latest/api/astropy.time.Time.html#astropy.time.Time" title="astropy.time.Time" class="sphx-glr-backref-module-astropy-time sphx-glr-backref-type-py-class"><span class="n">Time</span></a>
+<span class="kn">from</span> <span class="nn">regions</span> <span class="kn">import</span> <a href="https://astropy-regions.readthedocs.io/en/latest/api/regions.CircleSkyRegion.html#regions.CircleSkyRegion" title="regions.CircleSkyRegion" class="sphx-glr-backref-module-regions sphx-glr-backref-type-py-class"><span class="n">CircleSkyRegion</span></a>
 
 <span class="c1"># %matplotlib inline</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
-<span class="n">log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<a href="https://docs.python.org/3/library/logging.html#logging.Logger" title="logging.Logger" class="sphx-glr-backref-module-logging sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">log</span></a> <span class="o">=</span> <a href="https://docs.python.org/3/library/logging.html#logging.getLogger" title="logging.getLogger" class="sphx-glr-backref-module-logging sphx-glr-backref-type-py-function"><span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span></a><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 
 <span class="kn">from</span> <span class="nn">gammapy.data</span> <span class="kn">import</span> <span class="n">DataStore</span>
-<span class="kn">from</span> <span class="nn">gammapy.datasets</span> <span class="kn">import</span> <span class="n">Datasets</span><span class="p">,</span> <span class="n">SpectrumDataset</span>
+<span class="kn">from</span> <span class="nn">gammapy.datasets</span> <span class="kn">import</span> <a href="../../api/gammapy.datasets.Datasets.html#gammapy.datasets.Datasets" title="gammapy.datasets.Datasets" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class"><span class="n">Datasets</span></a><span class="p">,</span> <span class="n">SpectrumDataset</span>
 <span class="kn">from</span> <span class="nn">gammapy.makers</span> <span class="kn">import</span> <span class="p">(</span>
-    <span class="n">ReflectedRegionsBackgroundMaker</span><span class="p">,</span>
-    <span class="n">SafeMaskMaker</span><span class="p">,</span>
-    <span class="n">SpectrumDatasetMaker</span><span class="p">,</span>
+    <a href="../../api/gammapy.makers.ReflectedRegionsBackgroundMaker.html#gammapy.makers.ReflectedRegionsBackgroundMaker" title="gammapy.makers.ReflectedRegionsBackgroundMaker" class="sphx-glr-backref-module-gammapy-makers sphx-glr-backref-type-py-class"><span class="n">ReflectedRegionsBackgroundMaker</span></a><span class="p">,</span>
+    <a href="../../api/gammapy.makers.SafeMaskMaker.html#gammapy.makers.SafeMaskMaker" title="gammapy.makers.SafeMaskMaker" class="sphx-glr-backref-module-gammapy-makers sphx-glr-backref-type-py-class"><span class="n">SafeMaskMaker</span></a><span class="p">,</span>
+    <a href="../../api/gammapy.makers.SpectrumDatasetMaker.html#gammapy.makers.SpectrumDatasetMaker" title="gammapy.makers.SpectrumDatasetMaker" class="sphx-glr-backref-module-gammapy-makers sphx-glr-backref-type-py-class"><span class="n">SpectrumDatasetMaker</span></a><span class="p">,</span>
 <span class="p">)</span>
 <span class="kn">from</span> <span class="nn">gammapy.maps</span> <span class="kn">import</span> <span class="n">MapAxis</span><span class="p">,</span> <span class="n">RegionGeom</span><span class="p">,</span> <span class="n">TimeMapAxis</span>
-<span class="kn">from</span> <span class="nn">gammapy.modeling</span> <span class="kn">import</span> <span class="n">Fit</span>
+<span class="kn">from</span> <span class="nn">gammapy.modeling</span> <span class="kn">import</span> <a href="../../api/gammapy.modeling.Fit.html#gammapy.modeling.Fit" title="gammapy.modeling.Fit" class="sphx-glr-backref-module-gammapy-modeling sphx-glr-backref-type-py-class"><span class="n">Fit</span></a>
 <span class="kn">from</span> <span class="nn">gammapy.modeling.models</span> <span class="kn">import</span> <span class="p">(</span>
-    <span class="n">PowerLawSpectralModel</span><span class="p">,</span>
-    <span class="n">SkyModel</span><span class="p">,</span>
+    <a href="../../api/gammapy.modeling.models.PowerLawSpectralModel.html#gammapy.modeling.models.PowerLawSpectralModel" title="gammapy.modeling.models.PowerLawSpectralModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class"><span class="n">PowerLawSpectralModel</span></a><span class="p">,</span>
+    <a href="../../api/gammapy.modeling.models.SkyModel.html#gammapy.modeling.models.SkyModel" title="gammapy.modeling.models.SkyModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class"><span class="n">SkyModel</span></a><span class="p">,</span>
 <span class="p">)</span>
 
-<span class="n">log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<a href="https://docs.python.org/3/library/logging.html#logging.Logger" title="logging.Logger" class="sphx-glr-backref-module-logging sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">log</span></a> <span class="o">=</span> <a href="https://docs.python.org/3/library/logging.html#logging.getLogger" title="logging.getLogger" class="sphx-glr-backref-module-logging sphx-glr-backref-type-py-function"><span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span></a><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 </pre></div>
 </div>
 <section id="data-selection">
 <h3>Data selection<a class="headerlink" href="#data-selection" title="Link to this heading">#</a></h3>
 <p>We select all runs pointing within 2 degrees of PKS 2155-304.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">data_store</span> <span class="o">=</span> <span class="n">DataStore</span><span class="o">.</span><span class="n">from_dir</span><span class="p">(</span><span class="s2">&quot;$GAMMAPY_DATA/hess-dl3-dr1/&quot;</span><span class="p">)</span>
-<span class="n">target_position</span> <span class="o">=</span> <span class="n">SkyCoord</span><span class="p">(</span><span class="mf">329.71693826</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">deg</span><span class="p">,</span> <span class="o">-</span><span class="mf">30.2255890</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">deg</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="s2">&quot;icrs&quot;</span><span class="p">)</span>
-<span class="n">selection</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../../api/gammapy.data.DataStore.html#gammapy.data.DataStore" title="gammapy.data.DataStore" class="sphx-glr-backref-module-gammapy-data sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">data_store</span></a> <span class="o">=</span> <a href="../../api/gammapy.data.DataStore.html#gammapy.data.DataStore.from_dir" title="gammapy.data.DataStore.from_dir" class="sphx-glr-backref-module-gammapy-data sphx-glr-backref-type-py-method"><span class="n">DataStore</span><span class="o">.</span><span class="n">from_dir</span></a><span class="p">(</span><span class="s2">&quot;$GAMMAPY_DATA/hess-dl3-dr1/&quot;</span><span class="p">)</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.coordinates.SkyCoord.html#astropy.coordinates.SkyCoord" title="astropy.coordinates.SkyCoord" class="sphx-glr-backref-module-astropy-coordinates sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">target_position</span></a> <span class="o">=</span> <a href="https://docs.astropy.org/en/latest/api/astropy.coordinates.SkyCoord.html#astropy.coordinates.SkyCoord" title="astropy.coordinates.SkyCoord" class="sphx-glr-backref-module-astropy-coordinates sphx-glr-backref-type-py-class"><span class="n">SkyCoord</span></a><span class="p">(</span><span class="mf">329.71693826</span> <span class="o">*</span> <a href="https://docs.astropy.org/en/latest/api/astropy.units.Unit.html#astropy.units.Unit" title="astropy.units.Unit" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">u</span><span class="o">.</span><span class="n">deg</span></a><span class="p">,</span> <span class="o">-</span><span class="mf">30.2255890</span> <span class="o">*</span> <a href="https://docs.astropy.org/en/latest/api/astropy.units.Unit.html#astropy.units.Unit" title="astropy.units.Unit" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">u</span><span class="o">.</span><span class="n">deg</span></a><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="s2">&quot;icrs&quot;</span><span class="p">)</span>
+<a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">selection</span></a> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
     <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;sky_circle&quot;</span><span class="p">,</span>
     <span class="n">frame</span><span class="o">=</span><span class="s2">&quot;icrs&quot;</span><span class="p">,</span>
-    <span class="n">lon</span><span class="o">=</span><span class="n">target_position</span><span class="o">.</span><span class="n">ra</span><span class="p">,</span>
-    <span class="n">lat</span><span class="o">=</span><span class="n">target_position</span><span class="o">.</span><span class="n">dec</span><span class="p">,</span>
-    <span class="n">radius</span><span class="o">=</span><span class="mi">2</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">deg</span><span class="p">,</span>
+    <span class="n">lon</span><span class="o">=</span><a href="https://docs.astropy.org/en/latest/api/astropy.coordinates.Longitude.html#astropy.coordinates.Longitude" title="astropy.coordinates.Longitude" class="sphx-glr-backref-module-astropy-coordinates sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">target_position</span><span class="o">.</span><span class="n">ra</span></a><span class="p">,</span>
+    <span class="n">lat</span><span class="o">=</span><a href="https://docs.astropy.org/en/latest/api/astropy.coordinates.Latitude.html#astropy.coordinates.Latitude" title="astropy.coordinates.Latitude" class="sphx-glr-backref-module-astropy-coordinates sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">target_position</span><span class="o">.</span><span class="n">dec</span></a><span class="p">,</span>
+    <span class="n">radius</span><span class="o">=</span><span class="mi">2</span> <span class="o">*</span> <a href="https://docs.astropy.org/en/latest/api/astropy.units.Unit.html#astropy.units.Unit" title="astropy.units.Unit" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">u</span><span class="o">.</span><span class="n">deg</span></a><span class="p">,</span>
 <span class="p">)</span>
-<span class="n">obs_ids</span> <span class="o">=</span> <span class="n">data_store</span><span class="o">.</span><span class="n">obs_table</span><span class="o">.</span><span class="n">select_observations</span><span class="p">(</span><span class="n">selection</span><span class="p">)[</span><span class="s2">&quot;OBS_ID&quot;</span><span class="p">]</span>
-<span class="n">observations</span> <span class="o">=</span> <span class="n">data_store</span><span class="o">.</span><span class="n">get_observations</span><span class="p">(</span><span class="n">obs_ids</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Number of selected observations : </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">observations</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.table.Column.html#astropy.table.Column" title="astropy.table.Column" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">obs_ids</span></a> <span class="o">=</span> <a href="../../api/gammapy.data.ObservationTable.html#gammapy.data.ObservationTable.select_observations" title="gammapy.data.ObservationTable.select_observations" class="sphx-glr-backref-module-gammapy-data sphx-glr-backref-type-py-method"><span class="n">data_store</span><span class="o">.</span><span class="n">obs_table</span><span class="o">.</span><span class="n">select_observations</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">selection</span></a><span class="p">)[</span><span class="s2">&quot;OBS_ID&quot;</span><span class="p">]</span>
+<a href="../../api/gammapy.data.Observations.html#gammapy.data.Observations" title="gammapy.data.Observations" class="sphx-glr-backref-module-gammapy-data sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">observations</span></a> <span class="o">=</span> <a href="../../api/gammapy.data.DataStore.html#gammapy.data.DataStore.get_observations" title="gammapy.data.DataStore.get_observations" class="sphx-glr-backref-module-gammapy-data sphx-glr-backref-type-py-method"><span class="n">data_store</span><span class="o">.</span><span class="n">get_observations</span></a><span class="p">(</span><a href="https://docs.astropy.org/en/latest/api/astropy.table.Column.html#astropy.table.Column" title="astropy.table.Column" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">obs_ids</span></a><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Number of selected observations : </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><a href="../../api/gammapy.data.Observations.html#gammapy.data.Observations" title="gammapy.data.Observations" class="sphx-glr-backref-module-gammapy-data sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">observations</span></a><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Number of selected observations : 21
@@ -663,18 +707,18 @@ variability.</p>
 15-minute time intervals as lists of <a class="reference external" href="https://docs.astropy.org/en/latest/api/astropy.time.Time.html#astropy.time.Time" title="(in Astropy v7.0)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Time</span></code></a> start and stop
 objects, and apply the intervals to the observations by using
 <a class="reference internal" href="../../api/gammapy.data.Observations.html#gammapy.data.Observations.select_time" title="gammapy.data.Observations.select_time"><code class="xref py py-obj docutils literal notranslate"><span class="pre">select_time</span></code></a></p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">t0</span> <span class="o">=</span> <span class="n">Time</span><span class="p">(</span><span class="s2">&quot;2006-07-29T20:30&quot;</span><span class="p">)</span>
-<span class="n">duration</span> <span class="o">=</span> <span class="mi">15</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">min</span>
-<span class="n">n_time_bins</span> <span class="o">=</span> <span class="mi">25</span>
-<span class="n">times</span> <span class="o">=</span> <span class="n">t0</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">n_time_bins</span><span class="p">)</span> <span class="o">*</span> <span class="n">duration</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.astropy.org/en/latest/api/astropy.time.Time.html#astropy.time.Time" title="astropy.time.Time" class="sphx-glr-backref-module-astropy-time sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">t0</span></a> <span class="o">=</span> <a href="https://docs.astropy.org/en/latest/api/astropy.time.Time.html#astropy.time.Time" title="astropy.time.Time" class="sphx-glr-backref-module-astropy-time sphx-glr-backref-type-py-class"><span class="n">Time</span></a><span class="p">(</span><span class="s2">&quot;2006-07-29T20:30&quot;</span><span class="p">)</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">duration</span></a> <span class="o">=</span> <span class="mi">15</span> <span class="o">*</span> <a href="https://docs.astropy.org/en/latest/api/astropy.units.Unit.html#astropy.units.Unit" title="astropy.units.Unit" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">u</span><span class="o">.</span><span class="n">min</span></a>
+<a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">n_time_bins</span></a> <span class="o">=</span> <span class="mi">25</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.time.Time.html#astropy.time.Time" title="astropy.time.Time" class="sphx-glr-backref-module-astropy-time sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">times</span></a> <span class="o">=</span> <a href="https://docs.astropy.org/en/latest/api/astropy.time.Time.html#astropy.time.Time" title="astropy.time.Time" class="sphx-glr-backref-module-astropy-time sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">t0</span></a> <span class="o">+</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.arange.html#numpy.arange" title="numpy.arange" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">arange</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">n_time_bins</span></a><span class="p">)</span> <span class="o">*</span> <a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">duration</span></a>
 
-<span class="n">time_intervals</span> <span class="o">=</span> <span class="p">[</span><span class="n">Time</span><span class="p">([</span><span class="n">tstart</span><span class="p">,</span> <span class="n">tstop</span><span class="p">])</span> <span class="k">for</span> <span class="n">tstart</span><span class="p">,</span> <span class="n">tstop</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">times</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">times</span><span class="p">[</span><span class="mi">1</span><span class="p">:])]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">time_intervals</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">mjd</span><span class="p">)</span>
-<span class="n">short_observations</span> <span class="o">=</span> <span class="n">observations</span><span class="o">.</span><span class="n">select_time</span><span class="p">(</span><span class="n">time_intervals</span><span class="p">)</span>
+<a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">time_intervals</span></a> <span class="o">=</span> <span class="p">[</span><a href="https://docs.astropy.org/en/latest/api/astropy.time.Time.html#astropy.time.Time" title="astropy.time.Time" class="sphx-glr-backref-module-astropy-time sphx-glr-backref-type-py-class"><span class="n">Time</span></a><span class="p">([</span><span class="n">tstart</span><span class="p">,</span> <span class="n">tstop</span><span class="p">])</span> <span class="k">for</span> <span class="n">tstart</span><span class="p">,</span> <span class="n">tstop</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><a href="https://docs.astropy.org/en/latest/api/astropy.time.Time.html#astropy.time.Time" title="astropy.time.Time" class="sphx-glr-backref-module-astropy-time sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">times</span></a><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <a href="https://docs.astropy.org/en/latest/api/astropy.time.Time.html#astropy.time.Time" title="astropy.time.Time" class="sphx-glr-backref-module-astropy-time sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">times</span></a><span class="p">[</span><span class="mi">1</span><span class="p">:])]</span>
+<span class="nb">print</span><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">time_intervals</span></a><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">mjd</span><span class="p">)</span>
+<a href="../../api/gammapy.data.Observations.html#gammapy.data.Observations" title="gammapy.data.Observations" class="sphx-glr-backref-module-gammapy-data sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">short_observations</span></a> <span class="o">=</span> <a href="../../api/gammapy.data.Observations.html#gammapy.data.Observations.select_time" title="gammapy.data.Observations.select_time" class="sphx-glr-backref-module-gammapy-data sphx-glr-backref-type-py-method"><span class="n">observations</span><span class="o">.</span><span class="n">select_time</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">time_intervals</span></a><span class="p">)</span>
 
 <span class="c1"># check that observations have been filtered</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Number of observations after time filtering: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">short_observations</span><span class="p">)</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">short_observations</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">gti</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Number of observations after time filtering: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><a href="../../api/gammapy.data.Observations.html#gammapy.data.Observations" title="gammapy.data.Observations" class="sphx-glr-backref-module-gammapy-data sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">short_observations</span></a><span class="p">)</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><a href="../../api/gammapy.data.Observations.html#gammapy.data.Observations" title="gammapy.data.Observations" class="sphx-glr-backref-module-gammapy-data sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">short_observations</span></a><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">gti</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[53946.09375    53946.10416667]
@@ -696,37 +740,37 @@ GTI info:
 <p>In this example, we perform a 1D analysis with a reflected regions
 background estimation. For details, see the
 <a class="reference internal" href="../analysis-1d/spectral_analysis.html"><span class="doc">Spectral analysis</span></a> tutorial.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">energy_axis</span> <span class="o">=</span> <span class="n">MapAxis</span><span class="o">.</span><span class="n">from_energy_bounds</span><span class="p">(</span><span class="s2">&quot;0.4 TeV&quot;</span><span class="p">,</span> <span class="s2">&quot;20 TeV&quot;</span><span class="p">,</span> <span class="n">nbin</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
-<span class="n">energy_axis_true</span> <span class="o">=</span> <span class="n">MapAxis</span><span class="o">.</span><span class="n">from_energy_bounds</span><span class="p">(</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../../api/gammapy.maps.MapAxis.html#gammapy.maps.MapAxis" title="gammapy.maps.MapAxis" class="sphx-glr-backref-module-gammapy-maps sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">energy_axis</span></a> <span class="o">=</span> <a href="../../api/gammapy.maps.MapAxis.html#gammapy.maps.MapAxis.from_energy_bounds" title="gammapy.maps.MapAxis.from_energy_bounds" class="sphx-glr-backref-module-gammapy-maps sphx-glr-backref-type-py-method"><span class="n">MapAxis</span><span class="o">.</span><span class="n">from_energy_bounds</span></a><span class="p">(</span><span class="s2">&quot;0.4 TeV&quot;</span><span class="p">,</span> <span class="s2">&quot;20 TeV&quot;</span><span class="p">,</span> <span class="n">nbin</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<a href="../../api/gammapy.maps.MapAxis.html#gammapy.maps.MapAxis" title="gammapy.maps.MapAxis" class="sphx-glr-backref-module-gammapy-maps sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">energy_axis_true</span></a> <span class="o">=</span> <a href="../../api/gammapy.maps.MapAxis.html#gammapy.maps.MapAxis.from_energy_bounds" title="gammapy.maps.MapAxis.from_energy_bounds" class="sphx-glr-backref-module-gammapy-maps sphx-glr-backref-type-py-method"><span class="n">MapAxis</span><span class="o">.</span><span class="n">from_energy_bounds</span></a><span class="p">(</span>
     <span class="s2">&quot;0.1 TeV&quot;</span><span class="p">,</span> <span class="s2">&quot;40 TeV&quot;</span><span class="p">,</span> <span class="n">nbin</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;energy_true&quot;</span>
 <span class="p">)</span>
 
-<span class="n">on_region_radius</span> <span class="o">=</span> <span class="n">Angle</span><span class="p">(</span><span class="s2">&quot;0.11 deg&quot;</span><span class="p">)</span>
-<span class="n">on_region</span> <span class="o">=</span> <span class="n">CircleSkyRegion</span><span class="p">(</span><span class="n">center</span><span class="o">=</span><span class="n">target_position</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="n">on_region_radius</span><span class="p">)</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.coordinates.Angle.html#astropy.coordinates.Angle" title="astropy.coordinates.Angle" class="sphx-glr-backref-module-astropy-coordinates sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">on_region_radius</span></a> <span class="o">=</span> <a href="https://docs.astropy.org/en/latest/api/astropy.coordinates.Angle.html#astropy.coordinates.Angle" title="astropy.coordinates.Angle" class="sphx-glr-backref-module-astropy-coordinates sphx-glr-backref-type-py-class"><span class="n">Angle</span></a><span class="p">(</span><span class="s2">&quot;0.11 deg&quot;</span><span class="p">)</span>
+<a href="https://astropy-regions.readthedocs.io/en/latest/api/regions.CircleSkyRegion.html#regions.CircleSkyRegion" title="regions.CircleSkyRegion" class="sphx-glr-backref-module-regions sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">on_region</span></a> <span class="o">=</span> <a href="https://astropy-regions.readthedocs.io/en/latest/api/regions.CircleSkyRegion.html#regions.CircleSkyRegion" title="regions.CircleSkyRegion" class="sphx-glr-backref-module-regions sphx-glr-backref-type-py-class"><span class="n">CircleSkyRegion</span></a><span class="p">(</span><span class="n">center</span><span class="o">=</span><a href="https://docs.astropy.org/en/latest/api/astropy.coordinates.SkyCoord.html#astropy.coordinates.SkyCoord" title="astropy.coordinates.SkyCoord" class="sphx-glr-backref-module-astropy-coordinates sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">target_position</span></a><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><a href="https://docs.astropy.org/en/latest/api/astropy.coordinates.Angle.html#astropy.coordinates.Angle" title="astropy.coordinates.Angle" class="sphx-glr-backref-module-astropy-coordinates sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">on_region_radius</span></a><span class="p">)</span>
 
-<span class="n">geom</span> <span class="o">=</span> <span class="n">RegionGeom</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="n">on_region</span><span class="p">,</span> <span class="n">axes</span><span class="o">=</span><span class="p">[</span><span class="n">energy_axis</span><span class="p">])</span>
+<a href="../../api/gammapy.maps.RegionGeom.html#gammapy.maps.RegionGeom" title="gammapy.maps.RegionGeom" class="sphx-glr-backref-module-gammapy-maps sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">geom</span></a> <span class="o">=</span> <a href="../../api/gammapy.maps.RegionGeom.html#gammapy.maps.RegionGeom.create" title="gammapy.maps.RegionGeom.create" class="sphx-glr-backref-module-gammapy-maps sphx-glr-backref-type-py-method"><span class="n">RegionGeom</span><span class="o">.</span><span class="n">create</span></a><span class="p">(</span><span class="n">region</span><span class="o">=</span><a href="https://astropy-regions.readthedocs.io/en/latest/api/regions.CircleSkyRegion.html#regions.CircleSkyRegion" title="regions.CircleSkyRegion" class="sphx-glr-backref-module-regions sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">on_region</span></a><span class="p">,</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">axes</span></a><span class="o">=</span><span class="p">[</span><a href="../../api/gammapy.maps.MapAxis.html#gammapy.maps.MapAxis" title="gammapy.maps.MapAxis" class="sphx-glr-backref-module-gammapy-maps sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">energy_axis</span></a><span class="p">])</span>
 
-<span class="n">dataset_maker</span> <span class="o">=</span> <span class="n">SpectrumDatasetMaker</span><span class="p">(</span>
-    <span class="n">containment_correction</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">selection</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;counts&quot;</span><span class="p">,</span> <span class="s2">&quot;exposure&quot;</span><span class="p">,</span> <span class="s2">&quot;edisp&quot;</span><span class="p">]</span>
+<a href="../../api/gammapy.makers.SpectrumDatasetMaker.html#gammapy.makers.SpectrumDatasetMaker" title="gammapy.makers.SpectrumDatasetMaker" class="sphx-glr-backref-module-gammapy-makers sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">dataset_maker</span></a> <span class="o">=</span> <a href="../../api/gammapy.makers.SpectrumDatasetMaker.html#gammapy.makers.SpectrumDatasetMaker" title="gammapy.makers.SpectrumDatasetMaker" class="sphx-glr-backref-module-gammapy-makers sphx-glr-backref-type-py-class"><span class="n">SpectrumDatasetMaker</span></a><span class="p">(</span>
+    <span class="n">containment_correction</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">selection</span></a><span class="o">=</span><span class="p">[</span><span class="s2">&quot;counts&quot;</span><span class="p">,</span> <span class="s2">&quot;exposure&quot;</span><span class="p">,</span> <span class="s2">&quot;edisp&quot;</span><span class="p">]</span>
 <span class="p">)</span>
-<span class="n">bkg_maker</span> <span class="o">=</span> <span class="n">ReflectedRegionsBackgroundMaker</span><span class="p">()</span>
-<span class="n">safe_mask_masker</span> <span class="o">=</span> <span class="n">SafeMaskMaker</span><span class="p">(</span><span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;aeff-max&quot;</span><span class="p">],</span> <span class="n">aeff_percent</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<a href="../../api/gammapy.makers.ReflectedRegionsBackgroundMaker.html#gammapy.makers.ReflectedRegionsBackgroundMaker" title="gammapy.makers.ReflectedRegionsBackgroundMaker" class="sphx-glr-backref-module-gammapy-makers sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">bkg_maker</span></a> <span class="o">=</span> <a href="../../api/gammapy.makers.ReflectedRegionsBackgroundMaker.html#gammapy.makers.ReflectedRegionsBackgroundMaker" title="gammapy.makers.ReflectedRegionsBackgroundMaker" class="sphx-glr-backref-module-gammapy-makers sphx-glr-backref-type-py-class"><span class="n">ReflectedRegionsBackgroundMaker</span></a><span class="p">()</span>
+<a href="../../api/gammapy.makers.SafeMaskMaker.html#gammapy.makers.SafeMaskMaker" title="gammapy.makers.SafeMaskMaker" class="sphx-glr-backref-module-gammapy-makers sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">safe_mask_masker</span></a> <span class="o">=</span> <a href="../../api/gammapy.makers.SafeMaskMaker.html#gammapy.makers.SafeMaskMaker" title="gammapy.makers.SafeMaskMaker" class="sphx-glr-backref-module-gammapy-makers sphx-glr-backref-type-py-class"><span class="n">SafeMaskMaker</span></a><span class="p">(</span><span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;aeff-max&quot;</span><span class="p">],</span> <span class="n">aeff_percent</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 
-<span class="n">datasets</span> <span class="o">=</span> <span class="n">Datasets</span><span class="p">()</span>
+<a href="../../api/gammapy.datasets.Datasets.html#gammapy.datasets.Datasets" title="gammapy.datasets.Datasets" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">datasets</span></a> <span class="o">=</span> <a href="../../api/gammapy.datasets.Datasets.html#gammapy.datasets.Datasets" title="gammapy.datasets.Datasets" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class"><span class="n">Datasets</span></a><span class="p">()</span>
 
-<span class="n">dataset_empty</span> <span class="o">=</span> <span class="n">SpectrumDataset</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">geom</span><span class="o">=</span><span class="n">geom</span><span class="p">,</span> <span class="n">energy_axis_true</span><span class="o">=</span><span class="n">energy_axis_true</span><span class="p">)</span>
+<a href="../../api/gammapy.datasets.SpectrumDataset.html#gammapy.datasets.SpectrumDataset" title="gammapy.datasets.SpectrumDataset" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">dataset_empty</span></a> <span class="o">=</span> <a href="../../api/gammapy.datasets.SpectrumDataset.html#gammapy.datasets.SpectrumDataset.create" title="gammapy.datasets.SpectrumDataset.create" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-method"><span class="n">SpectrumDataset</span><span class="o">.</span><span class="n">create</span></a><span class="p">(</span><a href="../../api/gammapy.maps.RegionGeom.html#gammapy.maps.RegionGeom" title="gammapy.maps.RegionGeom" class="sphx-glr-backref-module-gammapy-maps sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">geom</span></a><span class="o">=</span><a href="../../api/gammapy.maps.RegionGeom.html#gammapy.maps.RegionGeom" title="gammapy.maps.RegionGeom" class="sphx-glr-backref-module-gammapy-maps sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">geom</span></a><span class="p">,</span> <a href="../../api/gammapy.maps.MapAxis.html#gammapy.maps.MapAxis" title="gammapy.maps.MapAxis" class="sphx-glr-backref-module-gammapy-maps sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">energy_axis_true</span></a><span class="o">=</span><a href="../../api/gammapy.maps.MapAxis.html#gammapy.maps.MapAxis" title="gammapy.maps.MapAxis" class="sphx-glr-backref-module-gammapy-maps sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">energy_axis_true</span></a><span class="p">)</span>
 
-<span class="k">for</span> <span class="n">obs</span> <span class="ow">in</span> <span class="n">short_observations</span><span class="p">:</span>
-    <span class="n">dataset</span> <span class="o">=</span> <span class="n">dataset_maker</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">dataset_empty</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span> <span class="n">obs</span><span class="p">)</span>
+<span class="k">for</span> <a href="../../api/gammapy.data.Observation.html#gammapy.data.Observation" title="gammapy.data.Observation" class="sphx-glr-backref-module-gammapy-data sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">obs</span></a> <span class="ow">in</span> <a href="../../api/gammapy.data.Observations.html#gammapy.data.Observations" title="gammapy.data.Observations" class="sphx-glr-backref-module-gammapy-data sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">short_observations</span></a><span class="p">:</span>
+    <a href="../../api/gammapy.datasets.SpectrumDataset.html#gammapy.datasets.SpectrumDataset" title="gammapy.datasets.SpectrumDataset" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">dataset</span></a> <span class="o">=</span> <a href="../../api/gammapy.makers.SpectrumDatasetMaker.html#gammapy.makers.SpectrumDatasetMaker.run" title="gammapy.makers.SpectrumDatasetMaker.run" class="sphx-glr-backref-module-gammapy-makers sphx-glr-backref-type-py-method"><span class="n">dataset_maker</span><span class="o">.</span><span class="n">run</span></a><span class="p">(</span><a href="../../api/gammapy.datasets.SpectrumDataset.html#gammapy.datasets.SpectrumDataset.copy" title="gammapy.datasets.SpectrumDataset.copy" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-method"><span class="n">dataset_empty</span><span class="o">.</span><span class="n">copy</span></a><span class="p">(),</span> <a href="../../api/gammapy.data.Observation.html#gammapy.data.Observation" title="gammapy.data.Observation" class="sphx-glr-backref-module-gammapy-data sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">obs</span></a><span class="p">)</span>
 
-    <span class="n">dataset_on_off</span> <span class="o">=</span> <span class="n">bkg_maker</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">obs</span><span class="p">)</span>
-    <span class="n">dataset_on_off</span> <span class="o">=</span> <span class="n">safe_mask_masker</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">dataset_on_off</span><span class="p">,</span> <span class="n">obs</span><span class="p">)</span>
-    <span class="n">datasets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dataset_on_off</span><span class="p">)</span>
+    <a href="../../api/gammapy.datasets.SpectrumDatasetOnOff.html#gammapy.datasets.SpectrumDatasetOnOff" title="gammapy.datasets.SpectrumDatasetOnOff" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">dataset_on_off</span></a> <span class="o">=</span> <a href="../../api/gammapy.makers.ReflectedRegionsBackgroundMaker.html#gammapy.makers.ReflectedRegionsBackgroundMaker.run" title="gammapy.makers.ReflectedRegionsBackgroundMaker.run" class="sphx-glr-backref-module-gammapy-makers sphx-glr-backref-type-py-method"><span class="n">bkg_maker</span><span class="o">.</span><span class="n">run</span></a><span class="p">(</span><a href="../../api/gammapy.datasets.SpectrumDataset.html#gammapy.datasets.SpectrumDataset" title="gammapy.datasets.SpectrumDataset" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">dataset</span></a><span class="p">,</span> <a href="../../api/gammapy.data.Observation.html#gammapy.data.Observation" title="gammapy.data.Observation" class="sphx-glr-backref-module-gammapy-data sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">obs</span></a><span class="p">)</span>
+    <a href="../../api/gammapy.datasets.SpectrumDatasetOnOff.html#gammapy.datasets.SpectrumDatasetOnOff" title="gammapy.datasets.SpectrumDatasetOnOff" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">dataset_on_off</span></a> <span class="o">=</span> <a href="../../api/gammapy.makers.SafeMaskMaker.html#gammapy.makers.SafeMaskMaker.run" title="gammapy.makers.SafeMaskMaker.run" class="sphx-glr-backref-module-gammapy-makers sphx-glr-backref-type-py-method"><span class="n">safe_mask_masker</span><span class="o">.</span><span class="n">run</span></a><span class="p">(</span><a href="../../api/gammapy.datasets.SpectrumDatasetOnOff.html#gammapy.datasets.SpectrumDatasetOnOff" title="gammapy.datasets.SpectrumDatasetOnOff" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">dataset_on_off</span></a><span class="p">,</span> <a href="../../api/gammapy.data.Observation.html#gammapy.data.Observation" title="gammapy.data.Observation" class="sphx-glr-backref-module-gammapy-data sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">obs</span></a><span class="p">)</span>
+    <a href="../../api/gammapy.datasets.Datasets.html#gammapy.datasets.Datasets.append" title="gammapy.datasets.Datasets.append" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-method"><span class="n">datasets</span><span class="o">.</span><span class="n">append</span></a><span class="p">(</span><a href="../../api/gammapy.datasets.SpectrumDatasetOnOff.html#gammapy.datasets.SpectrumDatasetOnOff" title="gammapy.datasets.SpectrumDatasetOnOff" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">dataset_on_off</span></a><span class="p">)</span>
 </pre></div>
 </div>
 <p>This gives us list of <a class="reference internal" href="../../api/gammapy.datasets.SpectrumDatasetOnOff.html#gammapy.datasets.SpectrumDatasetOnOff" title="gammapy.datasets.SpectrumDatasetOnOff"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SpectrumDatasetOnOff</span></code></a> which can now be
 modelled.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">datasets</span><span class="p">)</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><a href="../../api/gammapy.datasets.Datasets.html#gammapy.datasets.Datasets" title="gammapy.datasets.Datasets" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">datasets</span></a><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Datasets
@@ -735,238 +779,238 @@ modelled.</p>
 Dataset 0:
 
   Type       : SpectrumDatasetOnOff
-  Name       : w-MYPP1T
+  Name       : q1OcCrGu
   Instrument : HESS
   Models     :
 
 Dataset 1:
 
   Type       : SpectrumDatasetOnOff
-  Name       : a0BS0j7C
+  Name       : hSXzXYvI
   Instrument : HESS
   Models     :
 
 Dataset 2:
 
   Type       : SpectrumDatasetOnOff
-  Name       : LZlqfUOT
+  Name       : LKDDjYgz
   Instrument : HESS
   Models     :
 
 Dataset 3:
 
   Type       : SpectrumDatasetOnOff
-  Name       : Pt8_S-qU
+  Name       : 9hxY3Db3
   Instrument : HESS
   Models     :
 
 Dataset 4:
 
   Type       : SpectrumDatasetOnOff
-  Name       : juw2OqpR
+  Name       : UjP1fiPA
   Instrument : HESS
   Models     :
 
 Dataset 5:
 
   Type       : SpectrumDatasetOnOff
-  Name       : lK7zwDhA
+  Name       : lQSRA7Ot
   Instrument : HESS
   Models     :
 
 Dataset 6:
 
   Type       : SpectrumDatasetOnOff
-  Name       : pU2dEGzi
+  Name       : c9PX_C_N
   Instrument : HESS
   Models     :
 
 Dataset 7:
 
   Type       : SpectrumDatasetOnOff
-  Name       : y36VfT1_
+  Name       : ybAwpQ_a
   Instrument : HESS
   Models     :
 
 Dataset 8:
 
   Type       : SpectrumDatasetOnOff
-  Name       : lcj96Oh5
+  Name       : s5v8Z8vP
   Instrument : HESS
   Models     :
 
 Dataset 9:
 
   Type       : SpectrumDatasetOnOff
-  Name       : XFCu0seL
+  Name       : CSfLe__Z
   Instrument : HESS
   Models     :
 
 Dataset 10:
 
   Type       : SpectrumDatasetOnOff
-  Name       : Nc3I0CJz
+  Name       : IoZf6jQx
   Instrument : HESS
   Models     :
 
 Dataset 11:
 
   Type       : SpectrumDatasetOnOff
-  Name       : PEGT_wh8
+  Name       : MqPjLs34
   Instrument : HESS
   Models     :
 
 Dataset 12:
 
   Type       : SpectrumDatasetOnOff
-  Name       : VzqwJQdh
+  Name       : RsQz0Gt0
   Instrument : HESS
   Models     :
 
 Dataset 13:
 
   Type       : SpectrumDatasetOnOff
-  Name       : sYIbQJb4
+  Name       : 6eTlEIyl
   Instrument : HESS
   Models     :
 
 Dataset 14:
 
   Type       : SpectrumDatasetOnOff
-  Name       : mOmPjM9u
+  Name       : HaFfRWZ5
   Instrument : HESS
   Models     :
 
 Dataset 15:
 
   Type       : SpectrumDatasetOnOff
-  Name       : CaSEWcnq
+  Name       : S8zlaiAF
   Instrument : HESS
   Models     :
 
 Dataset 16:
 
   Type       : SpectrumDatasetOnOff
-  Name       : CAZNebfk
+  Name       : TyE7NUb1
   Instrument : HESS
   Models     :
 
 Dataset 17:
 
   Type       : SpectrumDatasetOnOff
-  Name       : ifo81R4d
+  Name       : 8gXyFVkI
   Instrument : HESS
   Models     :
 
 Dataset 18:
 
   Type       : SpectrumDatasetOnOff
-  Name       : Vrql_rgj
+  Name       : FR-KmXO3
   Instrument : HESS
   Models     :
 
 Dataset 19:
 
   Type       : SpectrumDatasetOnOff
-  Name       : -PRPmasO
+  Name       : Mg8kIb1p
   Instrument : HESS
   Models     :
 
 Dataset 20:
 
   Type       : SpectrumDatasetOnOff
-  Name       : Ajrk0kA_
+  Name       : VrByGuzD
   Instrument : HESS
   Models     :
 
 Dataset 21:
 
   Type       : SpectrumDatasetOnOff
-  Name       : VPHjS7MI
+  Name       : CNlS-73t
   Instrument : HESS
   Models     :
 
 Dataset 22:
 
   Type       : SpectrumDatasetOnOff
-  Name       : 1stfagwP
+  Name       : cgV8UJfe
   Instrument : HESS
   Models     :
 
 Dataset 23:
 
   Type       : SpectrumDatasetOnOff
-  Name       : x-9gFXY3
+  Name       : AnlVnt0Y
   Instrument : HESS
   Models     :
 
 Dataset 24:
 
   Type       : SpectrumDatasetOnOff
-  Name       : 1yeA61cH
+  Name       : 51rmRTu2
   Instrument : HESS
   Models     :
 
 Dataset 25:
 
   Type       : SpectrumDatasetOnOff
-  Name       : BlfYQLio
+  Name       : NbrazCLa
   Instrument : HESS
   Models     :
 
 Dataset 26:
 
   Type       : SpectrumDatasetOnOff
-  Name       : vRtWKQjw
+  Name       : HU7jTV7z
   Instrument : HESS
   Models     :
 
 Dataset 27:
 
   Type       : SpectrumDatasetOnOff
-  Name       : YWEPXy5y
+  Name       : rVhLImMw
   Instrument : HESS
   Models     :
 
 Dataset 28:
 
   Type       : SpectrumDatasetOnOff
-  Name       : 8raMViR6
+  Name       : 6PHh9jJB
   Instrument : HESS
   Models     :
 
 Dataset 29:
 
   Type       : SpectrumDatasetOnOff
-  Name       : 4KRWgGBJ
+  Name       : kZlkUBHF
   Instrument : HESS
   Models     :
 
 Dataset 30:
 
   Type       : SpectrumDatasetOnOff
-  Name       : 8hKgNKwv
+  Name       : kIneTwo_
   Instrument : HESS
   Models     :
 
 Dataset 31:
 
   Type       : SpectrumDatasetOnOff
-  Name       : lbAXRICE
+  Name       : V3BK9fjH
   Instrument : HESS
   Models     :
 
 Dataset 32:
 
   Type       : SpectrumDatasetOnOff
-  Name       : k7TFkJpk
+  Name       : fmnAzqko
   Instrument : HESS
   Models     :
 
 Dataset 33:
 
   Type       : SpectrumDatasetOnOff
-  Name       : y9H2ez_6
+  Name       : 1PSVIL6E
   Instrument : HESS
   Models     :
 </pre></div>
@@ -980,14 +1024,14 @@ required. If you are doing a 3D FoV analysis, you will need to model the
 background appropriately as well.</p>
 <p>The index and amplitude of the spectral model is kept free. You can
 configure the quantities you want to freeze.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">spectral_model</span> <span class="o">=</span> <span class="n">PowerLawSpectralModel</span><span class="p">(</span>
-    <span class="n">index</span><span class="o">=</span><span class="mf">3.0</span><span class="p">,</span> <span class="n">amplitude</span><span class="o">=</span><span class="mf">2e-11</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">Unit</span><span class="p">(</span><span class="s2">&quot;1 / (cm2 s TeV)&quot;</span><span class="p">),</span> <span class="n">reference</span><span class="o">=</span><span class="mi">1</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">TeV</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../../api/gammapy.modeling.models.PowerLawSpectralModel.html#gammapy.modeling.models.PowerLawSpectralModel" title="gammapy.modeling.models.PowerLawSpectralModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">spectral_model</span></a> <span class="o">=</span> <a href="../../api/gammapy.modeling.models.PowerLawSpectralModel.html#gammapy.modeling.models.PowerLawSpectralModel" title="gammapy.modeling.models.PowerLawSpectralModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class"><span class="n">PowerLawSpectralModel</span></a><span class="p">(</span>
+    <span class="n">index</span><span class="o">=</span><span class="mf">3.0</span><span class="p">,</span> <span class="n">amplitude</span><span class="o">=</span><span class="mf">2e-11</span> <span class="o">*</span> <a href="https://docs.astropy.org/en/latest/api/astropy.units.Unit.html#astropy.units.Unit" title="astropy.units.Unit" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class"><span class="n">u</span><span class="o">.</span><span class="n">Unit</span></a><span class="p">(</span><span class="s2">&quot;1 / (cm2 s TeV)&quot;</span><span class="p">),</span> <span class="n">reference</span><span class="o">=</span><span class="mi">1</span> <span class="o">*</span> <a href="https://docs.astropy.org/en/latest/api/astropy.units.PrefixUnit.html#astropy.units.PrefixUnit" title="astropy.units.PrefixUnit" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">u</span><span class="o">.</span><span class="n">TeV</span></a>
 <span class="p">)</span>
-<span class="n">spectral_model</span><span class="o">.</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">frozen</span> <span class="o">=</span> <span class="kc">False</span>
+<a href="../../api/gammapy.modeling.models.PowerLawSpectralModel.html#gammapy.modeling.models.PowerLawSpectralModel.parameters" title="gammapy.modeling.models.PowerLawSpectralModel.parameters" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-attribute"><span class="n">spectral_model</span><span class="o">.</span><span class="n">parameters</span></a><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">frozen</span> <span class="o">=</span> <span class="kc">False</span>
 
 
-<span class="n">sky_model</span> <span class="o">=</span> <span class="n">SkyModel</span><span class="p">(</span><span class="n">spatial_model</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">spectral_model</span><span class="o">=</span><span class="n">spectral_model</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;pks2155&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">sky_model</span><span class="p">)</span>
+<a href="../../api/gammapy.modeling.models.SkyModel.html#gammapy.modeling.models.SkyModel" title="gammapy.modeling.models.SkyModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">sky_model</span></a> <span class="o">=</span> <a href="../../api/gammapy.modeling.models.SkyModel.html#gammapy.modeling.models.SkyModel" title="gammapy.modeling.models.SkyModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class"><span class="n">SkyModel</span></a><span class="p">(</span><span class="n">spatial_model</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <a href="../../api/gammapy.modeling.models.PowerLawSpectralModel.html#gammapy.modeling.models.PowerLawSpectralModel" title="gammapy.modeling.models.PowerLawSpectralModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">spectral_model</span></a><span class="o">=</span><a href="../../api/gammapy.modeling.models.PowerLawSpectralModel.html#gammapy.modeling.models.PowerLawSpectralModel" title="gammapy.modeling.models.PowerLawSpectralModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">spectral_model</span></a><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;pks2155&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><a href="../../api/gammapy.modeling.models.SkyModel.html#gammapy.modeling.models.SkyModel" title="gammapy.modeling.models.SkyModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">sky_model</span></a><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>SkyModel
@@ -1012,16 +1056,16 @@ information in each bin.</p>
 <p>If time bins are present without any available observations, those bins
 are discarded and a new list of valid time intervals and fit results are
 created.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">time_resolved_spectroscopy</span><span class="p">(</span><span class="n">datasets</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">time_intervals</span><span class="p">):</span>
-    <span class="n">fit</span> <span class="o">=</span> <span class="n">Fit</span><span class="p">()</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">time_resolved_spectroscopy</span><span class="p">(</span><a href="../../api/gammapy.datasets.Datasets.html#gammapy.datasets.Datasets" title="gammapy.datasets.Datasets" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">datasets</span></a><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">time_intervals</span></a><span class="p">):</span>
+    <span class="n">fit</span> <span class="o">=</span> <a href="../../api/gammapy.modeling.Fit.html#gammapy.modeling.Fit" title="gammapy.modeling.Fit" class="sphx-glr-backref-module-gammapy-modeling sphx-glr-backref-type-py-class"><span class="n">Fit</span></a><span class="p">()</span>
     <span class="n">valid_intervals</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">fit_results</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">t_min</span><span class="p">,</span> <span class="n">t_max</span> <span class="ow">in</span> <span class="n">time_intervals</span><span class="p">:</span>
-        <span class="n">datasets_to_fit</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">select_time</span><span class="p">(</span><span class="n">time_min</span><span class="o">=</span><span class="n">t_min</span><span class="p">,</span> <span class="n">time_max</span><span class="o">=</span><span class="n">t_max</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">t_min</span><span class="p">,</span> <span class="n">t_max</span> <span class="ow">in</span> <a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">time_intervals</span></a><span class="p">:</span>
+        <span class="n">datasets_to_fit</span> <span class="o">=</span> <a href="../../api/gammapy.datasets.Datasets.html#gammapy.datasets.Datasets.select_time" title="gammapy.datasets.Datasets.select_time" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-method"><span class="n">datasets</span><span class="o">.</span><span class="n">select_time</span></a><span class="p">(</span><span class="n">time_min</span><span class="o">=</span><span class="n">t_min</span><span class="p">,</span> <span class="n">time_max</span><span class="o">=</span><span class="n">t_max</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">datasets_to_fit</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+            <a href="https://docs.python.org/3/library/logging.html#logging.Logger.info" title="logging.Logger.info" class="sphx-glr-backref-module-logging sphx-glr-backref-type-py-method"><span class="n">log</span><span class="o">.</span><span class="n">info</span></a><span class="p">(</span>
                 <span class="sa">f</span><span class="s2">&quot;No Dataset for the time interval </span><span class="si">{</span><span class="n">t_min</span><span class="si">}</span><span class="s2"> to </span><span class="si">{</span><span class="n">t_max</span><span class="si">}</span><span class="s2">. Skipping interval.&quot;</span>
             <span class="p">)</span>
             <span class="k">continue</span>
@@ -1037,7 +1081,7 @@ created.</p>
 </pre></div>
 </div>
 <p>We now apply it to our data</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">valid_times</span><span class="p">,</span> <span class="n">results</span> <span class="o">=</span> <span class="n">time_resolved_spectroscopy</span><span class="p">(</span><span class="n">datasets</span><span class="p">,</span> <span class="n">sky_model</span><span class="p">,</span> <span class="n">time_intervals</span><span class="p">)</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">valid_times</span></a><span class="p">,</span> <a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a> <span class="o">=</span> <span class="n">time_resolved_spectroscopy</span><span class="p">(</span><a href="../../api/gammapy.datasets.Datasets.html#gammapy.datasets.Datasets" title="gammapy.datasets.Datasets" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">datasets</span></a><span class="p">,</span> <a href="../../api/gammapy.modeling.models.SkyModel.html#gammapy.modeling.models.SkyModel" title="gammapy.modeling.models.SkyModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">sky_model</span></a><span class="p">,</span> <a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">time_intervals</span></a><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/numpy/core/fromnumeric.py:88: RuntimeWarning: overflow encountered in reduce
@@ -1047,7 +1091,7 @@ created.</p>
 </pre></div>
 </div>
 <p>To view the results of the fit,</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>OptimizeResult
@@ -1068,7 +1112,7 @@ CovarianceResult
 </pre></div>
 </div>
 <p>Or, to access the fitted models,</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">models</span><span class="p">)</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">models</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>DatasetModels
@@ -1091,12 +1135,11 @@ relevant information. In the following, we extract the time intervals,
 information on the fit convergence and the free parameters. You can
 extract more information if required, eg, the <code class="xref py py-obj docutils literal notranslate"><span class="pre">total_stat</span></code> in each
 bin, etc.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">create_table</span><span class="p">(</span><span class="n">time_intervals</span><span class="p">,</span> <span class="n">fit_result</span><span class="p">):</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">create_table</span><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">time_intervals</span></a><span class="p">,</span> <span class="n">fit_result</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <a href="https://docs.astropy.org/en/latest/api/astropy.table.QTable.html#astropy.table.QTable" title="astropy.table.QTable" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class"><span class="n">QTable</span></a><span class="p">()</span>
 
-    <span class="n">t</span> <span class="o">=</span> <span class="n">QTable</span><span class="p">()</span>
-
-    <span class="n">t</span><span class="p">[</span><span class="s2">&quot;tstart&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">time_intervals</span><span class="p">)</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">t</span><span class="p">[</span><span class="s2">&quot;tstop&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">time_intervals</span><span class="p">)</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">t</span><span class="p">[</span><span class="s2">&quot;tstart&quot;</span><span class="p">]</span> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.array.html#numpy.array" title="numpy.array" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">time_intervals</span></a><span class="p">)</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">t</span><span class="p">[</span><span class="s2">&quot;tstop&quot;</span><span class="p">]</span> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.array.html#numpy.array" title="numpy.array" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-function"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">time_intervals</span></a><span class="p">)</span><span class="o">.</span><span class="n">T</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
     <span class="n">t</span><span class="p">[</span><span class="s2">&quot;convergence&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">result</span><span class="o">.</span><span class="n">success</span> <span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">fit_result</span><span class="p">]</span>
     <span class="k">for</span> <span class="n">par</span> <span class="ow">in</span> <span class="n">fit_result</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">free_parameters</span><span class="p">:</span>
         <span class="n">t</span><span class="p">[</span><span class="n">par</span><span class="o">.</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
@@ -1109,8 +1152,8 @@ bin, etc.</p>
     <span class="k">return</span> <span class="n">t</span>
 
 
-<span class="n">table</span> <span class="o">=</span> <span class="n">create_table</span><span class="p">(</span><span class="n">valid_times</span><span class="p">,</span> <span class="n">results</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.table.QTable.html#astropy.table.QTable" title="astropy.table.QTable" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">table</span></a> <span class="o">=</span> <span class="n">create_table</span><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">valid_times</span></a><span class="p">,</span> <a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><a href="https://docs.astropy.org/en/latest/api/astropy.table.QTable.html#astropy.table.QTable" title="astropy.table.QTable" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">table</span></a><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>         tstart                  tstop          convergence       index             index_err            amplitude            amplitude_err
@@ -1146,35 +1189,35 @@ bin, etc.</p>
 <h3>Visualising the results<a class="headerlink" href="#visualising-the-results" title="Link to this heading">#</a></h3>
 <p>We can plot the spectral index and the amplitude as a function of time.
 For convenience, we will convert the times into a <a class="reference internal" href="../../api/gammapy.maps.TimeMapAxis.html#gammapy.maps.TimeMapAxis" title="gammapy.maps.TimeMapAxis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TimeMapAxis</span></code></a>.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">time_axis</span> <span class="o">=</span> <span class="n">TimeMapAxis</span><span class="o">.</span><span class="n">from_time_edges</span><span class="p">(</span>
-    <span class="n">time_min</span><span class="o">=</span><span class="n">table</span><span class="p">[</span><span class="s2">&quot;tstart&quot;</span><span class="p">],</span> <span class="n">time_max</span><span class="o">=</span><span class="n">table</span><span class="p">[</span><span class="s2">&quot;tstop&quot;</span><span class="p">]</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../../api/gammapy.maps.TimeMapAxis.html#gammapy.maps.TimeMapAxis" title="gammapy.maps.TimeMapAxis" class="sphx-glr-backref-module-gammapy-maps sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">time_axis</span></a> <span class="o">=</span> <a href="../../api/gammapy.maps.TimeMapAxis.html#gammapy.maps.TimeMapAxis.from_time_edges" title="gammapy.maps.TimeMapAxis.from_time_edges" class="sphx-glr-backref-module-gammapy-maps sphx-glr-backref-type-py-method"><span class="n">TimeMapAxis</span><span class="o">.</span><span class="n">from_time_edges</span></a><span class="p">(</span>
+    <span class="n">time_min</span><span class="o">=</span><a href="https://docs.astropy.org/en/latest/api/astropy.table.QTable.html#astropy.table.QTable" title="astropy.table.QTable" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">table</span></a><span class="p">[</span><span class="s2">&quot;tstart&quot;</span><span class="p">],</span> <span class="n">time_max</span><span class="o">=</span><a href="https://docs.astropy.org/en/latest/api/astropy.table.QTable.html#astropy.table.QTable" title="astropy.table.QTable" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">table</span></a><span class="p">[</span><span class="s2">&quot;tstop&quot;</span><span class="p">]</span>
 <span class="p">)</span>
 
-<span class="n">fix</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
-<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">errorbar</span><span class="p">(</span>
-    <span class="n">x</span><span class="o">=</span><span class="n">time_axis</span><span class="o">.</span><span class="n">as_plot_center</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">table</span><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">],</span> <span class="n">yerr</span><span class="o">=</span><span class="n">table</span><span class="p">[</span><span class="s2">&quot;index_err&quot;</span><span class="p">],</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;o&quot;</span>
+<a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure" class="sphx-glr-backref-module-matplotlib-figure sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">fix</span></a><span class="p">,</span> <a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">axes</span></a> <span class="o">=</span> <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots" title="matplotlib.pyplot.subplots" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span></a><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">axes</span></a><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">errorbar</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><a href="../../api/gammapy.maps.TimeMapAxis.html#gammapy.maps.TimeMapAxis.as_plot_center" title="gammapy.maps.TimeMapAxis.as_plot_center" class="sphx-glr-backref-module-gammapy-maps sphx-glr-backref-type-py-attribute"><span class="n">time_axis</span><span class="o">.</span><span class="n">as_plot_center</span></a><span class="p">,</span> <span class="n">y</span><span class="o">=</span><a href="https://docs.astropy.org/en/latest/api/astropy.table.QTable.html#astropy.table.QTable" title="astropy.table.QTable" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">table</span></a><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">],</span> <span class="n">yerr</span><span class="o">=</span><a href="https://docs.astropy.org/en/latest/api/astropy.table.QTable.html#astropy.table.QTable" title="astropy.table.QTable" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">table</span></a><span class="p">[</span><span class="s2">&quot;index_err&quot;</span><span class="p">],</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;o&quot;</span>
 <span class="p">)</span>
-<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">errorbar</span><span class="p">(</span>
-    <span class="n">x</span><span class="o">=</span><span class="n">time_axis</span><span class="o">.</span><span class="n">as_plot_center</span><span class="p">,</span>
-    <span class="n">y</span><span class="o">=</span><span class="n">table</span><span class="p">[</span><span class="s2">&quot;amplitude&quot;</span><span class="p">],</span>
-    <span class="n">yerr</span><span class="o">=</span><span class="n">table</span><span class="p">[</span><span class="s2">&quot;amplitude_err&quot;</span><span class="p">],</span>
+<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">axes</span></a><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">errorbar</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><a href="../../api/gammapy.maps.TimeMapAxis.html#gammapy.maps.TimeMapAxis.as_plot_center" title="gammapy.maps.TimeMapAxis.as_plot_center" class="sphx-glr-backref-module-gammapy-maps sphx-glr-backref-type-py-attribute"><span class="n">time_axis</span><span class="o">.</span><span class="n">as_plot_center</span></a><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><a href="https://docs.astropy.org/en/latest/api/astropy.table.QTable.html#astropy.table.QTable" title="astropy.table.QTable" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">table</span></a><span class="p">[</span><span class="s2">&quot;amplitude&quot;</span><span class="p">],</span>
+    <span class="n">yerr</span><span class="o">=</span><a href="https://docs.astropy.org/en/latest/api/astropy.table.QTable.html#astropy.table.QTable" title="astropy.table.QTable" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">table</span></a><span class="p">[</span><span class="s2">&quot;amplitude_err&quot;</span><span class="p">],</span>
     <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">,</span>
 <span class="p">)</span>
 
-<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;index&quot;</span><span class="p">)</span>
-<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;amplitude&quot;</span><span class="p">)</span>
-<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">axes</span></a><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;index&quot;</span><span class="p">)</span>
+<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">axes</span></a><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;amplitude&quot;</span><span class="p">)</span>
+<a href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="numpy.ndarray" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">axes</span></a><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">)</span>
+<a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<img src="../../_images/sphx_glr_Time_resolved_spectroscopy_001.png" srcset="../../_images/sphx_glr_Time_resolved_spectroscopy_001.png" alt="Time resolved spectroscopy" class = "sphx-glr-single-img"/><p>To get the integrated flux, we can access the model stored in the fit
+<img src="../../_images/sphx_glr_time_resolved_spectroscopy_001.png" srcset="../../_images/sphx_glr_time_resolved_spectroscopy_001.png" alt="time resolved spectroscopy" class = "sphx-glr-single-img"/><p>To get the integrated flux, we can access the model stored in the fit
 result object, eg</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">integral_flux</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="n">results</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">integral_flux</span></a> <span class="o">=</span> <span class="p">(</span>
+    <a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
     <span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="o">.</span><span class="n">spectral_model</span><span class="o">.</span><span class="n">integral_error</span><span class="p">(</span><span class="n">energy_min</span><span class="o">=</span><span class="mi">1</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">TeV</span><span class="p">,</span> <span class="n">energy_max</span><span class="o">=</span><span class="mi">10</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">TeV</span><span class="p">)</span>
+    <span class="o">.</span><a href="../../api/gammapy.modeling.models.PowerLawSpectralModel.html#gammapy.modeling.models.PowerLawSpectralModel" title="gammapy.modeling.models.PowerLawSpectralModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">spectral_model</span></a><span class="o">.</span><span class="n">integral_error</span><span class="p">(</span><span class="n">energy_min</span><span class="o">=</span><span class="mi">1</span> <span class="o">*</span> <a href="https://docs.astropy.org/en/latest/api/astropy.units.PrefixUnit.html#astropy.units.PrefixUnit" title="astropy.units.PrefixUnit" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">u</span><span class="o">.</span><span class="n">TeV</span></a><span class="p">,</span> <span class="n">energy_max</span><span class="o">=</span><span class="mi">10</span> <span class="o">*</span> <a href="https://docs.astropy.org/en/latest/api/astropy.units.PrefixUnit.html#astropy.units.PrefixUnit" title="astropy.units.PrefixUnit" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">u</span><span class="o">.</span><span class="n">TeV</span></a><span class="p">)</span>
 <span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Integral flux in the first bin:&quot;</span><span class="p">,</span> <span class="n">integral_flux</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Integral flux in the first bin:&quot;</span><span class="p">,</span> <a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">integral_flux</span></a><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Integral flux in the first bin: [3.39200283e-11 4.59497706e-12] 1 / (cm2 s)
@@ -1182,15 +1225,22 @@ result object, eg</p>
 </div>
 <p>To plot hysteresis curves, ie the spectral index as a function of
 amplitude</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">table</span><span class="p">[</span><span class="s2">&quot;amplitude&quot;</span><span class="p">],</span> <span class="n">table</span><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">time_axis</span><span class="o">.</span><span class="n">center</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">table</span><span class="p">[</span><span class="s2">&quot;amplitude&quot;</span><span class="p">],</span> <span class="n">table</span><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">],</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;amplitude&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;index&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.errorbar.html#matplotlib.pyplot.errorbar" title="matplotlib.pyplot.errorbar" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">errorbar</span></a><span class="p">(</span>
+    <a href="https://docs.astropy.org/en/latest/api/astropy.table.QTable.html#astropy.table.QTable" title="astropy.table.QTable" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">table</span></a><span class="p">[</span><span class="s2">&quot;amplitude&quot;</span><span class="p">],</span>
+    <a href="https://docs.astropy.org/en/latest/api/astropy.table.QTable.html#astropy.table.QTable" title="astropy.table.QTable" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">table</span></a><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">],</span>
+    <span class="n">xerr</span><span class="o">=</span><a href="https://docs.astropy.org/en/latest/api/astropy.table.QTable.html#astropy.table.QTable" title="astropy.table.QTable" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">table</span></a><span class="p">[</span><span class="s2">&quot;amplitude_err&quot;</span><span class="p">],</span>
+    <span class="n">yerr</span><span class="o">=</span><a href="https://docs.astropy.org/en/latest/api/astropy.table.QTable.html#astropy.table.QTable" title="astropy.table.QTable" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">table</span></a><span class="p">[</span><span class="s2">&quot;index_err&quot;</span><span class="p">],</span>
+    <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="p">,</span>
+    <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+<span class="p">)</span>
+<a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.scatter.html#matplotlib.pyplot.scatter" title="matplotlib.pyplot.scatter" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span></a><span class="p">(</span><a href="https://docs.astropy.org/en/latest/api/astropy.table.QTable.html#astropy.table.QTable" title="astropy.table.QTable" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">table</span></a><span class="p">[</span><span class="s2">&quot;amplitude&quot;</span><span class="p">],</span> <a href="https://docs.astropy.org/en/latest/api/astropy.table.QTable.html#astropy.table.QTable" title="astropy.table.QTable" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">table</span></a><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><a href="../../api/gammapy.maps.TimeMapAxis.html#gammapy.maps.TimeMapAxis.center" title="gammapy.maps.TimeMapAxis.center" class="sphx-glr-backref-module-gammapy-maps sphx-glr-backref-type-py-attribute"><span class="n">time_axis</span><span class="o">.</span><span class="n">center</span><span class="o">.</span><span class="n">value</span></a><span class="p">)</span>
+<a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xlabel.html#matplotlib.pyplot.xlabel" title="matplotlib.pyplot.xlabel" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s2">&quot;amplitude&quot;</span><span class="p">)</span>
+<a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.ylabel.html#matplotlib.pyplot.ylabel" title="matplotlib.pyplot.ylabel" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s2">&quot;index&quot;</span><span class="p">)</span>
+<a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.colorbar.html#matplotlib.pyplot.colorbar" title="matplotlib.pyplot.colorbar" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span></a><span class="p">()</span><span class="o">.</span><span class="n">set_label</span><span class="p">(</span><span class="s2">&quot;time&quot;</span><span class="p">)</span>
+<a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<img src="../../_images/sphx_glr_Time_resolved_spectroscopy_002.png" srcset="../../_images/sphx_glr_Time_resolved_spectroscopy_002.png" alt="Time resolved spectroscopy" class = "sphx-glr-single-img"/></section>
+<img src="../../_images/sphx_glr_time_resolved_spectroscopy_002.png" srcset="../../_images/sphx_glr_time_resolved_spectroscopy_002.png" alt="time resolved spectroscopy" class = "sphx-glr-single-img"/></section>
 </section>
 <section id="exercises">
 <h2>Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h2>
@@ -1201,20 +1251,20 @@ broken power law.</p></li>
 <li><p>Compare the significance of the new model with the simple power law.
 Take note of any fit non-convergence in the bins.</p></li>
 </ol>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 11.570 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 11.413 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-tutorials-analysis-time-time-resolved-spectroscopy-py">
 <div class="binder-badge docutils container">
-<a class="reference external image-reference" href="https://mybinder.org/v2/gh/gammapy/gammapy-webpage/main?urlpath=lab/tree/notebooks/dev/tutorials/analysis-time/Time_resolved_spectroscopy.ipynb"><img alt="Launch binder" src="../../_images/binder_badge_logo3.svg" style="width: 150px;" />
+<a class="reference external image-reference" href="https://mybinder.org/v2/gh/gammapy/gammapy-webpage/main?urlpath=lab/tree/notebooks/dev/tutorials/analysis-time/time_resolved_spectroscopy.ipynb"><img alt="Launch binder" src="../../_images/binder_badge_logo3.svg" style="width: 150px;" />
 </a>
 </div>
 <div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
-<p><a class="reference download internal" download="" href="../../_downloads/49945b472a79d59ea792f8e113366e99/Time_resolved_spectroscopy.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">Time_resolved_spectroscopy.ipynb</span></code></a></p>
+<p><a class="reference download internal" download="" href="../../_downloads/cf5e0af3c49d2fc1814cad3f9672e8d3/time_resolved_spectroscopy.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">time_resolved_spectroscopy.ipynb</span></code></a></p>
 </div>
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
-<p><a class="reference download internal" download="" href="../../_downloads/6e3b87a6f0841e72c7c8237c7efe11dc/Time_resolved_spectroscopy.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">Time_resolved_spectroscopy.py</span></code></a></p>
+<p><a class="reference download internal" download="" href="../../_downloads/ce5d4cb4a2724543d1a97e32de80db42/time_resolved_spectroscopy.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">time_resolved_spectroscopy.py</span></code></a></p>
 </div>
 <div class="sphx-glr-download sphx-glr-download-zip docutils container">
-<p><a class="reference download internal" download="" href="../../_downloads/e13573be09b72c90db0b9bda1249d8c4/Time_resolved_spectroscopy.zip"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">zipped:</span> <span class="pre">Time_resolved_spectroscopy.zip</span></code></a></p>
+<p><a class="reference download internal" download="" href="../../_downloads/e1ae92381427a3e34d582ae0a377cb19/time_resolved_spectroscopy.zip"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">zipped:</span> <span class="pre">time_resolved_spectroscopy.zip</span></code></a></p>
 </div>
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
@@ -1243,7 +1293,6 @@ Take note of any fit non-convergence in the bins.</p></li>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aim">Aim</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#context">Context</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proposed-approach">Proposed approach</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a><ul class="nav section-nav flex-column">
@@ -1263,7 +1312,7 @@ Take note of any fit non-convergence in the bins.</p></li>
   <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="../../_sources/tutorials/analysis-time/Time_resolved_spectroscopy.rst.txt">
+    <a href="../../_sources/tutorials/analysis-time/time_resolved_spectroscopy.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
@@ -1300,19 +1349,28 @@ Take note of any fit non-convergence in the bins.</p></li>
   </p>
 </div>
       
-        <div class="footer-item">
-
-  <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.0.2.
-    <br/>
-  </p>
-</div>
+    </div>
+  
+  
+    <div class="footer-items__center">
+      
+        <div class="footer-item"><p class="last-updated">
+  Last updated on 11 Oct 2024.
+  <br/>
+</p></div>
       
     </div>
   
   
-  
     <div class="footer-items__end">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.0.
+    <br/>
+  </p>
+</div>
       
         <div class="footer-item">
 <p class="theme-version">

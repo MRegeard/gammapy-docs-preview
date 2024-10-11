@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**00:20.057** total execution time for 3 files **from tutorials/starting**:
+**00:18.483** total execution time for 3 files **from tutorials/starting**:
 
 .. container::
 
@@ -32,12 +32,12 @@ Computation times
    * - Example
      - Time
      - Mem (MB)
-   * - :ref:`sphx_glr_tutorials_starting_analysis_2.py` (``analysis_2.py``)
-     - 00:20.057
-     - 0.0
    * - :ref:`sphx_glr_tutorials_starting_analysis_1.py` (``analysis_1.py``)
-     - 00:00.000
+     - 00:08.799
      - 0.0
    * - :ref:`sphx_glr_tutorials_starting_overview.py` (``overview.py``)
-     - 00:00.000
+     - 00:04.947
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_starting_analysis_2.py` (``analysis_2.py``)
+     - 00:04.737
      - 0.0

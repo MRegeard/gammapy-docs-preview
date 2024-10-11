@@ -142,37 +142,37 @@ Check setup
 
     System:
 
-            python_executable      : /Users/mregeard/anaconda3/envs/gammapy-dev/bin/python 
-            python_version         : 3.11.9     
+            python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python 
+            python_version         : 3.11.10    
             machine                : x86_64     
             system                 : Darwin     
 
 
     Gammapy package:
 
-            version                : 1.3.dev468+g4c56d91f9e.d20240613 
-            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/gammapy 
+            version                : 1.3.dev1205+g00f44f94ac 
+            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy 
 
 
     Other packages:
 
             numpy                  : 1.26.4     
-            scipy                  : 1.13.1     
-            astropy                : 6.1.0      
-            regions                : 0.9        
+            scipy                  : 1.14.1     
+            astropy                : 5.2.2      
+            regions                : 0.10       
             click                  : 8.1.7      
-            yaml                   : 6.0.1      
-            IPython                : 8.25.0     
-            jupyterlab             : 3.5.3      
-            matplotlib             : 3.8.4      
-            pandas                 : 2.2.2      
-            healpy                 : 1.16.6     
-            iminuit                : 2.25.2     
+            yaml                   : 6.0.2      
+            IPython                : 8.28.0     
+            jupyterlab             : not installed 
+            matplotlib             : 3.9.2      
+            pandas                 : not installed 
+            healpy                 : 1.17.3     
+            iminuit                : 2.30.1     
             sherpa                 : 4.16.1     
             naima                  : 0.10.0     
             emcee                  : 3.1.6      
             corner                 : 2.2.2      
-            ray                    : 2.24.0     
+            ray                    : 2.37.0     
 
 
     Gammapy environment variables:
@@ -245,7 +245,12 @@ Here is what the configuration for our analysis looks like:
     AnalysisConfig
 
         general:
-            log: {level: info, filename: null, filemode: null, format: null, datefmt: null}
+            log:
+                level: info
+                filename: null
+                filemode: null
+                format: null
+                datefmt: null
             outdir: .
             n_jobs: 1
             datasets_file: null
@@ -254,47 +259,100 @@ Here is what the configuration for our analysis looks like:
             datastore: /Users/mregeard/Workspace/dev/code/gammapy/gammapy-data/hess-dl3-dr1
             obs_ids: []
             obs_file: null
-            obs_cone: {frame: icrs, lon: 83.633 deg, lat: 22.014 deg, radius: 5.0 deg}
-            obs_time: {start: null, stop: null}
-            required_irf: [aeff, edisp, psf, bkg]
+            obs_cone:
+                frame: icrs
+                lon: 83.633 deg
+                lat: 22.014 deg
+                radius: 5.0 deg
+            obs_time:
+                start: null
+                stop: null
+            required_irf:
+            - aeff
+            - edisp
+            - psf
+            - bkg
         datasets:
             type: 1d
             stack: true
             geom:
                 wcs:
-                    skydir: {frame: null, lon: null, lat: null}
+                    skydir:
+                        frame: null
+                        lon: null
+                        lat: null
                     binsize: 0.02 deg
-                    width: {width: 5.0 deg, height: 5.0 deg}
+                    width:
+                        width: 5.0 deg
+                        height: 5.0 deg
                     binsize_irf: 0.2 deg
-                selection: {offset_max: 2.5 deg}
+                selection:
+                    offset_max: 2.5 deg
                 axes:
-                    energy: {min: 0.5 TeV, max: 30.0 TeV, nbins: 20}
-                    energy_true: {min: 0.1 TeV, max: 50.0 TeV, nbins: 40}
-            map_selection: [counts, exposure, background, psf, edisp]
+                    energy:
+                        min: 0.5 TeV
+                        max: 30.0 TeV
+                        nbins: 20
+                    energy_true:
+                        min: 0.1 TeV
+                        max: 50.0 TeV
+                        nbins: 40
+            map_selection:
+            - counts
+            - exposure
+            - background
+            - psf
+            - edisp
             background:
                 method: reflected
                 exclusion: null
                 parameters: {}
             safe_mask:
-                methods: [aeff-default, aeff-max]
-                parameters: {aeff_percent: 0.1}
-            on_region: {frame: icrs, lon: 83.633 deg, lat: 22.014 deg, radius: 0.11 deg}
+                methods:
+                - aeff-default
+                - aeff-max
+                parameters:
+                    aeff_percent: 0.1
+            on_region:
+                frame: icrs
+                lon: 83.633 deg
+                lat: 22.014 deg
+                radius: 0.11 deg
             containment_correction: true
         fit:
-            fit_range: {min: 1.0 TeV, max: 20.0 TeV}
+            fit_range:
+                min: 1.0 TeV
+                max: 20.0 TeV
         flux_points:
-            energy: {min: 1.0 TeV, max: 20.0 TeV, nbins: 8}
+            energy:
+                min: 1.0 TeV
+                max: 20.0 TeV
+                nbins: 8
             source: crab
-            parameters: {selection_optional: all}
+            parameters:
+                selection_optional: all
         excess_map:
             correlation_radius: 0.1 deg
             parameters: {}
-            energy_edges: {min: null, max: null, nbins: null}
+            energy_edges:
+                min: null
+                max: null
+                nbins: null
         light_curve:
-            time_intervals: {start: null, stop: null}
-            energy_edges: {min: null, max: null, nbins: null}
+            time_intervals:
+                start: null
+                stop: null
+            energy_edges:
+                min: null
+                max: null
+                nbins: null
             source: source
-            parameters: {selection_optional: all}
+            parameters:
+                selection_optional: all
+        metadata:
+            creator: Gammapy 1.3.dev1205+g00f44f94ac
+            date: '2024-10-11T13:06:44.453281'
+            origin: null
     
 
 
@@ -408,7 +466,12 @@ One can export/import the `~gammapy.analysis.AnalysisConfig` to/from a YAML file
     AnalysisConfig
 
         general:
-            log: {level: info, filename: null, filemode: null, format: null, datefmt: null}
+            log:
+                level: info
+                filename: null
+                filemode: null
+                format: null
+                datefmt: null
             outdir: .
             n_jobs: 1
             datasets_file: null
@@ -417,47 +480,100 @@ One can export/import the `~gammapy.analysis.AnalysisConfig` to/from a YAML file
             datastore: /Users/mregeard/Workspace/dev/code/gammapy/gammapy-data/hess-dl3-dr1
             obs_ids: []
             obs_file: null
-            obs_cone: {frame: icrs, lon: 83.633 deg, lat: 22.014 deg, radius: 5.0 deg}
-            obs_time: {start: null, stop: null}
-            required_irf: [aeff, edisp, psf, bkg]
+            obs_cone:
+                frame: icrs
+                lon: 83.633 deg
+                lat: 22.014 deg
+                radius: 5.0 deg
+            obs_time:
+                start: null
+                stop: null
+            required_irf:
+            - aeff
+            - edisp
+            - psf
+            - bkg
         datasets:
             type: 1d
             stack: true
             geom:
                 wcs:
-                    skydir: {frame: null, lon: null, lat: null}
+                    skydir:
+                        frame: null
+                        lon: null
+                        lat: null
                     binsize: 0.02 deg
-                    width: {width: 5.0 deg, height: 5.0 deg}
+                    width:
+                        width: 5.0 deg
+                        height: 5.0 deg
                     binsize_irf: 0.2 deg
-                selection: {offset_max: 2.5 deg}
+                selection:
+                    offset_max: 2.5 deg
                 axes:
-                    energy: {min: 0.5 TeV, max: 30.0 TeV, nbins: 20}
-                    energy_true: {min: 0.1 TeV, max: 50.0 TeV, nbins: 40}
-            map_selection: [counts, exposure, background, psf, edisp]
+                    energy:
+                        min: 0.5 TeV
+                        max: 30.0 TeV
+                        nbins: 20
+                    energy_true:
+                        min: 0.1 TeV
+                        max: 50.0 TeV
+                        nbins: 40
+            map_selection:
+            - counts
+            - exposure
+            - background
+            - psf
+            - edisp
             background:
                 method: reflected
                 exclusion: /Users/mregeard/Workspace/dev/code/gammapy/gammapy-data/joint-crab/exclusion/exclusion_mask_crab.fits.gz
                 parameters: {}
             safe_mask:
-                methods: [aeff-default, aeff-max]
-                parameters: {aeff_percent: 0.1}
-            on_region: {frame: icrs, lon: 83.633 deg, lat: 22.014 deg, radius: 0.11 deg}
+                methods:
+                - aeff-default
+                - aeff-max
+                parameters:
+                    aeff_percent: 0.1
+            on_region:
+                frame: icrs
+                lon: 83.633 deg
+                lat: 22.014 deg
+                radius: 0.11 deg
             containment_correction: true
         fit:
-            fit_range: {min: 1.0 TeV, max: 20.0 TeV}
+            fit_range:
+                min: 1.0 TeV
+                max: 20.0 TeV
         flux_points:
-            energy: {min: 1.0 TeV, max: 20.0 TeV, nbins: 8}
+            energy:
+                min: 1.0 TeV
+                max: 20.0 TeV
+                nbins: 8
             source: crab
-            parameters: {selection_optional: all}
+            parameters:
+                selection_optional: all
         excess_map:
             correlation_radius: 0.1 deg
             parameters: {}
-            energy_edges: {min: null, max: null, nbins: null}
+            energy_edges:
+                min: null
+                max: null
+                nbins: null
         light_curve:
-            time_intervals: {start: null, stop: null}
-            energy_edges: {min: null, max: null, nbins: null}
+            time_intervals:
+                start: null
+                stop: null
+            energy_edges:
+                min: null
+                max: null
+                nbins: null
             source: source
-            parameters: {selection_optional: all}
+            parameters:
+                selection_optional: all
+        metadata:
+            creator: Gammapy 1.3.dev1205+g00f44f94ac
+            date: '2024-10-11T13:06:44.465260'
+            origin: null
     
 
 
@@ -626,8 +742,8 @@ unique entry of the datasets:
       Number of free parameters       : 0
 
       Total counts_off                : 581 
-      Acceptance                      : 18 
-      Acceptance off                  : 450 
+      Acceptance                      : 70 
+      Acceptance off                  : 1756 
 
 
 
@@ -786,7 +902,7 @@ object. Here is a pre-defined YAML configuration file created for this
       Temporal model type       : 
       Parameters:
         index                         :      2.600   +/-    0.00             
-        amplitude                     :   5.00e-11   +/- 0.0e+00 1 / (TeV s cm2)
+        amplitude                     :   5.00e-11   +/- 0.0e+00 1 / (cm2 s TeV)
         reference             (frozen):      1.000       TeV         
 
 
@@ -905,11 +1021,11 @@ Exploration of the fit results
             success    : True
             message    : Hesse terminated successfully.
 
-    model type    name     value         unit        error   min max frozen is_norm link prior
-    ----- ---- --------- ---------- -------------- --------- --- --- ------ ------- ---- -----
-     crab          index 2.6768e+00                1.035e-01 nan nan  False   False           
-     crab      amplitude 4.6795e-11 TeV-1 s-1 cm-2 4.679e-12 nan nan  False    True           
-     crab      reference 1.0000e+00            TeV 0.000e+00 nan nan   True   False           
+    model type    name     value         unit        error   min max frozen link prior
+    ----- ---- --------- ---------- -------------- --------- --- --- ------ ---- -----
+     crab          index 2.6768e+00                1.035e-01 nan nan  False           
+     crab      amplitude 4.6795e-11 cm-2 s-1 TeV-1 4.679e-12 nan nan  False           
+     crab      reference 1.0000e+00            TeV 0.000e+00 nan nan   True           
 
 
 
@@ -980,19 +1096,19 @@ This is how we can write the model back to file again:
             type: PowerLawSpectralModel
             parameters:
             -   name: index
-                value: 2.676836990195764
-                error: 0.10350020769951328
+                value: 2.6768369882384824
+                error: 0.1035002142411758
             -   name: amplitude
-                value: 4.679478012925587e-11
-                unit: TeV-1 s-1 cm-2
-                error: 4.678683678350495e-12
+                value: 4.6794780081959667e-11
+                unit: cm-2 s-1 TeV-1
+                error: 4.6786837316108595e-12
             -   name: reference
                 value: 1.0
                 unit: TeV
     covariance: model-best-fit_covariance.dat
     metadata:
-        creator: Gammapy 1.3.dev470+g3763fc00d7.d20240613
-        date: '2024-06-13T23:30:05.931704'
+        creator: Gammapy 1.3.dev1205+g00f44f94ac
+        date: '2024-10-11T13:06:46.325171'
         origin: null
 
 
@@ -1031,17 +1147,17 @@ Running the estimation
 
  .. code-block:: none
 
-    e_ref  e_min  e_max        dnde          dnde_err       dnde_errp       dnde_errn    ...  stat stat_null is_ul counts success   norm_scan        stat_scan     
-     TeV    TeV    TeV   1 / (TeV s cm2) 1 / (TeV s cm2) 1 / (TeV s cm2) 1 / (TeV s cm2) ...                                                                       
-    ------ ------ ------ --------------- --------------- --------------- --------------- ... ----- --------- ----- ------ ------- -------------- ------------------
-     1.134  0.924  1.392       2.835e-11       4.025e-12       4.206e-12       3.848e-12 ... 0.000   186.317 False   56.0    True 0.200 .. 5.000  61.061 .. 323.310
-     1.708  1.392  2.096       1.193e-11       1.255e-12       1.297e-12       1.215e-12 ... 0.718   333.040 False  102.0    True 0.200 .. 5.000 137.686 .. 402.694
-     2.572  2.096  3.156       4.325e-12       5.410e-13       5.626e-13       5.199e-13 ... 0.329   245.811 False   71.0    True 0.200 .. 5.000 105.216 .. 245.371
-     3.873  3.156  4.753       1.002e-12       1.965e-13       2.084e-13       1.850e-13 ... 1.663    84.415 False   31.0    True 0.200 .. 5.000  30.617 .. 190.044
-     5.833  4.753  7.158       4.655e-13       1.001e-13       1.070e-13       9.338e-14 ... 0.725    89.316 False   24.0    True 0.200 .. 5.000   35.669 .. 89.296
-     7.929  7.158  8.784       1.527e-13       6.872e-14       7.833e-14       5.976e-14 ... 0.000    15.993 False    6.0    True 0.200 .. 5.000    5.680 .. 33.974
-    10.779  8.784 13.228       9.692e-14       3.167e-14       3.499e-14       2.864e-14 ... 0.117    33.120 False   11.0    True 0.200 .. 5.000   15.247 .. 34.090
-    16.233 13.228 19.921       1.523e-14       1.034e-14       1.239e-14       8.463e-15 ... 0.608     6.611 False    3.0    True 0.200 .. 5.000    2.084 .. 28.509
+    e_ref  e_min  e_max        dnde          dnde_err       dnde_errp       dnde_errn    ...  stat stat_null     stat_scan      is_ul counts success   norm_scan   
+     TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) ...                                                                       
+    ------ ------ ------ --------------- --------------- --------------- --------------- ... ----- --------- ------------------ ----- ------ ------- --------------
+     1.134  0.924  1.392       2.835e-11       4.025e-12       4.206e-12       3.848e-12 ... 0.000   186.317  61.061 .. 323.310 False   56.0    True 0.200 .. 5.000
+     1.708  1.392  2.096       1.193e-11       1.255e-12       1.297e-12       1.215e-12 ... 0.718   333.040 137.686 .. 402.694 False  102.0    True 0.200 .. 5.000
+     2.572  2.096  3.156       4.325e-12       5.410e-13       5.626e-13       5.199e-13 ... 0.329   245.811 105.216 .. 245.371 False   71.0    True 0.200 .. 5.000
+     3.873  3.156  4.753       1.002e-12       1.965e-13       2.084e-13       1.850e-13 ... 1.663    84.415  30.617 .. 190.044 False   31.0    True 0.200 .. 5.000
+     5.833  4.753  7.158       4.655e-13       1.001e-13       1.070e-13       9.338e-14 ... 0.725    89.316   35.669 .. 89.296 False   24.0    True 0.200 .. 5.000
+     7.929  7.158  8.784       1.527e-13       6.872e-14       7.833e-14       5.976e-14 ... 0.000    15.993    5.680 .. 33.974 False    6.0    True 0.200 .. 5.000
+    10.779  8.784 13.228       9.692e-14       3.167e-14       3.499e-14       2.864e-14 ... 0.117    33.120   15.247 .. 34.090 False   11.0    True 0.200 .. 5.000
+    16.233 13.228 19.921       1.523e-14       1.034e-14       1.239e-14       8.463e-15 ... 0.608     6.611    2.084 .. 28.509 False    3.0    True 0.200 .. 5.000
 
 
 
@@ -1168,6 +1284,10 @@ both methods on a unique plot.
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: spectral_analysis_hli.py <spectral_analysis_hli.py>`
+
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: spectral_analysis_hli.zip <spectral_analysis_hli.zip>`
 
 
 .. only:: html

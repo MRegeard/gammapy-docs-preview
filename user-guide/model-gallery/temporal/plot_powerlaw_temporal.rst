@@ -113,15 +113,15 @@ Here is an example YAML file using the model:
             -   name: alpha
                 value: -2.0
             -   name: t_ref
-                value: 60474.77856366635
+                value: 60594.44565163029
                 unit: d
             -   name: t0
                 value: 1.0
                 unit: d
             scale: utc
     metadata:
-        creator: Gammapy 1.3.dev468+g4c56d91f9e.d20240613
-        date: '2024-06-13T21:05:07.999140'
+        creator: Gammapy 1.3.dev1205+g00f44f94ac
+        date: '2024-10-11T13:05:44.399861'
         origin: null
 
 
@@ -149,6 +149,10 @@ Here is an example YAML file using the model:
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: plot_powerlaw_temporal.py <plot_powerlaw_temporal.py>`
+
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: plot_powerlaw_temporal.zip <plot_powerlaw_temporal.zip>`
 
 
 .. only:: html

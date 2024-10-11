@@ -232,8 +232,8 @@ Here is an example YAML file using the model:
             -   name: edge_width
                 value: 0.01
     metadata:
-        creator: Gammapy 1.3.dev1110+g29931fb8f6
-        date: '2024-10-07T16:03:27.387345'
+        creator: Gammapy 1.3.dev1205+g00f44f94ac
+        date: '2024-10-11T13:05:24.002327'
         origin: null
 
 

@@ -34,6 +34,27 @@ Examples using ``gammapy.data.DataStore.obs``
 
  * :ref:`sphx_glr_tutorials_data_hess.py`
 
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Access and inspect CTAO data and instrument response functions (IRFs) using Gammapy.">
+
+.. only:: html
+
+  .. image:: /tutorials/data/images/thumb/sphx_glr_cta_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_data_cta.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">CTAO with Gammapy</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_data_cta.py`
+
 .. thumbnail-parent-div-close
 
 .. raw:: html

@@ -10,8 +10,8 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_user-guide_model-gallery_spatial_plot_constant.py>`
-        to download the full example code or to run this example in your browser via Binder
+        :ref:`Go to the end <sphx_glr_download_user-guide_model-gallery_spatial_plot_constant.py>`
+        to download the full example code. or to run this example in your browser via Binder
 
 .. rst-class:: sphx-glr-example-title
 
@@ -33,7 +33,7 @@ Here is an example plot of the model:
 
 .. GENERATED FROM PYTHON SOURCE LINES 14-27
 
-.. code-block:: python3
+.. code-block:: Python
 
 
     from gammapy.maps import WcsGeom
@@ -62,7 +62,7 @@ Here is an example plot of the model:
  .. code-block:: none
 
 
-    <WCSAxesSubplot: >
+    <WCSAxes: >
 
 
 
@@ -74,7 +74,7 @@ Here is an example YAML file using the model:
 
 .. GENERATED FROM PYTHON SOURCE LINES 31-39
 
-.. code-block:: python3
+.. code-block:: Python
 
 
     pwl = PowerLawSpectralModel()
@@ -109,6 +109,10 @@ Here is an example YAML file using the model:
         spatial:
             type: ConstantSpatialModel
             parameters: []
+    metadata:
+        creator: Gammapy 1.3.dev1205+g00f44f94ac
+        date: '2024-10-11T13:05:23.071418'
+        origin: null
 
 
 
@@ -121,21 +125,24 @@ Here is an example YAML file using the model:
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
-
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/gammapy/gammapy-webpage/master?urlpath=lab/tree/notebooks/dev/user-guide/model-gallery/spatial/plot_constant.ipynb
+        :target: https://mybinder.org/v2/gh/gammapy/gammapy-webpage/main?urlpath=lab/tree/notebooks/dev/user-guide/model-gallery/spatial/plot_constant.ipynb
         :alt: Launch binder
         :width: 150 px
+
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
+
+      :download:`Download Jupyter notebook: plot_constant.ipynb <plot_constant.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: plot_constant.py <plot_constant.py>`
 
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
+    .. container:: sphx-glr-download sphx-glr-download-zip
 
-      :download:`Download Jupyter notebook: plot_constant.ipynb <plot_constant.ipynb>`
+      :download:`Download zipped: plot_constant.zip <plot_constant.zip>`
 
 
 .. only:: html

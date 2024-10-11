@@ -128,14 +128,14 @@ Check setup
     System:
 
             python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python 
-            python_version         : 3.11.9     
+            python_version         : 3.11.10    
             machine                : x86_64     
             system                 : Darwin     
 
 
     Gammapy package:
 
-            version                : 1.3.dev1110+g29931fb8f6 
+            version                : 1.3.dev1205+g00f44f94ac 
             path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy 
 
 
@@ -152,7 +152,7 @@ Check setup
             matplotlib             : 3.9.2      
             pandas                 : not installed 
             healpy                 : 1.17.3     
-            iminuit                : 2.30.0     
+            iminuit                : 2.30.1     
             sherpa                 : 4.16.1     
             naima                  : 0.10.0     
             emcee                  : 3.1.6      
@@ -371,8 +371,8 @@ The parameters table will mention the type of prior associated to each model
 
        model    type    name     value         unit        error   min max frozen link     prior    
     ----------- ---- --------- ---------- -------------- --------- --- --- ------ ---- -------------
-    prior-model          index 2.2024e+00                9.124e-02 nan nan  False      GaussianPrior
-    prior-model      amplitude 1.1164e-11 cm-2 s-1 TeV-1 2.216e-12 nan nan  False                   
+    prior-model          index 2.0688e+00                9.044e-02 nan nan  False      GaussianPrior
+    prior-model      amplitude 9.2136e-12 cm-2 s-1 TeV-1 1.866e-12 nan nan  False                   
     prior-model      reference 1.0000e+00            TeV 0.000e+00 nan nan   True                   
 
 
@@ -781,14 +781,14 @@ The only parameter is ``sigma`` and the evaluation method return the squared inv
 
     {'spectral': {'type': 'PowerLawSpectralModel', 'parameters': [{'name': 'index', 'value': 2.0, 'prior': {'type': 'MyCustomPrior', 'parameters': [{'name': 'sigma', 'value': 0.5, 'unit': ''}], 'weight': 1}}, {'name': 'amplitude', 'value': 1e-12, 'unit': 'cm-2 s-1 TeV-1'}, {'name': 'reference', 'value': 1.0, 'unit': 'TeV'}]}}
 
-    [<__main__.MyCustomPrior object at 0x142d2b050>, None, None]
+    [<__main__.MyCustomPrior object at 0x14086a690>, None, None]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 37.086 seconds)
+   **Total running time of the script:** (0 minutes 38.767 seconds)
 
 
 .. _sphx_glr_download_tutorials_api_priors.py:

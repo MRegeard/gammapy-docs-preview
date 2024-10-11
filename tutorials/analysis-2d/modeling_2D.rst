@@ -116,37 +116,37 @@ Check setup
 
     System:
 
-            python_executable      : /Users/mregeard/anaconda3/envs/gammapy-dev/bin/python 
-            python_version         : 3.11.9     
+            python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python 
+            python_version         : 3.11.10    
             machine                : x86_64     
             system                 : Darwin     
 
 
     Gammapy package:
 
-            version                : 1.3.dev468+g4c56d91f9e.d20240613 
-            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/gammapy 
+            version                : 1.3.dev1205+g00f44f94ac 
+            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy 
 
 
     Other packages:
 
             numpy                  : 1.26.4     
-            scipy                  : 1.13.1     
-            astropy                : 6.1.0      
-            regions                : 0.9        
+            scipy                  : 1.14.1     
+            astropy                : 5.2.2      
+            regions                : 0.10       
             click                  : 8.1.7      
-            yaml                   : 6.0.1      
-            IPython                : 8.25.0     
-            jupyterlab             : 3.5.3      
-            matplotlib             : 3.8.4      
-            pandas                 : 2.2.2      
-            healpy                 : 1.16.6     
-            iminuit                : 2.25.2     
+            yaml                   : 6.0.2      
+            IPython                : 8.28.0     
+            jupyterlab             : not installed 
+            matplotlib             : 3.9.2      
+            pandas                 : not installed 
+            healpy                 : 1.17.3     
+            iminuit                : 2.30.1     
             sherpa                 : 4.16.1     
             naima                  : 0.10.0     
             emcee                  : 3.1.6      
             corner                 : 2.2.2      
-            ray                    : 2.24.0     
+            ray                    : 2.37.0     
 
 
     Gammapy environment variables:
@@ -165,7 +165,7 @@ Creating the config file
 Now, we create a config file for out analysis. You may load this from
 disc if you have a pre-defined config file.
 
-Here, we use 3 simulated CTA runs of the galactic center.
+Here, we use 3 simulated CTAO runs of the galactic center.
 
 
 .. GENERATED FROM PYTHON SOURCE LINES 69-76
@@ -235,56 +235,116 @@ analysis as *3D*, and define the geometry of the analysis.
     AnalysisConfig
 
         general:
-            log: {level: info, filename: null, filemode: null, format: null, datefmt: null}
+            log:
+                level: info
+                filename: null
+                filemode: null
+                format: null
+                datefmt: null
             outdir: .
             n_jobs: 1
             datasets_file: null
             models_file: null
         observations:
             datastore: /Users/mregeard/Workspace/dev/code/gammapy/gammapy-data/cta-1dc/index/gps
-            obs_ids: [110380, 111140, 111159]
+            obs_ids:
+            - 110380
+            - 111140
+            - 111159
             obs_file: null
-            obs_cone: {frame: null, lon: null, lat: null, radius: null}
-            obs_time: {start: null, stop: null}
-            required_irf: [aeff, edisp, psf, bkg]
+            obs_cone:
+                frame: null
+                lon: null
+                lat: null
+                radius: null
+            obs_time:
+                start: null
+                stop: null
+            required_irf:
+            - aeff
+            - edisp
+            - psf
+            - bkg
         datasets:
             type: 3d
             stack: true
             geom:
                 wcs:
-                    skydir: {frame: galactic, lon: 0.0 deg, lat: 0.0 deg}
+                    skydir:
+                        frame: galactic
+                        lon: 0.0 deg
+                        lat: 0.0 deg
                     binsize: 0.02 deg
-                    width: {width: 8.0 deg, height: 6.0 deg}
+                    width:
+                        width: 8.0 deg
+                        height: 6.0 deg
                     binsize_irf: 0.2 deg
-                selection: {offset_max: 2.5 deg}
+                selection:
+                    offset_max: 2.5 deg
                 axes:
-                    energy: {min: 0.1 TeV, max: 10.0 TeV, nbins: 1}
-                    energy_true: {min: 0.5 TeV, max: 20.0 TeV, nbins: 16}
-            map_selection: [counts, exposure, background, psf, edisp]
+                    energy:
+                        min: 0.1 TeV
+                        max: 10.0 TeV
+                        nbins: 1
+                    energy_true:
+                        min: 0.5 TeV
+                        max: 20.0 TeV
+                        nbins: 16
+            map_selection:
+            - counts
+            - exposure
+            - background
+            - psf
+            - edisp
             background:
                 method: fov_background
                 exclusion: null
                 parameters: {}
             safe_mask:
-                methods: [offset-max]
-                parameters: {offset_max: 2.5 deg}
-            on_region: {frame: null, lon: null, lat: null, radius: null}
+                methods:
+                - offset-max
+                parameters:
+                    offset_max: 2.5 deg
+            on_region:
+                frame: null
+                lon: null
+                lat: null
+                radius: null
             containment_correction: true
         fit:
-            fit_range: {min: 0.1 TeV, max: 30.0 TeV}
+            fit_range:
+                min: 0.1 TeV
+                max: 30.0 TeV
         flux_points:
-            energy: {min: null, max: null, nbins: null}
+            energy:
+                min: null
+                max: null
+                nbins: null
             source: source
-            parameters: {selection_optional: all}
+            parameters:
+                selection_optional: all
         excess_map:
             correlation_radius: 0.1 deg
             parameters: {}
-            energy_edges: {min: null, max: null, nbins: null}
+            energy_edges:
+                min: null
+                max: null
+                nbins: null
         light_curve:
-            time_intervals: {start: null, stop: null}
-            energy_edges: {min: null, max: null, nbins: null}
+            time_intervals:
+                start: null
+                stop: null
+            energy_edges:
+                min: null
+                max: null
+                nbins: null
             source: source
-            parameters: {selection_optional: all}
+            parameters:
+                selection_optional: all
+        metadata:
+            creator: Gammapy 1.3.dev1205+g00f44f94ac
+            date: '2024-10-11T13:07:24.691100'
+            origin: null
     
 
 
@@ -321,11 +381,11 @@ We now use the config file and create a single `MapDataset` containing
 
  .. code-block:: none
 
-    /Users/mregeard/anaconda3/envs/gammapy-dev/lib/python3.11/site-packages/astropy/units/core.py:2157: UnitsWarning: '1/s/MeV/sr' did not parse as fits unit: Numeric factor not supported by FITS If this is meant to be a custom unit, define it with 'u.def_unit'. To have it recognized inside a file reader or other code, enable it with 'u.add_enabled_units'. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html
+    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/astropy/units/core.py:2097: UnitsWarning: '1/s/MeV/sr' did not parse as fits unit: Numeric factor not supported by FITS If this is meant to be a custom unit, define it with 'u.def_unit'. To have it recognized inside a file reader or other code, enable it with 'u.add_enabled_units'. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html
       warnings.warn(msg, UnitsWarning)
-    /Users/mregeard/anaconda3/envs/gammapy-dev/lib/python3.11/site-packages/astropy/units/core.py:2157: UnitsWarning: '1/s/MeV/sr' did not parse as fits unit: Numeric factor not supported by FITS If this is meant to be a custom unit, define it with 'u.def_unit'. To have it recognized inside a file reader or other code, enable it with 'u.add_enabled_units'. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html
+    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/astropy/units/core.py:2097: UnitsWarning: '1/s/MeV/sr' did not parse as fits unit: Numeric factor not supported by FITS If this is meant to be a custom unit, define it with 'u.def_unit'. To have it recognized inside a file reader or other code, enable it with 'u.add_enabled_units'. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html
       warnings.warn(msg, UnitsWarning)
-    /Users/mregeard/anaconda3/envs/gammapy-dev/lib/python3.11/site-packages/astropy/units/core.py:2157: UnitsWarning: '1/s/MeV/sr' did not parse as fits unit: Numeric factor not supported by FITS If this is meant to be a custom unit, define it with 'u.def_unit'. To have it recognized inside a file reader or other code, enable it with 'u.add_enabled_units'. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html
+    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/astropy/units/core.py:2097: UnitsWarning: '1/s/MeV/sr' did not parse as fits unit: Numeric factor not supported by FITS If this is meant to be a custom unit, define it with 'u.def_unit'. To have it recognized inside a file reader or other code, enable it with 'u.add_enabled_units'. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html
       warnings.warn(msg, UnitsWarning)
     MapDataset
     ----------
@@ -528,17 +588,17 @@ We will freeze the parameters of the background
 
  .. code-block:: none
 
-       model    type    name      value      unit     error      min        max    frozen is_norm link prior
-    ----------- ---- --------- ----------- -------- --------- ---------- --------- ------ ------- ---- -----
-           GC-1      amplitude  4.1501e-11 s-1 cm-2 2.224e-12        nan       nan  False    True           
-           GC-1          index  2.0000e+00          0.000e+00        nan       nan   True   False           
-           GC-1           emin  1.0000e-01      TeV 0.000e+00        nan       nan   True   False           
-           GC-1           emax  1.0000e+01      TeV 0.000e+00        nan       nan   True   False           
-           GC-1          lon_0 -4.7613e-02      deg 1.998e-03        nan       nan  False   False           
-           GC-1          lat_0 -5.3566e-02      deg 1.983e-03 -9.000e+01 9.000e+01  False   False           
-    stacked-bkg           norm  9.9445e-01          3.411e-03        nan       nan  False    True           
-    stacked-bkg           tilt  0.0000e+00          0.000e+00        nan       nan   True   False           
-    stacked-bkg      reference  1.0000e+00      TeV 0.000e+00        nan       nan   True   False           
+       model    type    name      value      unit     error      min        max    frozen link prior
+    ----------- ---- --------- ----------- -------- --------- ---------- --------- ------ ---- -----
+           GC-1      amplitude  4.1624e-11 cm-2 s-1 2.220e-12        nan       nan  False           
+           GC-1          index  2.0000e+00          0.000e+00        nan       nan   True           
+           GC-1           emin  1.0000e-01      TeV 0.000e+00        nan       nan   True           
+           GC-1           emax  1.0000e+01      TeV 0.000e+00        nan       nan   True           
+           GC-1          lon_0 -5.4639e-02      deg 1.996e-03        nan       nan  False           
+           GC-1          lat_0 -4.6394e-02      deg 1.980e-03 -9.000e+01 9.000e+01  False           
+    stacked-bkg           norm  9.9441e-01          3.411e-03        nan       nan  False           
+    stacked-bkg           tilt  0.0000e+00          0.000e+00        nan       nan   True           
+    stacked-bkg      reference  1.0000e+00      TeV 0.000e+00        nan       nan   True           
 
 
 
@@ -564,6 +624,10 @@ We will freeze the parameters of the background
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: modeling_2D.py <modeling_2D.py>`
+
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: modeling_2D.zip <modeling_2D.zip>`
 
 
 .. only:: html

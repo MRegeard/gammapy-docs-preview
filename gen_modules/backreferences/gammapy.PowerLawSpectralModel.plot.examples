@@ -15,6 +15,27 @@ Examples using ``gammapy.PowerLawSpectralModel.plot``
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Introduction to basic data structures handling.">
+
+.. only:: html
+
+  .. image:: /tutorials/starting/images/thumb/sphx_glr_overview_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_starting_overview.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Data structures</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_starting_overview.py`
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Introduction to Gammapy analysis using the low level API.">
 
 .. only:: html
@@ -36,6 +57,27 @@ Examples using ``gammapy.PowerLawSpectralModel.plot``
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Fit spectral models to combined Fermi-LAT and IACT flux points tables.">
+
+.. only:: html
+
+  .. image:: /tutorials/analysis-1d/images/thumb/sphx_glr_sed_fitting_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_analysis-1d_sed_fitting.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Flux point fitting</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_analysis-1d_sed_fitting.py`
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Gamma rays emitted from extra-galactic objects, eg blazars, interact with the photons of the Extragalactic Background Light (EBL) through pair production and are attenuated, thus modifying the intrinsic spectrum.">
 
 .. only:: html
@@ -54,6 +96,27 @@ Examples using ``gammapy.PowerLawSpectralModel.plot``
 .. only:: not html
 
  * :ref:`sphx_glr_tutorials_analysis-1d_ebl.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This notebook shows how to sample events of sources whose model evolves in energy and time.">
+
+.. only:: html
+
+  .. image:: /tutorials/analysis-3d/images/thumb/sphx_glr_event_sampling_nrg_depend_models_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_analysis-3d_event_sampling_nrg_depend_models.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Sample a source with energy-dependent temporal evolution</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_analysis-3d_event_sampling_nrg_depend_models.py`
 
 .. raw:: html
 

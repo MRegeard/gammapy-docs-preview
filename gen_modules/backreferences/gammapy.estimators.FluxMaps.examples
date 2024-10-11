@@ -15,6 +15,27 @@ Examples using ``gammapy.estimators.FluxMaps``
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Introduction to 3D analysis using the Gammapy high level interface.">
+
+.. only:: html
+
+  .. image:: /tutorials/starting/images/thumb/sphx_glr_analysis_1_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_starting_analysis_1.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">High level interface</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_starting_analysis_1.py`
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="HAWC is an array of water Cherenkov detectors located in Mexico that detects gamma-rays in the range between hundreds of GeV and hundreds of TeV. Gammapy recently added support of HAWC high level data analysis, after export to the current open data level 3 format.">
 
 .. only:: html
@@ -138,6 +159,27 @@ Examples using ``gammapy.estimators.FluxMaps``
 .. only:: not html
 
  * :ref:`sphx_glr_tutorials_analysis-time_pulsar_analysis.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Create and apply masks maps.">
+
+.. only:: html
+
+  .. image:: /tutorials/api/images/thumb/sphx_glr_mask_maps_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_api_mask_maps.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Mask maps</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_api_mask_maps.py`
 
 .. raw:: html
 

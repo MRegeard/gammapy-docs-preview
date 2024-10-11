@@ -15,7 +15,7 @@ Examples using ``gammapy.irf.IRF.evaluate``
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Access and inspect CTA data and instrument response functions (IRFs) using Gammapy.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Access and inspect CTAO data and instrument response functions (IRFs) using Gammapy.">
 
 .. only:: html
 
@@ -26,7 +26,7 @@ Examples using ``gammapy.irf.IRF.evaluate``
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">CTA with Gammapy</div>
+      <div class="sphx-glr-thumbnail-title">CTAO with Gammapy</div>
     </div>
 
 
@@ -36,7 +36,7 @@ Examples using ``gammapy.irf.IRF.evaluate``
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="gammapy.irf contains classes for handling Instrument Response Functions typically stored as mul...">
+    <div class="sphx-glr-thumbcontainer" tooltip="gammapy.irf contains classes for handling Instrument Response Functions typically stored as multi-dimensional tables. For a list of IRF classes internally supported, see https://gamma-astro-data-formats.readthedocs.io/en/v0.3/irfs/full_enclosure/index.html">
 
 .. only:: html
 

@@ -10,8 +10,8 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_user-guide_model-gallery_spectral_plot_super_exp_cutoff_powerlaw_4fgl_dr1.py>`
-        to download the full example code or to run this example in your browser via Binder
+        :ref:`Go to the end <sphx_glr_download_user-guide_model-gallery_spectral_plot_super_exp_cutoff_powerlaw_4fgl_dr1.py>`
+        to download the full example code. or to run this example in your browser via Binder
 
 .. rst-class:: sphx-glr-example-title
 
@@ -43,7 +43,7 @@ Here is an example plot of the model:
 
 .. GENERATED FROM PYTHON SOURCE LINES 24-45
 
-.. code-block:: python3
+.. code-block:: Python
 
 
     from astropy import units as u
@@ -92,7 +92,7 @@ Here is an example YAML file using the model:
 
 .. GENERATED FROM PYTHON SOURCE LINES 49-54
 
-.. code-block:: python3
+.. code-block:: Python
 
 
     model = SkyModel(spectral_model=model, name="super-exp-cutoff-power-law-4fgl-model")
@@ -125,6 +125,10 @@ Here is an example YAML file using the model:
                 value: 1.0
             -   name: index_2
                 value: 2.0
+    metadata:
+        creator: Gammapy 1.3.dev1205+g00f44f94ac
+        date: '2024-10-11T13:05:42.951506'
+        origin: null
 
 
 
@@ -137,21 +141,24 @@ Here is an example YAML file using the model:
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
-
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/gammapy/gammapy-webpage/master?urlpath=lab/tree/notebooks/dev/user-guide/model-gallery/spectral/plot_super_exp_cutoff_powerlaw_4fgl_dr1.ipynb
+        :target: https://mybinder.org/v2/gh/gammapy/gammapy-webpage/main?urlpath=lab/tree/notebooks/dev/user-guide/model-gallery/spectral/plot_super_exp_cutoff_powerlaw_4fgl_dr1.ipynb
         :alt: Launch binder
         :width: 150 px
+
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
+
+      :download:`Download Jupyter notebook: plot_super_exp_cutoff_powerlaw_4fgl_dr1.ipynb <plot_super_exp_cutoff_powerlaw_4fgl_dr1.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: plot_super_exp_cutoff_powerlaw_4fgl_dr1.py <plot_super_exp_cutoff_powerlaw_4fgl_dr1.py>`
 
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
+    .. container:: sphx-glr-download sphx-glr-download-zip
 
-      :download:`Download Jupyter notebook: plot_super_exp_cutoff_powerlaw_4fgl_dr1.ipynb <plot_super_exp_cutoff_powerlaw_4fgl_dr1.ipynb>`
+      :download:`Download zipped: plot_super_exp_cutoff_powerlaw_4fgl_dr1.zip <plot_super_exp_cutoff_powerlaw_4fgl_dr1.zip>`
 
 
 .. only:: html

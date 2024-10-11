@@ -166,37 +166,37 @@ Check setup
 
     System:
 
-            python_executable      : /Users/mregeard/anaconda3/envs/gammapy-dev/bin/python 
-            python_version         : 3.11.9     
+            python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python 
+            python_version         : 3.11.10    
             machine                : x86_64     
             system                 : Darwin     
 
 
     Gammapy package:
 
-            version                : 1.3.dev468+g4c56d91f9e.d20240613 
-            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/gammapy 
+            version                : 1.3.dev1205+g00f44f94ac 
+            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy 
 
 
     Other packages:
 
             numpy                  : 1.26.4     
-            scipy                  : 1.13.1     
-            astropy                : 6.1.0      
-            regions                : 0.9        
+            scipy                  : 1.14.1     
+            astropy                : 5.2.2      
+            regions                : 0.10       
             click                  : 8.1.7      
-            yaml                   : 6.0.1      
-            IPython                : 8.25.0     
-            jupyterlab             : 3.5.3      
-            matplotlib             : 3.8.4      
-            pandas                 : 2.2.2      
-            healpy                 : 1.16.6     
-            iminuit                : 2.25.2     
+            yaml                   : 6.0.2      
+            IPython                : 8.28.0     
+            jupyterlab             : not installed 
+            matplotlib             : 3.9.2      
+            pandas                 : not installed 
+            healpy                 : 1.17.3     
+            iminuit                : 2.30.1     
             sherpa                 : 4.16.1     
             naima                  : 0.10.0     
             emcee                  : 3.1.6      
             corner                 : 2.2.2      
-            ray                    : 2.24.0     
+            ray                    : 2.37.0     
 
 
     Gammapy environment variables:
@@ -449,7 +449,7 @@ want to event-sample to the `~gammapy.datasets.Dataset` container:
       Temporal model type       : 
       Parameters:
         index                         :      2.000   +/-    0.00             
-        amplitude                     :   1.00e-12   +/- 0.0e+00 1 / (TeV s cm2)
+        amplitude                     :   1.00e-12   +/- 0.0e+00 1 / (cm2 s TeV)
         reference             (frozen):      1.000       TeV         
         lon_0                         :      0.000   +/-    0.00 deg         
         lat_0                         :      0.500   +/-    0.00 deg         
@@ -594,6 +594,13 @@ use of `fits` library in `astropy`:
 
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/astropy/io/fits/hdu/table.py:374: AstropyDeprecationWarning: The following keywords are now recognized as special column-related attributes and should be set via the Column objects: TCTYPn, TCUNIn. In future, these values will be dropped from manually specified headers automatically and replaced with values generated based on the Column objects.
+      warnings.warn(
+
 
 
 
@@ -704,7 +711,7 @@ example:
       Temporal model type       : ExpDecayTemporalModel
       Parameters:
         index                         :      2.000   +/-    0.00             
-        amplitude                     :   2.00e-11   +/- 0.0e+00 1 / (TeV s cm2)
+        amplitude                     :   2.00e-11   +/- 0.0e+00 1 / (cm2 s TeV)
         reference             (frozen):      1.000       TeV         
         lon_0                         :      0.000   +/-    0.00 deg         
         lat_0                         :      0.500   +/-    0.00 deg         
@@ -977,17 +984,17 @@ observation:
 
  .. code-block:: none
 
-    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/gammapy/utils/random/inverse_cdf.py:36: RuntimeWarning: invalid value encountered in divide
+    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy/utils/random/inverse_cdf.py:36: RuntimeWarning: invalid value encountered in divide
       pdf = pdf.ravel() / pdf.sum()
-    /Users/mregeard/anaconda3/envs/gammapy-dev/lib/python3.11/site-packages/astropy/units/quantity.py:671: RuntimeWarning: invalid value encountered in divide
+    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/astropy/units/quantity.py:673: RuntimeWarning: invalid value encountered in divide
       result = super().__array_ufunc__(function, method, *arrays, **kwargs)
-    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/gammapy/utils/random/inverse_cdf.py:36: RuntimeWarning: invalid value encountered in divide
+    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy/utils/random/inverse_cdf.py:36: RuntimeWarning: invalid value encountered in divide
       pdf = pdf.ravel() / pdf.sum()
-    /Users/mregeard/anaconda3/envs/gammapy-dev/lib/python3.11/site-packages/astropy/units/quantity.py:671: RuntimeWarning: invalid value encountered in divide
+    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/astropy/units/quantity.py:673: RuntimeWarning: invalid value encountered in divide
       result = super().__array_ufunc__(function, method, *arrays, **kwargs)
-    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/gammapy/utils/random/inverse_cdf.py:36: RuntimeWarning: invalid value encountered in divide
+    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy/utils/random/inverse_cdf.py:36: RuntimeWarning: invalid value encountered in divide
       pdf = pdf.ravel() / pdf.sum()
-    /Users/mregeard/anaconda3/envs/gammapy-dev/lib/python3.11/site-packages/astropy/units/quantity.py:671: RuntimeWarning: invalid value encountered in divide
+    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/astropy/units/quantity.py:673: RuntimeWarning: invalid value encountered in divide
       result = super().__array_ufunc__(function, method, *arrays, **kwargs)
 
 
@@ -1018,12 +1025,12 @@ You can now load the event list and the corresponding IRFs with
 
  .. code-block:: none
 
-    OBS_ID    TSTART      TSTOP          ONTIME            LIVETIME      DEADC ... MJDREFI MJDREFF TIMEUNIT TIMESYS TIMEREF
-                s           s              s                  s                ...                                         
-    ------ ----------- ----------- ------------------ ------------------ ----- ... ------- ------- -------- ------- -------
-         2 631177205.0 631180805.0  3599.999999999997  3599.999999999997   1.0 ...   51544     0.0        s     utc   LOCAL
-         0 631155605.0 631159205.0 3600.0000000000064 3600.0000000000064   1.0 ...   51544     0.0        s     utc   LOCAL
-         1 631170005.0 631173605.0  3600.000000000002  3600.000000000002   1.0 ...   51544     0.0        s     utc   LOCAL
+    OBS_ID    TSTART      TSTOP          ONTIME           LIVETIME     DEADC ... MJDREFI MJDREFF TIMEUNIT TIMESYS TIMEREF
+                s           s              s                 s               ...                                         
+    ------ ----------- ----------- ----------------- ----------------- ----- ... ------- ------- -------- ------- -------
+         2 631177205.0 631180805.0 3599.999999999997 3599.999999999997   1.0 ...   51544     0.0        s     utc   LOCAL
+         0 631155605.0 631159205.0 3600.000000000006 3600.000000000006   1.0 ...   51544     0.0        s     utc   LOCAL
+         1 631170005.0 631173605.0 3600.000000000002 3600.000000000002   1.0 ...   51544     0.0        s     utc   LOCAL
 
 
 
@@ -1088,6 +1095,10 @@ Exercises
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: event_sampling.py <event_sampling.py>`
+
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: event_sampling.zip <event_sampling.zip>`
 
 
 .. only:: html

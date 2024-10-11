@@ -18,11 +18,8 @@
 .. _sphx_glr_tutorials_analysis-time_time_resolved_spectroscopy.py:
 
 
-A time resolved spectroscopy estimator
-======================================
-
-Aim
----
+Time resolved spectroscopy estimator
+====================================
 
 Perform spectral fits of a blazar in different time bins to investigate
 spectral changes during flares.
@@ -65,7 +62,7 @@ Setup
 
 As usual, we’ll start with some general imports…
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-81
+.. GENERATED FROM PYTHON SOURCE LINES 47-78
 
 .. code-block:: Python
 
@@ -107,7 +104,7 @@ As usual, we’ll start with some general imports…
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 82-87
+.. GENERATED FROM PYTHON SOURCE LINES 79-84
 
 Data selection
 ~~~~~~~~~~~~~~
@@ -115,7 +112,7 @@ Data selection
 We select all runs pointing within 2 degrees of PKS 2155-304.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 87-102
+.. GENERATED FROM PYTHON SOURCE LINES 84-99
 
 .. code-block:: Python
 
@@ -147,7 +144,7 @@ We select all runs pointing within 2 degrees of PKS 2155-304.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 103-108
+.. GENERATED FROM PYTHON SOURCE LINES 100-105
 
 The flaring observations were taken during July 2006. We define
 15-minute time intervals as lists of `~astropy.time.Time` start and stop
@@ -155,7 +152,7 @@ objects, and apply the intervals to the observations by using
 `~gammapy.data.Observations.select_time`
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 108-123
+.. GENERATED FROM PYTHON SOURCE LINES 105-120
 
 .. code-block:: Python
 
@@ -197,7 +194,7 @@ objects, and apply the intervals to the observations by using
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 124-131
+.. GENERATED FROM PYTHON SOURCE LINES 121-128
 
 Data reduction
 --------------
@@ -207,7 +204,7 @@ background estimation. For details, see the
 :doc:`/tutorials/analysis-1d/spectral_analysis` tutorial.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 131-160
+.. GENERATED FROM PYTHON SOURCE LINES 128-157
 
 .. code-block:: Python
 
@@ -247,13 +244,13 @@ background estimation. For details, see the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 161-164
+.. GENERATED FROM PYTHON SOURCE LINES 158-161
 
 This gives us list of `~gammapy.datasets.SpectrumDatasetOnOff` which can now be
 modelled.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 164-168
+.. GENERATED FROM PYTHON SOURCE LINES 161-165
 
 .. code-block:: Python
 
@@ -275,238 +272,238 @@ modelled.
     Dataset 0: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : YEyTm8G4
+      Name       : q1OcCrGu
       Instrument : HESS
       Models     : 
 
     Dataset 1: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : DyFBEqXY
+      Name       : hSXzXYvI
       Instrument : HESS
       Models     : 
 
     Dataset 2: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : eimKJ0wB
+      Name       : LKDDjYgz
       Instrument : HESS
       Models     : 
 
     Dataset 3: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : F1FGw45E
+      Name       : 9hxY3Db3
       Instrument : HESS
       Models     : 
 
     Dataset 4: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : gFM5fs2f
+      Name       : UjP1fiPA
       Instrument : HESS
       Models     : 
 
     Dataset 5: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : eZOk-eD0
+      Name       : lQSRA7Ot
       Instrument : HESS
       Models     : 
 
     Dataset 6: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : -II-B_mA
+      Name       : c9PX_C_N
       Instrument : HESS
       Models     : 
 
     Dataset 7: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : 4wid9Hll
+      Name       : ybAwpQ_a
       Instrument : HESS
       Models     : 
 
     Dataset 8: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : cHRN0XSE
+      Name       : s5v8Z8vP
       Instrument : HESS
       Models     : 
 
     Dataset 9: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : BaXwYlz_
+      Name       : CSfLe__Z
       Instrument : HESS
       Models     : 
 
     Dataset 10: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : PBtKoore
+      Name       : IoZf6jQx
       Instrument : HESS
       Models     : 
 
     Dataset 11: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : VAQUQJoW
+      Name       : MqPjLs34
       Instrument : HESS
       Models     : 
 
     Dataset 12: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : rOZTB8DT
+      Name       : RsQz0Gt0
       Instrument : HESS
       Models     : 
 
     Dataset 13: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : 1cMRufPB
+      Name       : 6eTlEIyl
       Instrument : HESS
       Models     : 
 
     Dataset 14: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : VsJy9oUY
+      Name       : HaFfRWZ5
       Instrument : HESS
       Models     : 
 
     Dataset 15: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : uU-8dOb6
+      Name       : S8zlaiAF
       Instrument : HESS
       Models     : 
 
     Dataset 16: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : Bc6kcVlI
+      Name       : TyE7NUb1
       Instrument : HESS
       Models     : 
 
     Dataset 17: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : ySEiVhCH
+      Name       : 8gXyFVkI
       Instrument : HESS
       Models     : 
 
     Dataset 18: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : n3b27nYG
+      Name       : FR-KmXO3
       Instrument : HESS
       Models     : 
 
     Dataset 19: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : 6n3Nzocg
+      Name       : Mg8kIb1p
       Instrument : HESS
       Models     : 
 
     Dataset 20: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : O7l7Bt7G
+      Name       : VrByGuzD
       Instrument : HESS
       Models     : 
 
     Dataset 21: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : yU9QHExG
+      Name       : CNlS-73t
       Instrument : HESS
       Models     : 
 
     Dataset 22: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : R6pguhbi
+      Name       : cgV8UJfe
       Instrument : HESS
       Models     : 
 
     Dataset 23: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : T-CtlDfk
+      Name       : AnlVnt0Y
       Instrument : HESS
       Models     : 
 
     Dataset 24: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : 75lkYH9h
+      Name       : 51rmRTu2
       Instrument : HESS
       Models     : 
 
     Dataset 25: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : 4xoonv_g
+      Name       : NbrazCLa
       Instrument : HESS
       Models     : 
 
     Dataset 26: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : 3cgXlqlb
+      Name       : HU7jTV7z
       Instrument : HESS
       Models     : 
 
     Dataset 27: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : b0Oyhk8T
+      Name       : rVhLImMw
       Instrument : HESS
       Models     : 
 
     Dataset 28: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : NFNaU0Wr
+      Name       : 6PHh9jJB
       Instrument : HESS
       Models     : 
 
     Dataset 29: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : IRVjkt9X
+      Name       : kZlkUBHF
       Instrument : HESS
       Models     : 
 
     Dataset 30: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : wHIqPvLl
+      Name       : kIneTwo_
       Instrument : HESS
       Models     : 
 
     Dataset 31: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : d6m21XE1
+      Name       : V3BK9fjH
       Instrument : HESS
       Models     : 
 
     Dataset 32: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : K8HbhN-g
+      Name       : fmnAzqko
       Instrument : HESS
       Models     : 
 
     Dataset 33: 
 
       Type       : SpectrumDatasetOnOff
-      Name       : jfZOcZ3U
+      Name       : 1PSVIL6E
       Instrument : HESS
       Models     : 
 
@@ -515,7 +512,7 @@ modelled.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 169-180
+.. GENERATED FROM PYTHON SOURCE LINES 166-177
 
 Modeling
 --------
@@ -529,7 +526,7 @@ The index and amplitude of the spectral model is kept free. You can
 configure the quantities you want to freeze.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 180-191
+.. GENERATED FROM PYTHON SOURCE LINES 177-188
 
 .. code-block:: Python
 
@@ -569,7 +566,7 @@ configure the quantities you want to freeze.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 192-203
+.. GENERATED FROM PYTHON SOURCE LINES 189-200
 
 Time resolved spectroscopy algorithm
 ------------------------------------
@@ -583,7 +580,7 @@ are discarded and a new list of valid time intervals and fit results are
 created.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 203-229
+.. GENERATED FROM PYTHON SOURCE LINES 200-226
 
 .. code-block:: Python
 
@@ -620,12 +617,12 @@ created.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 230-232
+.. GENERATED FROM PYTHON SOURCE LINES 227-229
 
 We now apply it to our data
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 232-236
+.. GENERATED FROM PYTHON SOURCE LINES 229-233
 
 .. code-block:: Python
 
@@ -649,12 +646,12 @@ We now apply it to our data
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 237-239
+.. GENERATED FROM PYTHON SOURCE LINES 234-236
 
 To view the results of the fit,
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 239-243
+.. GENERATED FROM PYTHON SOURCE LINES 236-240
 
 .. code-block:: Python
 
@@ -690,12 +687,12 @@ To view the results of the fit,
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 244-246
+.. GENERATED FROM PYTHON SOURCE LINES 241-243
 
 Or, to access the fitted models,
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 246-250
+.. GENERATED FROM PYTHON SOURCE LINES 243-247
 
 .. code-block:: Python
 
@@ -730,7 +727,7 @@ Or, to access the fitted models,
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 251-257
+.. GENERATED FROM PYTHON SOURCE LINES 248-254
 
 To better visualize the data, we can create a table by extracting some
 relevant information. In the following, we extract the time intervals,
@@ -739,7 +736,7 @@ extract more information if required, eg, the `total_stat` in each
 bin, etc.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 257-280
+.. GENERATED FROM PYTHON SOURCE LINES 254-277
 
 .. code-block:: Python
 
@@ -805,7 +802,7 @@ bin, etc.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 281-287
+.. GENERATED FROM PYTHON SOURCE LINES 278-284
 
 Visualising the results
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -814,7 +811,7 @@ We can plot the spectral index and the amplitude as a function of time.
 For convenience, we will convert the times into a `~gammapy.maps.TimeMapAxis`.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 287-309
+.. GENERATED FROM PYTHON SOURCE LINES 284-306
 
 .. code-block:: Python
 
@@ -852,13 +849,13 @@ For convenience, we will convert the times into a `~gammapy.maps.TimeMapAxis`.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 310-313
+.. GENERATED FROM PYTHON SOURCE LINES 307-310
 
 To get the integrated flux, we can access the model stored in the fit
 result object, eg
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 313-322
+.. GENERATED FROM PYTHON SOURCE LINES 310-319
 
 .. code-block:: Python
 
@@ -884,22 +881,29 @@ result object, eg
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 323-326
+.. GENERATED FROM PYTHON SOURCE LINES 320-323
 
 To plot hysteresis curves, ie the spectral index as a function of
 amplitude
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 326-335
+.. GENERATED FROM PYTHON SOURCE LINES 323-339
 
 .. code-block:: Python
 
 
+    plt.errorbar(
+        table["amplitude"],
+        table["index"],
+        xerr=table["amplitude_err"],
+        yerr=table["index_err"],
+        linestyle=":",
+        linewidth=0.5,
+    )
     plt.scatter(table["amplitude"], table["index"], c=time_axis.center.value)
-    plt.plot(table["amplitude"], table["index"], linewidth=0.5)
     plt.xlabel("amplitude")
     plt.ylabel("index")
-    plt.colorbar()
+    plt.colorbar().set_label("time")
     plt.show()
 
 
@@ -915,7 +919,7 @@ amplitude
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 336-345
+.. GENERATED FROM PYTHON SOURCE LINES 340-349
 
 Exercises
 ---------
@@ -930,7 +934,7 @@ Exercises
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 12.411 seconds)
+   **Total running time of the script:** (0 minutes 11.413 seconds)
 
 
 .. _sphx_glr_download_tutorials_analysis-time_time_resolved_spectroscopy.py:

@@ -21,12 +21,12 @@
 Point source sensitivity
 ========================
 
-Estimate the CTA sensitivity for a point-like IRF at a fixed zenith angle and fixed offset.
+Estimate the CTAO sensitivity for a point-like IRF at a fixed zenith angle and fixed offset.
 
 Introduction
 ------------
 
-This notebook explains how to estimate the CTA sensitivity for a
+This notebook explains how to estimate the CTAO sensitivity for a
 point-like IRF at a fixed zenith angle and fixed offset, using the full
 containment IRFs distributed for the CTA 1DC. The significance is
 computed for a 1D analysis (ON-OFF regions) with the Li&Ma formula.
@@ -112,14 +112,14 @@ Check setup
     System:
 
             python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python 
-            python_version         : 3.11.9     
+            python_version         : 3.11.10    
             machine                : x86_64     
             system                 : Darwin     
 
 
     Gammapy package:
 
-            version                : 1.3.dev1110+g29931fb8f6 
+            version                : 1.3.dev1205+g00f44f94ac 
             path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy 
 
 
@@ -136,7 +136,7 @@ Check setup
             matplotlib             : 3.9.2      
             pandas                 : not installed 
             healpy                 : 1.17.3     
-            iminuit                : 2.30.0     
+            iminuit                : 2.30.1     
             sherpa                 : 4.16.1     
             naima                  : 0.10.0     
             emcee                  : 3.1.6      
@@ -195,7 +195,7 @@ degree.
 Load IRFs and prepare dataset
 -----------------------------
 
-We extract the 1D IRFs from the full 3D IRFs provided by CTA.
+We extract the 1D IRFs from the full 3D IRFs provided by CTAO.
 
 
 .. GENERATED FROM PYTHON SOURCE LINES 86-97
@@ -223,7 +223,6 @@ We extract the 1D IRFs from the full 3D IRFs provided by CTA.
 
     /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/astropy/units/core.py:2097: UnitsWarning: '1/s/MeV/sr' did not parse as fits unit: Numeric factor not supported by FITS If this is meant to be a custom unit, define it with 'u.def_unit'. To have it recognized inside a file reader or other code, enable it with 'u.add_enabled_units'. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html
       warnings.warn(msg, UnitsWarning)
-    Invalid unit found in background table! Assuming (s-1 MeV-1 sr-1)
 
 
 
@@ -340,7 +339,7 @@ minimal significance of 5 per bin. The excess must also be larger than 5% of the
 
 We assume an alpha of 0.2 (ratio between ON and OFF area). We then run the sensitivity estimator.
 
-These are the conditions imposed in standard CTA sensitivity computations.
+These are the conditions imposed in standard CTAO sensitivity computations.
 
 .. GENERATED FROM PYTHON SOURCE LINES 157-165
 

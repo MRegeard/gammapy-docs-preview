@@ -1,10 +1,3 @@
-<!--
-# -*- coding: utf-8 -*-
-# Licensed under a 3-clause BSD style license - see LICENSE.rst
-#
-# Gammapy documentation layout configuration file.
--->
-
 
 <!DOCTYPE html>
 
@@ -36,8 +29,8 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=fd3f3429" />
-    <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css?v=7f9a90b1" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css?v=d2d258e8" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css?v=f4aeca0c" />
@@ -54,11 +47,11 @@
     <script src="../../_static/jquery.js?v=5d32c60e"></script>
     <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
     <script src="../../_static/documentation_options.js?v=1f75dfce"></script>
-    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=30646c52"></script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/analysis-3d/energy_dependent_estimation';</script>
     <script>
@@ -67,36 +60,15 @@
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
         </script>
+    <script src="../../_static/matomo.js?v=52704cab"></script>
     <link rel="icon" href="../../_static/gammapy_logo.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Multi instrument joint 3D and 1D analysis" href="analysis_mwl.html" />
-    <link rel="prev" title="Flux Profile Estimation" href="flux_profiles.html" />
-
-   
+    <link rel="prev" title="Basic image exploration and fitting" href="cta_data_analysis.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="08 Oct 2024"/>
-
-   <!-- Matomo -->
-
-   <script>
-     var _paq = window._paq = window._paq || [];
-     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-     _paq.push(['trackPageView']);
-     _paq.push(['enableLinkTracking']);
-     (function() {
-     var u="https://apcstatview.in2p3.fr/";
-     _paq.push(['setTrackerUrl', u+'matomo.php']);
-     _paq.push(['setSiteId', '3']);
-     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-     })();
-   </script>
-
-   <!-- End Matomo Code -->
-
-
+    <meta name="docbuild:last-update" content="11 Oct 2024"/>
   </head>
   
   
@@ -528,7 +500,7 @@ document.write(`
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../data/hess.html">H.E.S.S. with Gammapy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../data/cta.html">CTA with Gammapy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/cta.html">CTAO with Gammapy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../data/fermi_lat.html">Fermi-LAT with Gammapy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../data/hawc.html">HAWC with Gammapy</a></li>
 </ul>
@@ -538,10 +510,10 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="../analysis-1d/spectral_analysis_hli.html">Spectral analysis with the HLI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis-1d/spectral_analysis_rad_max.html">Spectral analysis with energy-dependent directional cuts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis-1d/extended_source_spectral_analysis.html">Spectral analysis of extended sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-1d/spectrum_simulation.html">1D spectrum simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-1d/sed_fitting.html">Flux point fitting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis-1d/ebl.html">Account for spectral absorption due to the EBL</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="../analysis-1d/sed_fitting.html">Flux point fitting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../analysis-1d/spectrum_simulation.html">1D spectrum simulation</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../analysis-2d/detect.html">Source detection and significance maps</a></li>
@@ -549,20 +521,22 @@ document.write(`
 <li class="toctree-l1"><a class="reference internal" href="../analysis-2d/modeling_2D.html">2D map fitting</a></li>
 </ul>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="cta_data_analysis.html">Basic image exploration and fitting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="analysis_3d.html">3D detailed analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="flux_profiles.html">Flux Profile Estimation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cta_data_analysis.html">Basic image exploration and fitting</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Morphological energy dependence estimation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="analysis_mwl.html">Multi instrument joint 3D and 1D analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="simulate_3d.html">3D map simulation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="event_sampling.html">Event sampling</a></li>
 <li class="toctree-l1"><a class="reference internal" href="event_sampling_nrg_depend_models.html">Sample a source with energy-dependent temporal evolution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flux_profiles.html">Flux Profile Estimation</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../analysis-time/light_curve.html">Light curves</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis-time/light_curve_flare.html">Light curves for flares</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../analysis-time/pulsar_analysis.html">Pulsar analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-time/variability_estimation.html">Estimation of time variability in a lightcurve</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-time/time_resolved_spectroscopy.html">Time resolved spectroscopy estimator</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analysis-time/light_curve_simulation.html">Simulating and fitting a time varying source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis-time/pulsar_analysis.html">Pulsar analysis</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../api/irfs.html">Using Gammapy IRFs</a></li>
@@ -679,18 +653,18 @@ individually within each energy band.</p>
 <section id="setup">
 <h2>Setup<a class="headerlink" href="#setup" title="Link to this heading">#</a></h2>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">astropy</span> <span class="kn">import</span> <span class="n">units</span> <span class="k">as</span> <span class="n">u</span>
-<span class="kn">from</span> <span class="nn">astropy.coordinates</span> <span class="kn">import</span> <span class="n">SkyCoord</span>
-<span class="kn">from</span> <span class="nn">astropy.table</span> <span class="kn">import</span> <span class="n">Table</span>
+<span class="kn">from</span> <span class="nn">astropy.coordinates</span> <span class="kn">import</span> <a href="https://docs.astropy.org/en/latest/api/astropy.coordinates.SkyCoord.html#astropy.coordinates.SkyCoord" title="astropy.coordinates.SkyCoord" class="sphx-glr-backref-module-astropy-coordinates sphx-glr-backref-type-py-class"><span class="n">SkyCoord</span></a>
+<span class="kn">from</span> <span class="nn">astropy.table</span> <span class="kn">import</span> <a href="https://docs.astropy.org/en/latest/api/astropy.table.Table.html#astropy.table.Table" title="astropy.table.Table" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class"><span class="n">Table</span></a>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
-<span class="kn">from</span> <span class="nn">gammapy.datasets</span> <span class="kn">import</span> <span class="n">Datasets</span><span class="p">,</span> <span class="n">MapDataset</span>
-<span class="kn">from</span> <span class="nn">gammapy.estimators</span> <span class="kn">import</span> <span class="n">EnergyDependentMorphologyEstimator</span>
+<span class="kn">from</span> <span class="nn">gammapy.datasets</span> <span class="kn">import</span> <a href="../../api/gammapy.datasets.Datasets.html#gammapy.datasets.Datasets" title="gammapy.datasets.Datasets" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class"><span class="n">Datasets</span></a><span class="p">,</span> <span class="n">MapDataset</span>
+<span class="kn">from</span> <span class="nn">gammapy.estimators</span> <span class="kn">import</span> <a href="../../api/gammapy.estimators.EnergyDependentMorphologyEstimator.html#gammapy.estimators.EnergyDependentMorphologyEstimator" title="gammapy.estimators.EnergyDependentMorphologyEstimator" class="sphx-glr-backref-module-gammapy-estimators sphx-glr-backref-type-py-class"><span class="n">EnergyDependentMorphologyEstimator</span></a>
 <span class="kn">from</span> <span class="nn">gammapy.estimators.energydependentmorphology</span> <span class="kn">import</span> <span class="n">weighted_chi2_parameter</span>
 <span class="kn">from</span> <span class="nn">gammapy.maps</span> <span class="kn">import</span> <span class="n">Map</span>
 <span class="kn">from</span> <span class="nn">gammapy.modeling.models</span> <span class="kn">import</span> <span class="p">(</span>
-    <span class="n">GaussianSpatialModel</span><span class="p">,</span>
-    <span class="n">PowerLawSpectralModel</span><span class="p">,</span>
-    <span class="n">SkyModel</span><span class="p">,</span>
+    <a href="../../api/gammapy.modeling.models.GaussianSpatialModel.html#gammapy.modeling.models.GaussianSpatialModel" title="gammapy.modeling.models.GaussianSpatialModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class"><span class="n">GaussianSpatialModel</span></a><span class="p">,</span>
+    <a href="../../api/gammapy.modeling.models.PowerLawSpectralModel.html#gammapy.modeling.models.PowerLawSpectralModel" title="gammapy.modeling.models.PowerLawSpectralModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class"><span class="n">PowerLawSpectralModel</span></a><span class="p">,</span>
+    <a href="../../api/gammapy.modeling.models.SkyModel.html#gammapy.modeling.models.SkyModel" title="gammapy.modeling.models.SkyModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class"><span class="n">SkyModel</span></a><span class="p">,</span>
 <span class="p">)</span>
 <span class="kn">from</span> <span class="nn">gammapy.stats.utils</span> <span class="kn">import</span> <span class="n">ts_to_sigma</span>
 <span class="kn">from</span> <span class="nn">gammapy.utils.check</span> <span class="kn">import</span> <span class="n">check_tutorials_setup</span>
@@ -704,37 +678,37 @@ individually within each energy band.</p>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>System:
 
-        python_executable      : /Users/mregeard/anaconda3/envs/gammapy-dev/bin/python
-        python_version         : 3.11.9
+        python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python
+        python_version         : 3.11.10
         machine                : x86_64
         system                 : Darwin
 
 
 Gammapy package:
 
-        version                : 1.3.dev468+g4c56d91f9e.d20240613
-        path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/gammapy
+        version                : 1.3.dev1205+g00f44f94ac
+        path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy
 
 
 Other packages:
 
         numpy                  : 1.26.4
-        scipy                  : 1.13.1
-        astropy                : 6.1.0
-        regions                : 0.9
+        scipy                  : 1.14.1
+        astropy                : 5.2.2
+        regions                : 0.10
         click                  : 8.1.7
-        yaml                   : 6.0.1
-        IPython                : 8.25.0
-        jupyterlab             : 3.5.3
-        matplotlib             : 3.8.4
-        pandas                 : 2.2.2
-        healpy                 : 1.16.6
-        iminuit                : 2.25.2
+        yaml                   : 6.0.2
+        IPython                : 8.28.0
+        jupyterlab             : not installed
+        matplotlib             : 3.9.2
+        pandas                 : not installed
+        healpy                 : 1.17.3
+        iminuit                : 2.30.1
         sherpa                 : 4.16.1
         naima                  : 0.10.0
         emcee                  : 3.1.6
         corner                 : 2.2.2
-        ray                    : 2.24.0
+        ray                    : 2.37.0
 
 
 Gammapy environment variables:
@@ -748,15 +722,15 @@ Gammapy environment variables:
 <p>Utilise the pre-defined dataset within <code class="xref py py-obj docutils literal notranslate"><span class="pre">$GAMMAPY_DATA</span></code>.</p>
 <p>P.S.: do not forget to set up your environment variable <code class="xref py py-obj docutils literal notranslate"><span class="pre">$GAMMAPY_DATA</span></code>
 to your local directory.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">stacked_dataset</span> <span class="o">=</span> <span class="n">MapDataset</span><span class="o">.</span><span class="n">read</span><span class="p">(</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../../api/gammapy.datasets.MapDataset.html#gammapy.datasets.MapDataset" title="gammapy.datasets.MapDataset" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">stacked_dataset</span></a> <span class="o">=</span> <a href="../../api/gammapy.datasets.MapDataset.html#gammapy.datasets.MapDataset.read" title="gammapy.datasets.MapDataset.read" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-method"><span class="n">MapDataset</span><span class="o">.</span><span class="n">read</span></a><span class="p">(</span>
     <span class="s2">&quot;$GAMMAPY_DATA/estimators/mock_DL4/dataset_energy_dependent.fits.gz&quot;</span>
 <span class="p">)</span>
-<span class="n">datasets</span> <span class="o">=</span> <span class="n">Datasets</span><span class="p">([</span><span class="n">stacked_dataset</span><span class="p">])</span>
+<a href="../../api/gammapy.datasets.Datasets.html#gammapy.datasets.Datasets" title="gammapy.datasets.Datasets" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">datasets</span></a> <span class="o">=</span> <a href="../../api/gammapy.datasets.Datasets.html#gammapy.datasets.Datasets" title="gammapy.datasets.Datasets" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class"><span class="n">Datasets</span></a><span class="p">([</span><a href="../../api/gammapy.datasets.MapDataset.html#gammapy.datasets.MapDataset" title="gammapy.datasets.MapDataset" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">stacked_dataset</span></a><span class="p">])</span>
 </pre></div>
 </div>
 <p>Define the energy edges of interest. These will be utilised to
 investigate the potential of energy-dependent morphology in the dataset.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">energy_edges</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">TeV</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">energy_edges</span></a> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span> <span class="o">*</span> <a href="https://docs.astropy.org/en/latest/api/astropy.units.PrefixUnit.html#astropy.units.PrefixUnit" title="astropy.units.PrefixUnit" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">u</span><span class="o">.</span><span class="n">TeV</span></a>
 </pre></div>
 </div>
 <p>Define the spectral and spatial models of interest. We utilise
@@ -766,26 +740,26 @@ morphology component in each energy band. A standard 3D fit (see the
 <a class="reference internal" href="analysis_3d.html"><span class="doc">3D detailed analysis</span></a> tutorial)
 is performed, then the best fit model is utilised here for the initial parameters
 in each model.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">source_position</span> <span class="o">=</span> <span class="n">SkyCoord</span><span class="p">(</span><span class="mf">5.58</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;deg&quot;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="s2">&quot;galactic&quot;</span><span class="p">)</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.astropy.org/en/latest/api/astropy.coordinates.SkyCoord.html#astropy.coordinates.SkyCoord" title="astropy.coordinates.SkyCoord" class="sphx-glr-backref-module-astropy-coordinates sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">source_position</span></a> <span class="o">=</span> <a href="https://docs.astropy.org/en/latest/api/astropy.coordinates.SkyCoord.html#astropy.coordinates.SkyCoord" title="astropy.coordinates.SkyCoord" class="sphx-glr-backref-module-astropy-coordinates sphx-glr-backref-type-py-class"><span class="n">SkyCoord</span></a><span class="p">(</span><span class="mf">5.58</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s2">&quot;deg&quot;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="s2">&quot;galactic&quot;</span><span class="p">)</span>
 
-<span class="n">spectral_model</span> <span class="o">=</span> <span class="n">PowerLawSpectralModel</span><span class="p">(</span>
-    <span class="n">index</span><span class="o">=</span><span class="mf">2.5</span><span class="p">,</span> <span class="n">amplitude</span><span class="o">=</span><span class="mf">9.8e-12</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">Unit</span><span class="p">(</span><span class="s2">&quot;cm-2 s-1 TeV-1&quot;</span><span class="p">),</span> <span class="n">reference</span><span class="o">=</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">TeV</span>
+<a href="../../api/gammapy.modeling.models.PowerLawSpectralModel.html#gammapy.modeling.models.PowerLawSpectralModel" title="gammapy.modeling.models.PowerLawSpectralModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">spectral_model</span></a> <span class="o">=</span> <a href="../../api/gammapy.modeling.models.PowerLawSpectralModel.html#gammapy.modeling.models.PowerLawSpectralModel" title="gammapy.modeling.models.PowerLawSpectralModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class"><span class="n">PowerLawSpectralModel</span></a><span class="p">(</span>
+    <span class="n">index</span><span class="o">=</span><span class="mf">2.5</span><span class="p">,</span> <span class="n">amplitude</span><span class="o">=</span><span class="mf">9.8e-12</span> <span class="o">*</span> <a href="https://docs.astropy.org/en/latest/api/astropy.units.Unit.html#astropy.units.Unit" title="astropy.units.Unit" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class"><span class="n">u</span><span class="o">.</span><span class="n">Unit</span></a><span class="p">(</span><span class="s2">&quot;cm-2 s-1 TeV-1&quot;</span><span class="p">),</span> <span class="n">reference</span><span class="o">=</span><span class="mf">1.0</span> <span class="o">*</span> <a href="https://docs.astropy.org/en/latest/api/astropy.units.PrefixUnit.html#astropy.units.PrefixUnit" title="astropy.units.PrefixUnit" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">u</span><span class="o">.</span><span class="n">TeV</span></a>
 <span class="p">)</span>
 
-<span class="n">spatial_model</span> <span class="o">=</span> <span class="n">GaussianSpatialModel</span><span class="p">(</span>
-    <span class="n">lon_0</span><span class="o">=</span><span class="n">source_position</span><span class="o">.</span><span class="n">l</span><span class="p">,</span>
-    <span class="n">lat_0</span><span class="o">=</span><span class="n">source_position</span><span class="o">.</span><span class="n">b</span><span class="p">,</span>
+<a href="../../api/gammapy.modeling.models.GaussianSpatialModel.html#gammapy.modeling.models.GaussianSpatialModel" title="gammapy.modeling.models.GaussianSpatialModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">spatial_model</span></a> <span class="o">=</span> <a href="../../api/gammapy.modeling.models.GaussianSpatialModel.html#gammapy.modeling.models.GaussianSpatialModel" title="gammapy.modeling.models.GaussianSpatialModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class"><span class="n">GaussianSpatialModel</span></a><span class="p">(</span>
+    <a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">lon_0</span></a><span class="o">=</span><a href="https://docs.astropy.org/en/latest/api/astropy.coordinates.Longitude.html#astropy.coordinates.Longitude" title="astropy.coordinates.Longitude" class="sphx-glr-backref-module-astropy-coordinates sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">source_position</span><span class="o">.</span><span class="n">l</span></a><span class="p">,</span>
+    <a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">lat_0</span></a><span class="o">=</span><a href="https://docs.astropy.org/en/latest/api/astropy.coordinates.Latitude.html#astropy.coordinates.Latitude" title="astropy.coordinates.Latitude" class="sphx-glr-backref-module-astropy-coordinates sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">source_position</span><span class="o">.</span><span class="n">b</span></a><span class="p">,</span>
     <span class="n">frame</span><span class="o">=</span><span class="s2">&quot;galactic&quot;</span><span class="p">,</span>
-    <span class="n">sigma</span><span class="o">=</span><span class="mf">0.2</span> <span class="o">*</span> <span class="n">u</span><span class="o">.</span><span class="n">deg</span><span class="p">,</span>
+    <a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">sigma</span></a><span class="o">=</span><span class="mf">0.2</span> <span class="o">*</span> <a href="https://docs.astropy.org/en/latest/api/astropy.units.Unit.html#astropy.units.Unit" title="astropy.units.Unit" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">u</span><span class="o">.</span><span class="n">deg</span></a><span class="p">,</span>
 <span class="p">)</span>
 
 <span class="c1"># Limit the search for the position on the spatial model</span>
-<span class="n">spatial_model</span><span class="o">.</span><span class="n">lon_0</span><span class="o">.</span><span class="n">min</span> <span class="o">=</span> <span class="n">source_position</span><span class="o">.</span><span class="n">galactic</span><span class="o">.</span><span class="n">l</span><span class="o">.</span><span class="n">deg</span> <span class="o">-</span> <span class="mf">0.8</span>
-<span class="n">spatial_model</span><span class="o">.</span><span class="n">lon_0</span><span class="o">.</span><span class="n">max</span> <span class="o">=</span> <span class="n">source_position</span><span class="o">.</span><span class="n">galactic</span><span class="o">.</span><span class="n">l</span><span class="o">.</span><span class="n">deg</span> <span class="o">+</span> <span class="mf">0.8</span>
-<span class="n">spatial_model</span><span class="o">.</span><span class="n">lat_0</span><span class="o">.</span><span class="n">min</span> <span class="o">=</span> <span class="n">source_position</span><span class="o">.</span><span class="n">galactic</span><span class="o">.</span><span class="n">b</span><span class="o">.</span><span class="n">deg</span> <span class="o">-</span> <span class="mf">0.8</span>
-<span class="n">spatial_model</span><span class="o">.</span><span class="n">lat_0</span><span class="o">.</span><span class="n">max</span> <span class="o">=</span> <span class="n">source_position</span><span class="o">.</span><span class="n">galactic</span><span class="o">.</span><span class="n">b</span><span class="o">.</span><span class="n">deg</span> <span class="o">+</span> <span class="mf">0.8</span>
+<a href="../../api/gammapy.modeling.Parameter.html#gammapy.modeling.Parameter.min" title="gammapy.modeling.Parameter.min" class="sphx-glr-backref-module-gammapy-modeling sphx-glr-backref-type-py-attribute"><span class="n">spatial_model</span><span class="o">.</span><span class="n">lon_0</span><span class="o">.</span><span class="n">min</span></a> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.float64" title="numpy.float64" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-attribute"><span class="n">source_position</span><span class="o">.</span><span class="n">galactic</span><span class="o">.</span><span class="n">l</span><span class="o">.</span><span class="n">deg</span></a> <span class="o">-</span> <span class="mf">0.8</span>
+<a href="../../api/gammapy.modeling.Parameter.html#gammapy.modeling.Parameter.max" title="gammapy.modeling.Parameter.max" class="sphx-glr-backref-module-gammapy-modeling sphx-glr-backref-type-py-attribute"><span class="n">spatial_model</span><span class="o">.</span><span class="n">lon_0</span><span class="o">.</span><span class="n">max</span></a> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.float64" title="numpy.float64" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-attribute"><span class="n">source_position</span><span class="o">.</span><span class="n">galactic</span><span class="o">.</span><span class="n">l</span><span class="o">.</span><span class="n">deg</span></a> <span class="o">+</span> <span class="mf">0.8</span>
+<a href="../../api/gammapy.modeling.Parameter.html#gammapy.modeling.Parameter.min" title="gammapy.modeling.Parameter.min" class="sphx-glr-backref-module-gammapy-modeling sphx-glr-backref-type-py-attribute"><span class="n">spatial_model</span><span class="o">.</span><span class="n">lat_0</span><span class="o">.</span><span class="n">min</span></a> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.float64" title="numpy.float64" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-attribute"><span class="n">source_position</span><span class="o">.</span><span class="n">galactic</span><span class="o">.</span><span class="n">b</span><span class="o">.</span><span class="n">deg</span></a> <span class="o">-</span> <span class="mf">0.8</span>
+<a href="../../api/gammapy.modeling.Parameter.html#gammapy.modeling.Parameter.max" title="gammapy.modeling.Parameter.max" class="sphx-glr-backref-module-gammapy-modeling sphx-glr-backref-type-py-attribute"><span class="n">spatial_model</span><span class="o">.</span><span class="n">lat_0</span><span class="o">.</span><span class="n">max</span></a> <span class="o">=</span> <a href="https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.float64" title="numpy.float64" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-attribute"><span class="n">source_position</span><span class="o">.</span><span class="n">galactic</span><span class="o">.</span><span class="n">b</span><span class="o">.</span><span class="n">deg</span></a> <span class="o">+</span> <span class="mf">0.8</span>
 
-<span class="n">model</span> <span class="o">=</span> <span class="n">SkyModel</span><span class="p">(</span><span class="n">spatial_model</span><span class="o">=</span><span class="n">spatial_model</span><span class="p">,</span> <span class="n">spectral_model</span><span class="o">=</span><span class="n">spectral_model</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;src&quot;</span><span class="p">)</span>
+<a href="../../api/gammapy.modeling.models.SkyModel.html#gammapy.modeling.models.SkyModel" title="gammapy.modeling.models.SkyModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">model</span></a> <span class="o">=</span> <a href="../../api/gammapy.modeling.models.SkyModel.html#gammapy.modeling.models.SkyModel" title="gammapy.modeling.models.SkyModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class"><span class="n">SkyModel</span></a><span class="p">(</span><a href="../../api/gammapy.modeling.models.GaussianSpatialModel.html#gammapy.modeling.models.GaussianSpatialModel" title="gammapy.modeling.models.GaussianSpatialModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">spatial_model</span></a><span class="o">=</span><a href="../../api/gammapy.modeling.models.GaussianSpatialModel.html#gammapy.modeling.models.GaussianSpatialModel" title="gammapy.modeling.models.GaussianSpatialModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">spatial_model</span></a><span class="p">,</span> <a href="../../api/gammapy.modeling.models.PowerLawSpectralModel.html#gammapy.modeling.models.PowerLawSpectralModel" title="gammapy.modeling.models.PowerLawSpectralModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">spectral_model</span></a><span class="o">=</span><a href="../../api/gammapy.modeling.models.PowerLawSpectralModel.html#gammapy.modeling.models.PowerLawSpectralModel" title="gammapy.modeling.models.PowerLawSpectralModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">spectral_model</span></a><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;src&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -798,16 +772,16 @@ wish to use for testing the energy dependence.
 To test for the energy dependence, it is recommended to keep the position and
 extension parameters free. This allows them to be used for fitting the spatial model
 in each energy band.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">spatial_model</span><span class="o">.</span><span class="n">lon_0</span><span class="o">.</span><span class="n">frozen</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">model</span><span class="o">.</span><span class="n">spatial_model</span><span class="o">.</span><span class="n">lat_0</span><span class="o">.</span><span class="n">frozen</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">model</span><span class="o">.</span><span class="n">spatial_model</span><span class="o">.</span><span class="n">sigma</span><span class="o">.</span><span class="n">frozen</span> <span class="o">=</span> <span class="kc">False</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../../api/gammapy.modeling.models.SkyModel.html#gammapy.modeling.models.SkyModel.spatial_model" title="gammapy.modeling.models.SkyModel.spatial_model" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-attribute"><span class="n">model</span><span class="o">.</span><span class="n">spatial_model</span><span class="o">.</span><span class="n">lon_0</span><span class="o">.</span><span class="n">frozen</span></a> <span class="o">=</span> <span class="kc">False</span>
+<a href="../../api/gammapy.modeling.models.SkyModel.html#gammapy.modeling.models.SkyModel.spatial_model" title="gammapy.modeling.models.SkyModel.spatial_model" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-attribute"><span class="n">model</span><span class="o">.</span><span class="n">spatial_model</span><span class="o">.</span><span class="n">lat_0</span><span class="o">.</span><span class="n">frozen</span></a> <span class="o">=</span> <span class="kc">False</span>
+<a href="../../api/gammapy.modeling.models.SkyModel.html#gammapy.modeling.models.SkyModel.spatial_model" title="gammapy.modeling.models.SkyModel.spatial_model" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-attribute"><span class="n">model</span><span class="o">.</span><span class="n">spatial_model</span><span class="o">.</span><span class="n">sigma</span><span class="o">.</span><span class="n">frozen</span></a> <span class="o">=</span> <span class="kc">False</span>
 
-<span class="n">model</span><span class="o">.</span><span class="n">spectral_model</span><span class="o">.</span><span class="n">amplitude</span><span class="o">.</span><span class="n">frozen</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">model</span><span class="o">.</span><span class="n">spectral_model</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">frozen</span> <span class="o">=</span> <span class="kc">True</span>
+<a href="../../api/gammapy.modeling.models.SkyModel.html#gammapy.modeling.models.SkyModel.spectral_model" title="gammapy.modeling.models.SkyModel.spectral_model" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-attribute"><span class="n">model</span><span class="o">.</span><span class="n">spectral_model</span><span class="o">.</span><span class="n">amplitude</span><span class="o">.</span><span class="n">frozen</span></a> <span class="o">=</span> <span class="kc">False</span>
+<a href="../../api/gammapy.modeling.models.SkyModel.html#gammapy.modeling.models.SkyModel.spectral_model" title="gammapy.modeling.models.SkyModel.spectral_model" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-attribute"><span class="n">model</span><span class="o">.</span><span class="n">spectral_model</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">frozen</span></a> <span class="o">=</span> <span class="kc">True</span>
 
-<span class="n">datasets</span><span class="o">.</span><span class="n">models</span> <span class="o">=</span> <span class="n">model</span>
+<a href="../../api/gammapy.datasets.Datasets.html#gammapy.datasets.Datasets.models" title="gammapy.datasets.Datasets.models" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-attribute"><span class="n">datasets</span><span class="o">.</span><span class="n">models</span></a> <span class="o">=</span> <a href="../../api/gammapy.modeling.models.SkyModel.html#gammapy.modeling.models.SkyModel" title="gammapy.modeling.models.SkyModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">model</span></a>
 
-<span class="n">estimator</span> <span class="o">=</span> <span class="n">EnergyDependentMorphologyEstimator</span><span class="p">(</span><span class="n">energy_edges</span><span class="o">=</span><span class="n">energy_edges</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="s2">&quot;src&quot;</span><span class="p">)</span>
+<a href="../../api/gammapy.estimators.EnergyDependentMorphologyEstimator.html#gammapy.estimators.EnergyDependentMorphologyEstimator" title="gammapy.estimators.EnergyDependentMorphologyEstimator" class="sphx-glr-backref-module-gammapy-estimators sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">estimator</span></a> <span class="o">=</span> <a href="../../api/gammapy.estimators.EnergyDependentMorphologyEstimator.html#gammapy.estimators.EnergyDependentMorphologyEstimator" title="gammapy.estimators.EnergyDependentMorphologyEstimator" class="sphx-glr-backref-module-gammapy-estimators sphx-glr-backref-type-py-class"><span class="n">EnergyDependentMorphologyEstimator</span></a><span class="p">(</span><a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">energy_edges</span></a><span class="o">=</span><a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">energy_edges</span></a><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="s2">&quot;src&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -819,17 +793,17 @@ in each energy band.</p>
 The table here shows the ∆(TS) value, the number of degrees of freedom (df)
 and the significance (σ) in each energy bin. The significance values here show that each
 energy band has significant signal above the background.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">results</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">datasets</span><span class="p">)</span>
-<span class="n">table_bkg_src</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s2">&quot;src_above_bkg&quot;</span><span class="p">])</span>
-<span class="n">display</span><span class="p">(</span><span class="n">table_bkg_src</span><span class="p">)</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a> <span class="o">=</span> <a href="../../api/gammapy.estimators.EnergyDependentMorphologyEstimator.html#gammapy.estimators.EnergyDependentMorphologyEstimator.run" title="gammapy.estimators.EnergyDependentMorphologyEstimator.run" class="sphx-glr-backref-module-gammapy-estimators sphx-glr-backref-type-py-method"><span class="n">estimator</span><span class="o">.</span><span class="n">run</span></a><span class="p">(</span><a href="../../api/gammapy.datasets.Datasets.html#gammapy.datasets.Datasets" title="gammapy.datasets.Datasets" class="sphx-glr-backref-module-gammapy-datasets sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">datasets</span></a><span class="p">)</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.table.Table.html#astropy.table.Table" title="astropy.table.Table" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">table_bkg_src</span></a> <span class="o">=</span> <a href="https://docs.astropy.org/en/latest/api/astropy.table.Table.html#astropy.table.Table" title="astropy.table.Table" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class"><span class="n">Table</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s2">&quot;src_above_bkg&quot;</span><span class="p">])</span>
+<span class="n">display</span><span class="p">(</span><a href="https://docs.astropy.org/en/latest/api/astropy.table.Table.html#astropy.table.Table" title="astropy.table.Table" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">table_bkg_src</span></a><span class="p">)</span>
 </pre></div>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Emin Emax      delta_ts       df    significance
 TeV  TeV
 ---- ---- ------------------ --- ------------------
- 1.0  3.0  998.0522043384044   4 31.277523277339693
- 3.0  5.0  712.8735970801717   4 26.346130330540056
- 5.0 20.0 290.41406311959145   4 16.564139843720852
+ 1.0  3.0  998.0521561432979   4 31.277522509220923
+ 3.0  5.0  712.8736149111646   4  26.34613066750795
+ 5.0 20.0 290.41406195811214   4  16.56413980902614
 </pre></div>
 </div>
 </section>
@@ -838,26 +812,26 @@ TeV  TeV
 <p>Next, the results of the energy-dependent estimator are shown.
 The table shows the various free parameters for the joint fit for <span class="math notranslate nohighlight">\(H_0\)</span> across the entire
 energy band and for each energy bin shown for <span class="math notranslate nohighlight">\(H_1\)</span>.</p>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">ts</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s2">&quot;energy_dependence&quot;</span><span class="p">][</span><span class="s2">&quot;delta_ts&quot;</span><span class="p">]</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s2">&quot;energy_dependence&quot;</span><span class="p">][</span><span class="s2">&quot;df&quot;</span><span class="p">]</span>
-<span class="n">sigma</span> <span class="o">=</span> <span class="n">ts_to_sigma</span><span class="p">(</span><span class="n">ts</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">)</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.float64" title="numpy.float64" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-attribute"><span class="n">ts</span></a> <span class="o">=</span> <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s2">&quot;energy_dependence&quot;</span><span class="p">][</span><span class="s2">&quot;delta_ts&quot;</span><span class="p">]</span>
+<a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a> <span class="o">=</span> <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s2">&quot;energy_dependence&quot;</span><span class="p">][</span><span class="s2">&quot;df&quot;</span><span class="p">]</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">sigma</span></a> <span class="o">=</span> <span class="n">ts_to_sigma</span><span class="p">(</span><a href="https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.float64" title="numpy.float64" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-attribute"><span class="n">ts</span></a><span class="p">,</span> <a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a><span class="o">=</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">df</span></a><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The delta_ts for the energy-dependent study: </span><span class="si">{</span><span class="n">ts</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Converting this to a significance gives: </span><span class="si">{</span><span class="n">sigma</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> </span><span class="se">\u03C3</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The delta_ts for the energy-dependent study: </span><span class="si">{</span><a href="https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.float64" title="numpy.float64" class="sphx-glr-backref-module-numpy sphx-glr-backref-type-py-attribute"><span class="n">ts</span></a><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Converting this to a significance gives: </span><span class="si">{</span><a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">sigma</span></a><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> </span><span class="se">\u03C3</span><span class="s2">&quot;</span><span class="p">)</span>
 
-<span class="n">results_table</span> <span class="o">=</span> <span class="n">Table</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s2">&quot;energy_dependence&quot;</span><span class="p">][</span><span class="s2">&quot;result&quot;</span><span class="p">])</span>
-<span class="n">display</span><span class="p">(</span><span class="n">results_table</span><span class="p">)</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.table.Table.html#astropy.table.Table" title="astropy.table.Table" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results_table</span></a> <span class="o">=</span> <a href="https://docs.astropy.org/en/latest/api/astropy.table.Table.html#astropy.table.Table" title="astropy.table.Table" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class"><span class="n">Table</span></a><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s2">&quot;energy_dependence&quot;</span><span class="p">][</span><span class="s2">&quot;result&quot;</span><span class="p">])</span>
+<span class="n">display</span><span class="p">(</span><a href="https://docs.astropy.org/en/latest/api/astropy.table.Table.html#astropy.table.Table" title="astropy.table.Table" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results_table</span></a><span class="p">)</span>
 </pre></div>
 </div>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>The delta_ts for the energy-dependent study: 76.816.
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>The delta_ts for the energy-dependent study: 76.825.
 Converting this to a significance gives: 7.678 σ
-Hypothesis Emin Emax       lon_0            lon_0_err              lat_0             lat_0_err              sigma             sigma_err
-           TeV  TeV         deg                deg                  deg                 deg                  deg                 deg
----------- ---- ---- ----------------- -------------------- ------------------- -------------------- ------------------- --------------------
-        H0  1.0 20.0  5.60675605648892 0.008441987161793538 0.20211883495061153 0.008450587706542128 0.21525426436630096 0.005909568144838417
-        H1  1.0  3.0 5.601810179115127 0.013467922688624083 0.21818544545893698  0.01336257833603082  0.2568647003020488  0.00941726571538244
-        H1  3.0  5.0 5.618083884555754 0.012802694168710603  0.1836774850682566 0.013243618707242518 0.19735852154615854 0.008156796323862538
-        H1  5.0 20.0 5.597613463837308 0.014678315370892585 0.18048825256900375 0.014851402199727515 0.13500523116807098  0.00889075724237852
+Hypothesis Emin Emax       lon_0             lon_0_err              lat_0             lat_0_err              sigma             sigma_err
+           TeV  TeV         deg                 deg                  deg                 deg                  deg                 deg
+---------- ---- ---- ------------------ -------------------- ------------------- -------------------- ------------------- --------------------
+        H0  1.0 20.0  5.606755734486948 0.008444914345427785 0.20212052620552395 0.008449944874265156  0.2152584002779943 0.005911904115377526
+        H1  1.0  3.0   5.60182541842943 0.013466528170723134 0.21817933883333251 0.013368237977902073   0.256860538584554 0.009422127334620922
+        H1  3.0  5.0 5.6180847053440015 0.012797288582144592 0.18368481799159286 0.013243757029625264 0.19736024621343617 0.008162823224436747
+        H1  5.0 20.0  5.597614242912117 0.014683822890373423 0.18048789894007888 0.014846938519725843  0.1349992171034376  0.00888806314503187
 </pre></div>
 </div>
 </section>
@@ -867,9 +841,9 @@ Hypothesis Emin Emax       lon_0            lon_0_err              lat_0        
 function for each parameter.</p>
 <p>The weighted chi-squared significance for the <code class="docutils literal notranslate"><span class="pre">sigma</span></code>, <code class="docutils literal notranslate"><span class="pre">lat_0</span></code> and <code class="docutils literal notranslate"><span class="pre">lon_0</span></code> values.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span>
-    <span class="n">Table</span><span class="p">(</span>
+    <a href="https://docs.astropy.org/en/latest/api/astropy.table.Table.html#astropy.table.Table" title="astropy.table.Table" class="sphx-glr-backref-module-astropy-table sphx-glr-backref-type-py-class"><span class="n">Table</span></a><span class="p">(</span>
         <span class="n">weighted_chi2_parameter</span><span class="p">(</span>
-            <span class="n">results</span><span class="p">[</span><span class="s2">&quot;energy_dependence&quot;</span><span class="p">][</span><span class="s2">&quot;result&quot;</span><span class="p">],</span>
+            <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s2">&quot;energy_dependence&quot;</span><span class="p">][</span><span class="s2">&quot;result&quot;</span><span class="p">],</span>
             <span class="n">parameters</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;sigma&quot;</span><span class="p">,</span> <span class="s2">&quot;lat_0&quot;</span><span class="p">,</span> <span class="s2">&quot;lon_0&quot;</span><span class="p">],</span>
         <span class="p">)</span>
     <span class="p">)</span>
@@ -878,9 +852,9 @@ function for each parameter.</p>
 </div>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>parameter        chi2         df    significance
 --------- ------------------ --- ------------------
-    sigma  88.75721831469119   2  9.157149505023423
-    lat_0 4.6962724920265035   2 1.6668357340215303
-    lon_0 1.3056702792140076   2 0.6424704032784441
+    sigma   88.7418080342822   2  9.156317729116378
+    lat_0 4.6917883591313565   2  1.665758445537774
+    lon_0 1.3052972315997122   2 0.6423208063674798
 </pre></div>
 </div>
 <p>Note: The chi-squared parameter does not include potential correlation between the
@@ -889,43 +863,43 @@ parameters, so it should be used cautiously.</p>
 </section>
 <section id="plotting-the-results">
 <h2>Plotting the results<a class="headerlink" href="#plotting-the-results" title="Link to this heading">#</a></h2>
-<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">empty_map</span> <span class="o">=</span> <span class="n">Map</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
-    <span class="n">skydir</span><span class="o">=</span><span class="n">spatial_model</span><span class="o">.</span><span class="n">position</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="n">spatial_model</span><span class="o">.</span><span class="n">frame</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">binsz</span><span class="o">=</span><span class="mf">0.02</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><a href="../../api/gammapy.maps.WcsNDMap.html#gammapy.maps.WcsNDMap" title="gammapy.maps.WcsNDMap" class="sphx-glr-backref-module-gammapy-maps sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">empty_map</span></a> <span class="o">=</span> <a href="../../api/gammapy.maps.Map.html#gammapy.maps.Map.create" title="gammapy.maps.Map.create" class="sphx-glr-backref-module-gammapy-maps-Map sphx-glr-backref-type-py-method"><span class="n">Map</span><span class="o">.</span><span class="n">create</span></a><span class="p">(</span>
+    <span class="n">skydir</span><span class="o">=</span><a href="../../api/gammapy.modeling.models.GaussianSpatialModel.html#gammapy.modeling.models.GaussianSpatialModel.position" title="gammapy.modeling.models.GaussianSpatialModel.position" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-attribute"><span class="n">spatial_model</span><span class="o">.</span><span class="n">position</span></a><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">spatial_model</span><span class="o">.</span><span class="n">frame</span></a><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">binsz</span><span class="o">=</span><span class="mf">0.02</span>
 <span class="p">)</span>
 
-<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;magenta&quot;</span><span class="p">]</span>
+<a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">colors</span></a> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;magenta&quot;</span><span class="p">]</span>
 
-<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
-<span class="n">ax</span> <span class="o">=</span> <span class="n">empty_map</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure" title="matplotlib.figure.Figure" class="sphx-glr-backref-module-matplotlib-figure sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">fig</span></a> <span class="o">=</span> <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure" title="matplotlib.pyplot.figure" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.visualization.wcsaxes.WCSAxes.html#astropy.visualization.wcsaxes.WCSAxes" title="astropy.visualization.wcsaxes.WCSAxes" class="sphx-glr-backref-module-astropy-visualization-wcsaxes sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ax</span></a> <span class="o">=</span> <a href="../../api/gammapy.maps.WcsNDMap.html#gammapy.maps.WcsNDMap.plot" title="gammapy.maps.WcsNDMap.plot" class="sphx-glr-backref-module-gammapy-maps sphx-glr-backref-type-py-method"><span class="n">empty_map</span><span class="o">.</span><span class="n">plot</span></a><span class="p">()</span>
 
-<span class="n">lat_0</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s2">&quot;energy_dependence&quot;</span><span class="p">][</span><span class="s2">&quot;result&quot;</span><span class="p">][</span><span class="s2">&quot;lat_0&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
-<span class="n">lat_0_err</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s2">&quot;energy_dependence&quot;</span><span class="p">][</span><span class="s2">&quot;result&quot;</span><span class="p">][</span><span class="s2">&quot;lat_0_err&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
-<span class="n">lon_0</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s2">&quot;energy_dependence&quot;</span><span class="p">][</span><span class="s2">&quot;result&quot;</span><span class="p">][</span><span class="s2">&quot;lon_0&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
-<span class="n">lon_0_err</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s2">&quot;energy_dependence&quot;</span><span class="p">][</span><span class="s2">&quot;result&quot;</span><span class="p">][</span><span class="s2">&quot;lon_0_err&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
-<span class="n">sigma</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s2">&quot;energy_dependence&quot;</span><span class="p">][</span><span class="s2">&quot;result&quot;</span><span class="p">][</span><span class="s2">&quot;sigma&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
-<span class="n">sigma_err</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s2">&quot;energy_dependence&quot;</span><span class="p">][</span><span class="s2">&quot;result&quot;</span><span class="p">][</span><span class="s2">&quot;sigma_err&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">lat_0</span></a> <span class="o">=</span> <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s2">&quot;energy_dependence&quot;</span><span class="p">][</span><span class="s2">&quot;result&quot;</span><span class="p">][</span><span class="s2">&quot;lat_0&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">lat_0_err</span></a> <span class="o">=</span> <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s2">&quot;energy_dependence&quot;</span><span class="p">][</span><span class="s2">&quot;result&quot;</span><span class="p">][</span><span class="s2">&quot;lat_0_err&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">lon_0</span></a> <span class="o">=</span> <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s2">&quot;energy_dependence&quot;</span><span class="p">][</span><span class="s2">&quot;result&quot;</span><span class="p">][</span><span class="s2">&quot;lon_0&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">lon_0_err</span></a> <span class="o">=</span> <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s2">&quot;energy_dependence&quot;</span><span class="p">][</span><span class="s2">&quot;result&quot;</span><span class="p">][</span><span class="s2">&quot;lon_0_err&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">sigma</span></a> <span class="o">=</span> <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s2">&quot;energy_dependence&quot;</span><span class="p">][</span><span class="s2">&quot;result&quot;</span><span class="p">][</span><span class="s2">&quot;sigma&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
+<a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">sigma_err</span></a> <span class="o">=</span> <a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">results</span></a><span class="p">[</span><span class="s2">&quot;energy_dependence&quot;</span><span class="p">][</span><span class="s2">&quot;result&quot;</span><span class="p">][</span><span class="s2">&quot;sigma_err&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">:]</span>
 
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lat_0</span><span class="p">)):</span>
-    <span class="n">model_plot</span> <span class="o">=</span> <span class="n">GaussianSpatialModel</span><span class="p">(</span>
-        <span class="n">lat_0</span><span class="o">=</span><span class="n">lat_0</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">lon_0</span><span class="o">=</span><span class="n">lon_0</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">sigma</span><span class="o">=</span><span class="n">sigma</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">frame</span><span class="o">=</span><span class="n">spatial_model</span><span class="o">.</span><span class="n">frame</span>
+<span class="k">for</span> <a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">i</span></a> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">lat_0</span></a><span class="p">)):</span>
+    <a href="../../api/gammapy.modeling.models.GaussianSpatialModel.html#gammapy.modeling.models.GaussianSpatialModel" title="gammapy.modeling.models.GaussianSpatialModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">model_plot</span></a> <span class="o">=</span> <a href="../../api/gammapy.modeling.models.GaussianSpatialModel.html#gammapy.modeling.models.GaussianSpatialModel" title="gammapy.modeling.models.GaussianSpatialModel" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-class"><span class="n">GaussianSpatialModel</span></a><span class="p">(</span>
+        <a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">lat_0</span></a><span class="o">=</span><a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">lat_0</span></a><span class="p">[</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">i</span></a><span class="p">],</span> <a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">lon_0</span></a><span class="o">=</span><a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">lon_0</span></a><span class="p">[</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">i</span></a><span class="p">],</span> <a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">sigma</span></a><span class="o">=</span><a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">sigma</span></a><span class="p">[</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">i</span></a><span class="p">],</span> <span class="n">frame</span><span class="o">=</span><a href="https://docs.python.org/3/library/stdtypes.html#str" title="builtins.str" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">spatial_model</span><span class="o">.</span><span class="n">frame</span></a>
     <span class="p">)</span>
-    <span class="n">model_plot</span><span class="o">.</span><span class="n">lat_0</span><span class="o">.</span><span class="n">error</span> <span class="o">=</span> <span class="n">lat_0_err</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-    <span class="n">model_plot</span><span class="o">.</span><span class="n">lon_0</span><span class="o">.</span><span class="n">error</span> <span class="o">=</span> <span class="n">lon_0_err</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-    <span class="n">model_plot</span><span class="o">.</span><span class="n">sigma</span><span class="o">.</span><span class="n">error</span> <span class="o">=</span> <span class="n">sigma_err</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <a href="../../api/gammapy.modeling.Parameter.html#gammapy.modeling.Parameter.error" title="gammapy.modeling.Parameter.error" class="sphx-glr-backref-module-gammapy-modeling sphx-glr-backref-type-py-attribute"><span class="n">model_plot</span><span class="o">.</span><span class="n">lat_0</span><span class="o">.</span><span class="n">error</span></a> <span class="o">=</span> <a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">lat_0_err</span></a><span class="p">[</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">i</span></a><span class="p">]</span>
+    <a href="../../api/gammapy.modeling.Parameter.html#gammapy.modeling.Parameter.error" title="gammapy.modeling.Parameter.error" class="sphx-glr-backref-module-gammapy-modeling sphx-glr-backref-type-py-attribute"><span class="n">model_plot</span><span class="o">.</span><span class="n">lon_0</span><span class="o">.</span><span class="n">error</span></a> <span class="o">=</span> <a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">lon_0_err</span></a><span class="p">[</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">i</span></a><span class="p">]</span>
+    <a href="../../api/gammapy.modeling.Parameter.html#gammapy.modeling.Parameter.error" title="gammapy.modeling.Parameter.error" class="sphx-glr-backref-module-gammapy-modeling sphx-glr-backref-type-py-attribute"><span class="n">model_plot</span><span class="o">.</span><span class="n">sigma</span><span class="o">.</span><span class="n">error</span></a> <span class="o">=</span> <a href="https://docs.astropy.org/en/latest/api/astropy.units.Quantity.html#astropy.units.Quantity" title="astropy.units.Quantity" class="sphx-glr-backref-module-astropy-units sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">sigma_err</span></a><span class="p">[</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">i</span></a><span class="p">]</span>
 
-    <span class="n">model_plot</span><span class="o">.</span><span class="n">plot_error</span><span class="p">(</span>
-        <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span>
+    <a href="../../api/gammapy.modeling.models.GaussianSpatialModel.html#gammapy.modeling.models.GaussianSpatialModel.plot_error" title="gammapy.modeling.models.GaussianSpatialModel.plot_error" class="sphx-glr-backref-module-gammapy-modeling-models sphx-glr-backref-type-py-method"><span class="n">model_plot</span><span class="o">.</span><span class="n">plot_error</span></a><span class="p">(</span>
+        <a href="https://docs.astropy.org/en/latest/api/astropy.visualization.wcsaxes.WCSAxes.html#astropy.visualization.wcsaxes.WCSAxes" title="astropy.visualization.wcsaxes.WCSAxes" class="sphx-glr-backref-module-astropy-visualization-wcsaxes sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ax</span></a><span class="o">=</span><a href="https://docs.astropy.org/en/latest/api/astropy.visualization.wcsaxes.WCSAxes.html#astropy.visualization.wcsaxes.WCSAxes" title="astropy.visualization.wcsaxes.WCSAxes" class="sphx-glr-backref-module-astropy-visualization-wcsaxes sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">ax</span></a><span class="p">,</span>
         <span class="n">which</span><span class="o">=</span><span class="s2">&quot;all&quot;</span><span class="p">,</span>
-        <span class="n">kwargs_extension</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;facecolor&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s2">&quot;edgecolor&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">]},</span>
-        <span class="n">kwargs_position</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">]},</span>
+        <span class="n">kwargs_extension</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;facecolor&quot;</span><span class="p">:</span> <a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">colors</span></a><span class="p">[</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">i</span></a><span class="p">],</span> <span class="s2">&quot;edgecolor&quot;</span><span class="p">:</span> <a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">colors</span></a><span class="p">[</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">i</span></a><span class="p">]},</span>
+        <span class="n">kwargs_position</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;color&quot;</span><span class="p">:</span> <a href="https://docs.python.org/3/library/stdtypes.html#list" title="builtins.list" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">colors</span></a><span class="p">[</span><a href="https://docs.python.org/3/library/functions.html#int" title="builtins.int" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">i</span></a><span class="p">]},</span>
     <span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 
 
 <span class="c1"># sphinx_gallery_thumbnail_number = 1</span>
 </pre></div>
 </div>
-<img src="../../_images/sphx_glr_energy_dependent_estimation_001.png" srcset="../../_images/sphx_glr_energy_dependent_estimation_001.png" alt="energy dependent estimation" class = "sphx-glr-single-img"/><p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 11.170 seconds)</p>
+<img src="../../_images/sphx_glr_energy_dependent_estimation_001.png" srcset="../../_images/sphx_glr_energy_dependent_estimation_001.png" alt="energy dependent estimation" class = "sphx-glr-single-img"/><p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 11.555 seconds)</p>
 <div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-tutorials-analysis-3d-energy-dependent-estimation-py">
 <div class="binder-badge docutils container">
 <a class="reference external image-reference" href="https://mybinder.org/v2/gh/gammapy/gammapy-webpage/main?urlpath=lab/tree/notebooks/dev/tutorials/analysis-3d/energy_dependent_estimation.ipynb"><img alt="Launch binder" src="../../_images/binder_badge_logo2.svg" style="width: 150px;" />
@@ -936,6 +910,9 @@ parameters, so it should be used cautiously.</p>
 </div>
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/1ccaeffb4e281faa566ce00a9de4d42f/energy_dependent_estimation.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">energy_dependent_estimation.py</span></code></a></p>
+</div>
+<div class="sphx-glr-download sphx-glr-download-zip docutils container">
+<p><a class="reference download internal" download="" href="../../_downloads/bc7f4b2c8d9d79b35ecf0b38127aca8c/energy_dependent_estimation.zip"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">zipped:</span> <span class="pre">energy_dependent_estimation.zip</span></code></a></p>
 </div>
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
@@ -1021,19 +998,28 @@ parameters, so it should be used cautiously.</p>
   </p>
 </div>
       
-        <div class="footer-item">
-
-  <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.0.2.
-    <br/>
-  </p>
-</div>
+    </div>
+  
+  
+    <div class="footer-items__center">
+      
+        <div class="footer-item"><p class="last-updated">
+  Last updated on 11 Oct 2024.
+  <br/>
+</p></div>
       
     </div>
   
   
-  
     <div class="footer-items__end">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.0.
+    <br/>
+  </p>
+</div>
       
         <div class="footer-item">
 <p class="theme-version">

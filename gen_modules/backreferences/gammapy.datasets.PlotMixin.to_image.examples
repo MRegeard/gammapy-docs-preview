@@ -15,7 +15,7 @@ Examples using ``gammapy.datasets.PlotMixin.to_image``
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Estimate the CTA sensitivity for a point-like IRF at a fixed zenith angle and fixed offset.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Estimate the CTAO sensitivity for a point-like IRF at a fixed zenith angle and fixed offset.">
 
 .. only:: html
 

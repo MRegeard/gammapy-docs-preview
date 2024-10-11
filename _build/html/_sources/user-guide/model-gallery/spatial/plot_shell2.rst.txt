@@ -10,8 +10,8 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_user-guide_model-gallery_spatial_plot_shell2.py>`
-        to download the full example code or to run this example in your browser via Binder
+        :ref:`Go to the end <sphx_glr_download_user-guide_model-gallery_spatial_plot_shell2.py>`
+        to download the full example code. or to run this example in your browser via Binder
 
 .. rst-class:: sphx-glr-example-title
 
@@ -56,7 +56,7 @@ In this case the relative width, eta, acts as a shape parameter.
 
 .. GENERATED FROM PYTHON SOURCE LINES 39-69
 
-.. code-block:: python3
+.. code-block:: Python
 
 
     import matplotlib.pyplot as plt
@@ -108,7 +108,7 @@ Here is an example YAML file using the model:
 
 .. GENERATED FROM PYTHON SOURCE LINES 73-82
 
-.. code-block:: python3
+.. code-block:: Python
 
 
     pwl = PowerLawSpectralModel()
@@ -156,6 +156,10 @@ Here is an example YAML file using the model:
                 unit: deg
             -   name: eta
                 value: 0.2
+    metadata:
+        creator: Gammapy 1.3.dev1205+g00f44f94ac
+        date: '2024-10-11T13:05:22.427881'
+        origin: null
 
 
 
@@ -168,21 +172,24 @@ Here is an example YAML file using the model:
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
-
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/gammapy/gammapy-webpage/master?urlpath=lab/tree/notebooks/dev/user-guide/model-gallery/spatial/plot_shell2.ipynb
+        :target: https://mybinder.org/v2/gh/gammapy/gammapy-webpage/main?urlpath=lab/tree/notebooks/dev/user-guide/model-gallery/spatial/plot_shell2.ipynb
         :alt: Launch binder
         :width: 150 px
+
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
+
+      :download:`Download Jupyter notebook: plot_shell2.ipynb <plot_shell2.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: plot_shell2.py <plot_shell2.py>`
 
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
+    .. container:: sphx-glr-download sphx-glr-download-zip
 
-      :download:`Download Jupyter notebook: plot_shell2.ipynb <plot_shell2.ipynb>`
+      :download:`Download zipped: plot_shell2.zip <plot_shell2.zip>`
 
 
 .. only:: html

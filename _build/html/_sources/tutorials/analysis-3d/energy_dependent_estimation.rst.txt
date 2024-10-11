@@ -118,37 +118,37 @@ Check setup
 
     System:
 
-            python_executable      : /Users/mregeard/anaconda3/envs/gammapy-dev/bin/python 
-            python_version         : 3.11.9     
+            python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python 
+            python_version         : 3.11.10    
             machine                : x86_64     
             system                 : Darwin     
 
 
     Gammapy package:
 
-            version                : 1.3.dev468+g4c56d91f9e.d20240613 
-            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/gammapy 
+            version                : 1.3.dev1205+g00f44f94ac 
+            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy 
 
 
     Other packages:
 
             numpy                  : 1.26.4     
-            scipy                  : 1.13.1     
-            astropy                : 6.1.0      
-            regions                : 0.9        
+            scipy                  : 1.14.1     
+            astropy                : 5.2.2      
+            regions                : 0.10       
             click                  : 8.1.7      
-            yaml                   : 6.0.1      
-            IPython                : 8.25.0     
-            jupyterlab             : 3.5.3      
-            matplotlib             : 3.8.4      
-            pandas                 : 2.2.2      
-            healpy                 : 1.16.6     
-            iminuit                : 2.25.2     
+            yaml                   : 6.0.2      
+            IPython                : 8.28.0     
+            jupyterlab             : not installed 
+            matplotlib             : 3.9.2      
+            pandas                 : not installed 
+            healpy                 : 1.17.3     
+            iminuit                : 2.30.1     
             sherpa                 : 4.16.1     
             naima                  : 0.10.0     
             emcee                  : 3.1.6      
             corner                 : 2.2.2      
-            ray                    : 2.24.0     
+            ray                    : 2.37.0     
 
 
     Gammapy environment variables:
@@ -322,9 +322,9 @@ energy band has significant signal above the background.
     Emin Emax      delta_ts       df    significance   
     TeV  TeV                                           
     ---- ---- ------------------ --- ------------------
-     1.0  3.0  998.0522043384044   4 31.277523277339693
-     3.0  5.0  712.8735970801717   4 26.346130330540056
-     5.0 20.0 290.41406311959145   4 16.564139843720852
+     1.0  3.0  998.0521561432979   4 31.277522509220923
+     3.0  5.0  712.8736149111646   4  26.34613066750795
+     5.0 20.0 290.41406195811214   4  16.56413980902614
 
 
 
@@ -362,15 +362,15 @@ energy band and for each energy bin shown for :math:`H_1`.
 
  .. code-block:: none
 
-    The delta_ts for the energy-dependent study: 76.816.
+    The delta_ts for the energy-dependent study: 76.825.
     Converting this to a significance gives: 7.678 σ
-    Hypothesis Emin Emax       lon_0            lon_0_err              lat_0             lat_0_err              sigma             sigma_err      
-               TeV  TeV         deg                deg                  deg                 deg                  deg                 deg         
-    ---------- ---- ---- ----------------- -------------------- ------------------- -------------------- ------------------- --------------------
-            H0  1.0 20.0  5.60675605648892 0.008441987161793538 0.20211883495061153 0.008450587706542128 0.21525426436630096 0.005909568144838417
-            H1  1.0  3.0 5.601810179115127 0.013467922688624083 0.21818544545893698  0.01336257833603082  0.2568647003020488  0.00941726571538244
-            H1  3.0  5.0 5.618083884555754 0.012802694168710603  0.1836774850682566 0.013243618707242518 0.19735852154615854 0.008156796323862538
-            H1  5.0 20.0 5.597613463837308 0.014678315370892585 0.18048825256900375 0.014851402199727515 0.13500523116807098  0.00889075724237852
+    Hypothesis Emin Emax       lon_0             lon_0_err              lat_0             lat_0_err              sigma             sigma_err      
+               TeV  TeV         deg                 deg                  deg                 deg                  deg                 deg         
+    ---------- ---- ---- ------------------ -------------------- ------------------- -------------------- ------------------- --------------------
+            H0  1.0 20.0  5.606755734486948 0.008444914345427785 0.20212052620552395 0.008449944874265156  0.2152584002779943 0.005911904115377526
+            H1  1.0  3.0   5.60182541842943 0.013466528170723134 0.21817933883333251 0.013368237977902073   0.256860538584554 0.009422127334620922
+            H1  3.0  5.0 5.6180847053440015 0.012797288582144592 0.18368481799159286 0.013243757029625264 0.19736024621343617 0.008162823224436747
+            H1  5.0 20.0  5.597614242912117 0.014683822890373423 0.18048789894007888 0.014846938519725843  0.1349992171034376  0.00888806314503187
 
 
 
@@ -410,9 +410,9 @@ The weighted chi-squared significance for the ``sigma``, ``lat_0`` and ``lon_0``
 
     parameter        chi2         df    significance   
     --------- ------------------ --- ------------------
-        sigma  88.75721831469119   2  9.157149505023423
-        lat_0 4.6962724920265035   2 1.6668357340215303
-        lon_0 1.3056702792140076   2 0.6424704032784441
+        sigma   88.7418080342822   2  9.156317729116378
+        lat_0 4.6917883591313565   2  1.665758445537774
+        lon_0 1.3052972315997122   2 0.6423208063674798
 
 
 
@@ -482,7 +482,7 @@ Plotting the results
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 11.170 seconds)
+   **Total running time of the script:** (0 minutes 11.555 seconds)
 
 
 .. _sphx_glr_download_tutorials_analysis-3d_energy_dependent_estimation.py:
@@ -505,6 +505,10 @@ Plotting the results
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: energy_dependent_estimation.py <energy_dependent_estimation.py>`
+
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: energy_dependent_estimation.zip <energy_dependent_estimation.zip>`
 
 
 .. only:: html

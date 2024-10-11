@@ -129,37 +129,37 @@ Check setup
 
     System:
 
-            python_executable      : /Users/mregeard/anaconda3/envs/gammapy-dev/bin/python 
-            python_version         : 3.11.9     
+            python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python 
+            python_version         : 3.11.10    
             machine                : x86_64     
             system                 : Darwin     
 
 
     Gammapy package:
 
-            version                : 1.3.dev468+g4c56d91f9e.d20240613 
-            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/gammapy 
+            version                : 1.3.dev1205+g00f44f94ac 
+            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy 
 
 
     Other packages:
 
             numpy                  : 1.26.4     
-            scipy                  : 1.13.1     
-            astropy                : 6.1.0      
-            regions                : 0.9        
+            scipy                  : 1.14.1     
+            astropy                : 5.2.2      
+            regions                : 0.10       
             click                  : 8.1.7      
-            yaml                   : 6.0.1      
-            IPython                : 8.25.0     
-            jupyterlab             : 3.5.3      
-            matplotlib             : 3.8.4      
-            pandas                 : 2.2.2      
-            healpy                 : 1.16.6     
-            iminuit                : 2.25.2     
+            yaml                   : 6.0.2      
+            IPython                : 8.28.0     
+            jupyterlab             : not installed 
+            matplotlib             : 3.9.2      
+            pandas                 : not installed 
+            healpy                 : 1.17.3     
+            iminuit                : 2.30.1     
             sherpa                 : 4.16.1     
             naima                  : 0.10.0     
             emcee                  : 3.1.6      
             corner                 : 2.2.2      
-            ray                    : 2.24.0     
+            ray                    : 2.37.0     
 
 
     Gammapy environment variables:
@@ -983,11 +983,11 @@ As a first example we will start with the Crab Nebula:
 
     PowerLawSpectralModel
 
-    type    name     value         unit        error   min max frozen is_norm link prior
-    ---- --------- ---------- -------------- --------- --- --- ------ ------- ---- -----
-             index 2.2202e+00                2.498e-02 nan nan  False   False           
-         amplitude 1.7132e-10 GeV-1 s-1 cm-2 3.389e-12 nan nan  False    True           
-         reference 2.2726e+01            GeV 0.000e+00 nan nan   True   False           
+    type    name     value         unit        error   min max frozen link prior
+    ---- --------- ---------- -------------- --------- --- --- ------ ---- -----
+             index 2.2202e+00                2.498e-02 nan nan  False           
+         amplitude 1.7132e-10 cm-2 GeV-1 s-1 3.389e-12 nan nan  False           
+         reference 2.2726e+01            GeV 0.000e+00 nan nan   True           
 
 
 
@@ -1048,7 +1048,7 @@ like normal Python function and convert to the desired units:
 
  .. code-block:: none
 
-    6.3848912826152664e-12 1 / (GeV s cm2)
+    6.3848912826152664e-12 1 / (cm2 GeV s)
 
 
 
@@ -1079,7 +1079,7 @@ Next we can compute the integral flux of the Crab between 10 GeV and
 
  .. code-block:: none
 
-    8.67457342435522e-09 1 / (s cm2)
+    8.67457342435522e-09 1 / (cm2 s)
 
 
 
@@ -1106,7 +1106,7 @@ in the Fermi-LAT 3FHL catalog:
 
  .. code-block:: none
 
-    8.658909145253801e-09 1 / (s cm2)
+    8.658909145253801e-09 1 / (cm2 s)
 
 
 
@@ -1136,7 +1136,7 @@ In addition we can compute the energy flux between 10 GeV and 2000 GeV:
 
  .. code-block:: none
 
-    5.311489174710791e-10 erg / (s cm2)
+    5.311489174710791e-10 erg / (cm2 s)
 
 
 
@@ -1206,7 +1206,7 @@ the ``.table`` attribute:
  .. code-block:: none
 
      e_ref    e_min   e_max         dnde         dnde_errp       dnde_errn        dnde_ul     sqrt_ts is_ul
-      GeV      GeV     GeV    1 / (GeV s cm2) 1 / (GeV s cm2) 1 / (GeV s cm2) 1 / (GeV s cm2)              
+      GeV      GeV     GeV    1 / (cm2 GeV s) 1 / (cm2 GeV s) 1 / (cm2 GeV s) 1 / (cm2 GeV s)              
     -------- ------- -------- --------------- --------------- --------------- --------------- ------- -----
       14.142  10.000   20.000       5.120e-10       1.321e-11       1.321e-11             nan 125.157 False
       31.623  20.000   50.000       7.359e-11       2.842e-12       2.842e-12             nan  88.715 False
@@ -1292,6 +1292,10 @@ Astropy and Gammapy.
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: overview.py <overview.py>`
+
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: overview.zip <overview.zip>`
 
 
 .. only:: html

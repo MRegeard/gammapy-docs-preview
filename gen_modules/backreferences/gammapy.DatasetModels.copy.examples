@@ -15,7 +15,7 @@ Examples using ``gammapy.DatasetModels.copy``
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Simulate a 3D observation of a source with the CTA 1DC response and fit it with the assumed sou...">
+    <div class="sphx-glr-thumbcontainer" tooltip="Simulate a 3D observation of a source with the CTA 1DC response and fit it with the assumed source model.">
 
 .. only:: html
 

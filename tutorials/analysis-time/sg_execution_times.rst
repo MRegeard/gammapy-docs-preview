@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**00:13.196** total execution time for 6 files **from tutorials/analysis-time**:
+**00:47.696** total execution time for 6 files **from tutorials/analysis-time**:
 
 .. container::
 
@@ -32,21 +32,21 @@ Computation times
    * - Example
      - Time
      - Mem (MB)
-   * - :ref:`sphx_glr_tutorials_analysis-time_time_resolved_spectroscopy.py` (``time_resolved_spectroscopy.py``)
-     - 00:12.411
-     - 0.0
-   * - :ref:`sphx_glr_tutorials_analysis-time_variability_estimation.py` (``variability_estimation.py``)
-     - 00:00.785
-     - 0.0
-   * - :ref:`sphx_glr_tutorials_analysis-time_light_curve.py` (``light_curve.py``)
-     - 00:00.000
-     - 0.0
    * - :ref:`sphx_glr_tutorials_analysis-time_light_curve_flare.py` (``light_curve_flare.py``)
-     - 00:00.000
+     - 00:18.495
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_analysis-time_time_resolved_spectroscopy.py` (``time_resolved_spectroscopy.py``)
+     - 00:11.413
      - 0.0
    * - :ref:`sphx_glr_tutorials_analysis-time_light_curve_simulation.py` (``light_curve_simulation.py``)
-     - 00:00.000
+     - 00:09.078
      - 0.0
    * - :ref:`sphx_glr_tutorials_analysis-time_pulsar_analysis.py` (``pulsar_analysis.py``)
-     - 00:00.000
+     - 00:04.269
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_analysis-time_light_curve.py` (``light_curve.py``)
+     - 00:04.102
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_analysis-time_variability_estimation.py` (``variability_estimation.py``)
+     - 00:00.339
      - 0.0

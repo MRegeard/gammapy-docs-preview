@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**00:29.829** total execution time for 8 files **from tutorials/analysis-1d**:
+**00:41.122** total execution time for 8 files **from tutorials/analysis-1d**:
 
 .. container::
 
@@ -33,26 +33,26 @@ Computation times
      - Time
      - Mem (MB)
    * - :ref:`sphx_glr_tutorials_analysis-1d_spectral_analysis.py` (``spectral_analysis.py``)
-     - 00:23.295
-     - 0.0
-   * - :ref:`sphx_glr_tutorials_analysis-1d_ebl.py` (``ebl.py``)
-     - 00:03.563
-     - 0.0
-   * - :ref:`sphx_glr_tutorials_analysis-1d_extended_source_spectral_analysis.py` (``extended_source_spectral_analysis.py``)
-     - 00:02.499
-     - 0.0
-   * - :ref:`sphx_glr_tutorials_analysis-1d_cta_sensitivity.py` (``cta_sensitivity.py``)
-     - 00:00.472
-     - 0.0
-   * - :ref:`sphx_glr_tutorials_analysis-1d_sed_fitting.py` (``sed_fitting.py``)
-     - 00:00.000
+     - 00:22.172
      - 0.0
    * - :ref:`sphx_glr_tutorials_analysis-1d_spectral_analysis_hli.py` (``spectral_analysis_hli.py``)
-     - 00:00.000
+     - 00:04.061
      - 0.0
-   * - :ref:`sphx_glr_tutorials_analysis-1d_spectral_analysis_rad_max.py` (``spectral_analysis_rad_max.py``)
-     - 00:00.000
+   * - :ref:`sphx_glr_tutorials_analysis-1d_ebl.py` (``ebl.py``)
+     - 00:03.562
      - 0.0
    * - :ref:`sphx_glr_tutorials_analysis-1d_spectrum_simulation.py` (``spectrum_simulation.py``)
-     - 00:00.000
+     - 00:03.374
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_analysis-1d_sed_fitting.py` (``sed_fitting.py``)
+     - 00:02.603
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_analysis-1d_extended_source_spectral_analysis.py` (``extended_source_spectral_analysis.py``)
+     - 00:02.484
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_analysis-1d_spectral_analysis_rad_max.py` (``spectral_analysis_rad_max.py``)
+     - 00:02.404
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_analysis-1d_cta_sensitivity.py` (``cta_sensitivity.py``)
+     - 00:00.461
      - 0.0

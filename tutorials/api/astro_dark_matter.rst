@@ -98,37 +98,37 @@ Check setup
 
     System:
 
-            python_executable      : /Users/mregeard/anaconda3/envs/gammapy-dev/bin/python 
-            python_version         : 3.11.9     
+            python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python 
+            python_version         : 3.11.10    
             machine                : x86_64     
             system                 : Darwin     
 
 
     Gammapy package:
 
-            version                : 1.3.dev468+g4c56d91f9e.d20240613 
-            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/gammapy 
+            version                : 1.3.dev1205+g00f44f94ac 
+            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy 
 
 
     Other packages:
 
             numpy                  : 1.26.4     
-            scipy                  : 1.13.1     
-            astropy                : 6.1.0      
-            regions                : 0.9        
+            scipy                  : 1.14.1     
+            astropy                : 5.2.2      
+            regions                : 0.10       
             click                  : 8.1.7      
-            yaml                   : 6.0.1      
-            IPython                : 8.25.0     
-            jupyterlab             : 3.5.3      
-            matplotlib             : 3.8.4      
-            pandas                 : 2.2.2      
-            healpy                 : 1.16.6     
-            iminuit                : 2.25.2     
+            yaml                   : 6.0.2      
+            IPython                : 8.28.0     
+            jupyterlab             : not installed 
+            matplotlib             : 3.9.2      
+            pandas                 : not installed 
+            healpy                 : 1.17.3     
+            iminuit                : 2.30.1     
             sherpa                 : 4.16.1     
             naima                  : 0.10.0     
             emcee                  : 3.1.6      
             corner                 : 2.2.2      
-            ray                    : 2.24.0     
+            ray                    : 2.37.0     
 
 
     Gammapy environment variables:
@@ -427,7 +427,7 @@ Finally flux maps can be produced like this:
 
 
 .. image-sg:: /tutorials/api/images/sphx_glr_astro_dark_matter_005.png
-   :alt: Flux [1 / (s cm2)]  m$_{DM}$=10.0 TeV, channel=Z
+   :alt: Flux [1 / (cm2 s)]  m$_{DM}$=10.0 TeV, channel=Z
    :srcset: /tutorials/api/images/sphx_glr_astro_dark_matter_005.png
    :class: sphx-glr-single-img
 
@@ -467,7 +467,7 @@ Finally flux maps for decay can be produced like this:
 
 
 .. image-sg:: /tutorials/api/images/sphx_glr_astro_dark_matter_006.png
-   :alt: Flux [1 / (s cm2)]  m$_{DM}$=10.0 TeV, channel=Z
+   :alt: Flux [1 / (cm2 s)]  m$_{DM}$=10.0 TeV, channel=Z
    :srcset: /tutorials/api/images/sphx_glr_astro_dark_matter_006.png
    :class: sphx-glr-single-img
 
@@ -478,7 +478,7 @@ Finally flux maps for decay can be produced like this:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 18.280 seconds)
+   **Total running time of the script:** (0 minutes 19.153 seconds)
 
 
 .. _sphx_glr_download_tutorials_api_astro_dark_matter.py:
@@ -501,6 +501,10 @@ Finally flux maps for decay can be produced like this:
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: astro_dark_matter.py <astro_dark_matter.py>`
+
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: astro_dark_matter.zip <astro_dark_matter.zip>`
 
 
 .. only:: html

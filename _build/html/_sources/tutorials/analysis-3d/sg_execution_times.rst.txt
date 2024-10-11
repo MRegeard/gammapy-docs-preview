@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**00:37.675** total execution time for 8 files **from tutorials/analysis-3d**:
+**01:19.163** total execution time for 8 files **from tutorials/analysis-3d**:
 
 .. container::
 
@@ -33,26 +33,26 @@ Computation times
      - Time
      - Mem (MB)
    * - :ref:`sphx_glr_tutorials_analysis-3d_analysis_3d.py` (``analysis_3d.py``)
-     - 00:26.021
-     - 0.0
-   * - :ref:`sphx_glr_tutorials_analysis-3d_cta_data_analysis.py` (``cta_data_analysis.py``)
-     - 00:11.654
-     - 0.0
-   * - :ref:`sphx_glr_tutorials_analysis-3d_analysis_mwl.py` (``analysis_mwl.py``)
-     - 00:00.000
+     - 00:25.795
      - 0.0
    * - :ref:`sphx_glr_tutorials_analysis-3d_energy_dependent_estimation.py` (``energy_dependent_estimation.py``)
-     - 00:00.000
+     - 00:11.555
      - 0.0
-   * - :ref:`sphx_glr_tutorials_analysis-3d_event_sampling.py` (``event_sampling.py``)
-     - 00:00.000
-     - 0.0
-   * - :ref:`sphx_glr_tutorials_analysis-3d_event_sampling_nrg_depend_models.py` (``event_sampling_nrg_depend_models.py``)
-     - 00:00.000
+   * - :ref:`sphx_glr_tutorials_analysis-3d_cta_data_analysis.py` (``cta_data_analysis.py``)
+     - 00:11.555
      - 0.0
    * - :ref:`sphx_glr_tutorials_analysis-3d_flux_profiles.py` (``flux_profiles.py``)
-     - 00:00.000
+     - 00:10.712
      - 0.0
    * - :ref:`sphx_glr_tutorials_analysis-3d_simulate_3d.py` (``simulate_3d.py``)
-     - 00:00.000
+     - 00:08.062
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_analysis-3d_event_sampling.py` (``event_sampling.py``)
+     - 00:06.074
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_analysis-3d_analysis_mwl.py` (``analysis_mwl.py``)
+     - 00:03.390
+     - 0.0
+   * - :ref:`sphx_glr_tutorials_analysis-3d_event_sampling_nrg_depend_models.py` (``event_sampling_nrg_depend_models.py``)
+     - 00:02.019
      - 0.0

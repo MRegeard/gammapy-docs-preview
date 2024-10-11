@@ -11,7 +11,7 @@
         :class: sphx-glr-download-link-note
 
         :ref:`Go to the end <sphx_glr_download_user-guide_model-gallery_spatial_plot_piecewise_norm_spatial.py>`
-        to download the full example code or to run this example in your browser via Binder
+        to download the full example code. or to run this example in your browser via Binder
 
 .. rst-class:: sphx-glr-example-title
 
@@ -35,7 +35,7 @@ Here is an example plot of the model:
 
 .. GENERATED FROM PYTHON SOURCE LINES 16-38
 
-.. code-block:: python3
+.. code-block:: Python
 
 
     import numpy as np
@@ -85,7 +85,7 @@ Here is an example YAML file using the model:
 
 .. GENERATED FROM PYTHON SOURCE LINES 42-47
 
-.. code-block:: python3
+.. code-block:: Python
 
 
     bkg_model = FoVBackgroundModel(spatial_model=model, dataset_name="dataset")
@@ -128,10 +128,10 @@ Here is an example YAML file using the model:
                 value: 1.0
             lon:
                 data:
-                - 51.785
-                - 51.785
-                - 48.215
-                - 48.215
+                - -308.21500000000003
+                - -308.21500000000003
+                - -311.78499999999997
+                - -311.78499999999997
                 unit: deg
             lat:
                 data:
@@ -140,6 +140,10 @@ Here is an example YAML file using the model:
                 - 1.785
                 - -1.785
                 unit: deg
+    metadata:
+        creator: Gammapy 1.3.dev1205+g00f44f94ac
+        date: '2024-10-11T13:05:22.159754'
+        origin: null
 
 
 
@@ -152,23 +156,24 @@ Here is an example YAML file using the model:
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
-
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/gammapy/gammapy-webpage/master?urlpath=lab/tree/notebooks/dev/user-guide/model-gallery/spatial/plot_piecewise_norm_spatial.ipynb
+        :target: https://mybinder.org/v2/gh/gammapy/gammapy-webpage/main?urlpath=lab/tree/notebooks/dev/user-guide/model-gallery/spatial/plot_piecewise_norm_spatial.ipynb
         :alt: Launch binder
         :width: 150 px
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
+      :download:`Download Jupyter notebook: plot_piecewise_norm_spatial.ipynb <plot_piecewise_norm_spatial.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: plot_piecewise_norm_spatial.py <plot_piecewise_norm_spatial.py>`
 
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
+    .. container:: sphx-glr-download sphx-glr-download-zip
 
-      :download:`Download Jupyter notebook: plot_piecewise_norm_spatial.ipynb <plot_piecewise_norm_spatial.ipynb>`
+      :download:`Download zipped: plot_piecewise_norm_spatial.zip <plot_piecewise_norm_spatial.zip>`
 
 
 .. only:: html

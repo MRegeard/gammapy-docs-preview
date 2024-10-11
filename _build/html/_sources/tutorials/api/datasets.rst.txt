@@ -95,37 +95,37 @@ Check setup
 
     System:
 
-            python_executable      : /Users/mregeard/anaconda3/envs/gammapy-dev/bin/python 
-            python_version         : 3.11.9     
+            python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python 
+            python_version         : 3.11.10    
             machine                : x86_64     
             system                 : Darwin     
 
 
     Gammapy package:
 
-            version                : 1.3.dev468+g4c56d91f9e.d20240613 
-            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/gammapy 
+            version                : 1.3.dev1205+g00f44f94ac 
+            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy 
 
 
     Other packages:
 
             numpy                  : 1.26.4     
-            scipy                  : 1.13.1     
-            astropy                : 6.1.0      
-            regions                : 0.9        
+            scipy                  : 1.14.1     
+            astropy                : 5.2.2      
+            regions                : 0.10       
             click                  : 8.1.7      
-            yaml                   : 6.0.1      
-            IPython                : 8.25.0     
-            jupyterlab             : 3.5.3      
-            matplotlib             : 3.8.4      
-            pandas                 : 2.2.2      
-            healpy                 : 1.16.6     
-            iminuit                : 2.25.2     
+            yaml                   : 6.0.2      
+            IPython                : 8.28.0     
+            jupyterlab             : not installed 
+            matplotlib             : 3.9.2      
+            pandas                 : not installed 
+            healpy                 : 1.17.3     
+            iminuit                : 2.30.1     
             sherpa                 : 4.16.1     
             naima                  : 0.10.0     
             emcee                  : 3.1.6      
             corner                 : 2.2.2      
-            ray                    : 2.24.0     
+            ray                    : 2.37.0     
 
 
     Gammapy environment variables:
@@ -297,7 +297,7 @@ To see the geometry of each map, we can use:
 
  .. code-block:: none
 
-    {'geom': <gammapy.maps.wcs.geom.WcsGeom object at 0x1864b4c10>, 'geom_exposure': <gammapy.maps.wcs.geom.WcsGeom object at 0x1864b7fd0>, 'geom_psf': <gammapy.maps.wcs.geom.WcsGeom object at 0x186bbead0>, 'geom_edisp': <gammapy.maps.wcs.geom.WcsGeom object at 0x185687790>}
+    {'geom': <gammapy.maps.wcs.geom.WcsGeom object at 0x141728310>, 'geom_exposure': <gammapy.maps.wcs.geom.WcsGeom object at 0x1400e9e10>, 'geom_psf': <gammapy.maps.wcs.geom.WcsGeom object at 0x140c41150>, 'geom_edisp': <gammapy.maps.wcs.geom.WcsGeom object at 0x142015fd0>}
 
 
 
@@ -633,7 +633,7 @@ Printing the dataset will now show the model components:
       Number of fit bins              : 691680 
 
       Fit statistic type              : cash
-      Fit statistic value (-2 log(L)) : 424649.33
+      Fit statistic value (-2 log(L)) : 424650.15
 
       Number of models                : 2 
       Number of parameters            : 8
@@ -648,7 +648,7 @@ Printing the dataset will now show the model components:
         Temporal model type       : 
         Parameters:
           index                         :      2.000   +/-    0.00             
-          amplitude                     :   1.00e-12   +/- 0.0e+00 1 / (TeV s cm2)
+          amplitude                     :   1.00e-12   +/- 0.0e+00 1 / (cm2 s TeV)
           reference             (frozen):      1.000       TeV         
           lon_0                         :      4.650   +/-    0.00 rad         
           lat_0                         :     -0.505   +/-    0.00 rad         
@@ -1115,7 +1115,7 @@ preserved during the down-sampling:
       Number of fit bins              : 67824 
 
       Fit statistic type              : cash
-      Fit statistic value (-2 log(L)) : 44318.32
+      Fit statistic value (-2 log(L)) : 44319.08
 
       Number of models                : 2 
       Number of parameters            : 8
@@ -1130,7 +1130,7 @@ preserved during the down-sampling:
         Temporal model type       : 
         Parameters:
           index                         :      2.000   +/-    0.00             
-          amplitude                     :   1.00e-12   +/- 0.0e+00 1 / (TeV s cm2)
+          amplitude                     :   1.00e-12   +/- 0.0e+00 1 / (cm2 s TeV)
           reference             (frozen):      1.000       TeV         
           lon_0                         :      4.650   +/-    0.00 rad         
           lat_0                         :     -0.505   +/-    0.00 rad         
@@ -1565,7 +1565,7 @@ collecting all the information from the individual calls to
                                                                                               ...       1 / s                                                    
     ------------- ------ ------------------ ----------------- ------------- ----------------- ... ----------------- ------ ---------- --------- -----------------
     dataset-empty      0                0.0               0.0           0.0               0.0 ...               nan 110000          0      cash               nan
-      dataset-cta 104317 12809.313714614138 41.41012398874995 91507.6953125 91719.64812476818 ... 2.420505189976446 768000      67824      cash 44318.32441804836
+      dataset-cta 104317 12809.313714614138 41.41012398874995 91507.6953125 91719.64820265985 ... 2.420505189976446 768000      67824      cash 44319.07873258705
     ['dataset-empty', 'dataset-cta']
 
 
@@ -1845,8 +1845,8 @@ Now we can stack all datasets using `~gammapy.datasets.Datasets.stack_reduce()`:
       Number of free parameters       : 0
 
       Total counts_off                : 645 
-      Acceptance                      : 43 
-      Acceptance off                  : 1149 
+      Acceptance                      : 168 
+      Acceptance off                  : 4497 
 
 
 
@@ -1883,7 +1883,7 @@ Or slice all datasets by a given energy range:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 23.919 seconds)
+   **Total running time of the script:** (0 minutes 12.665 seconds)
 
 
 .. _sphx_glr_download_tutorials_api_datasets.py:
@@ -1906,6 +1906,10 @@ Or slice all datasets by a given energy range:
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: datasets.py <datasets.py>`
+
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: datasets.zip <datasets.zip>`
 
 
 .. only:: html

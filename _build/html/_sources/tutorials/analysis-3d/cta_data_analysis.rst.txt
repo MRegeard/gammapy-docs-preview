@@ -27,11 +27,11 @@ Introduction
 ------------
 
 **This notebook shows an example how to make a sky image and spectrum
-for simulated CTA data with Gammapy.**
+for simulated CTAO data with Gammapy.**
 
 The dataset we will use is three observation runs on the Galactic
 Center. This is a tiny (and thus quick to process and play with and
-learn) subset of the simulated CTA dataset that was produced for the
+learn) subset of the simulated CTAO dataset that was produced for the
 first data challenge in August 2017.
 
 .. GENERATED FROM PYTHON SOURCE LINES 21-26
@@ -111,14 +111,14 @@ Check setup
     System:
 
             python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python 
-            python_version         : 3.11.9     
+            python_version         : 3.11.10    
             machine                : x86_64     
             system                 : Darwin     
 
 
     Gammapy package:
 
-            version                : 1.3.dev1110+g29931fb8f6 
+            version                : 1.3.dev1205+g00f44f94ac 
             path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy 
 
 
@@ -135,7 +135,7 @@ Check setup
             matplotlib             : 3.9.2      
             pandas                 : not installed 
             healpy                 : 1.17.3     
-            iminuit                : 2.30.0     
+            iminuit                : 2.30.1     
             sherpa                 : 4.16.1     
             naima                  : 0.10.0     
             emcee                  : 3.1.6      
@@ -818,7 +818,7 @@ profile to compute the flux and flux error.
 
     <div class="output_subarea output_html rendered_html output_result">
     <div><i>Table length=5</i>
-    <table id="table5390139984" class="table-striped table-bordered table-condensed">
+    <table id="table5377421456" class="table-striped table-bordered table-condensed">
     <thead><tr><th>e_ref</th><th>e_min</th><th>e_max</th><th>dnde</th><th>dnde_err</th><th>ts</th><th>sqrt_ts</th><th>npred</th><th>npred_excess</th><th>stat</th><th>stat_null</th><th>counts</th><th>success</th></tr></thead>
     <thead><tr><th>TeV</th><th>TeV</th><th>TeV</th><th>1 / (cm2 s TeV)</th><th>1 / (cm2 s TeV)</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead>
     <thead><tr><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64[1]</th><th>float32[1]</th><th>float64</th><th>float64</th><th>float64[1]</th><th>bool</th></tr></thead>
@@ -904,7 +904,7 @@ Exercises
 What next?
 ----------
 
--  This notebook showed an example of a first CTA analysis with Gammapy,
+-  This notebook showed an example of a first CTAO analysis with Gammapy,
    using simulated 1DC data.
 -  Let us know if you have any questions or issues!
 
@@ -912,7 +912,7 @@ What next?
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 11.654 seconds)
+   **Total running time of the script:** (0 minutes 11.555 seconds)
 
 
 .. _sphx_glr_download_tutorials_analysis-3d_cta_data_analysis.py:

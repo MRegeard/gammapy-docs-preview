@@ -130,37 +130,37 @@ Check setup
 
     System:
 
-            python_executable      : /Users/mregeard/anaconda3/envs/gammapy-dev/bin/python 
-            python_version         : 3.11.9     
+            python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python 
+            python_version         : 3.11.10    
             machine                : x86_64     
             system                 : Darwin     
 
 
     Gammapy package:
 
-            version                : 1.3.dev468+g4c56d91f9e.d20240613 
-            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/gammapy 
+            version                : 1.3.dev1205+g00f44f94ac 
+            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy 
 
 
     Other packages:
 
             numpy                  : 1.26.4     
-            scipy                  : 1.13.1     
-            astropy                : 6.1.0      
-            regions                : 0.9        
+            scipy                  : 1.14.1     
+            astropy                : 5.2.2      
+            regions                : 0.10       
             click                  : 8.1.7      
-            yaml                   : 6.0.1      
-            IPython                : 8.25.0     
-            jupyterlab             : 3.5.3      
-            matplotlib             : 3.8.4      
-            pandas                 : 2.2.2      
-            healpy                 : 1.16.6     
-            iminuit                : 2.25.2     
+            yaml                   : 6.0.2      
+            IPython                : 8.28.0     
+            jupyterlab             : not installed 
+            matplotlib             : 3.9.2      
+            pandas                 : not installed 
+            healpy                 : 1.17.3     
+            iminuit                : 2.30.1     
             sherpa                 : 4.16.1     
             naima                  : 0.10.0     
             emcee                  : 3.1.6      
             corner                 : 2.2.2      
-            ray                    : 2.24.0     
+            ray                    : 2.37.0     
 
 
     Gammapy environment variables:
@@ -207,7 +207,12 @@ Here is what the configuration for our analysis looks like:
     AnalysisConfig
 
         general:
-            log: {level: info, filename: null, filemode: null, format: null, datefmt: null}
+            log:
+                level: info
+                filename: null
+                filemode: null
+                format: null
+                datefmt: null
             outdir: .
             n_jobs: 1
             datasets_file: null
@@ -216,47 +221,98 @@ Here is what the configuration for our analysis looks like:
             datastore: /Users/mregeard/Workspace/dev/code/gammapy/gammapy-data/hess-dl3-dr1
             obs_ids: []
             obs_file: null
-            obs_cone: {frame: null, lon: null, lat: null, radius: null}
-            obs_time: {start: null, stop: null}
-            required_irf: [aeff, edisp, psf, bkg]
+            obs_cone:
+                frame: null
+                lon: null
+                lat: null
+                radius: null
+            obs_time:
+                start: null
+                stop: null
+            required_irf:
+            - aeff
+            - edisp
+            - psf
+            - bkg
         datasets:
             type: 1d
             stack: true
             geom:
                 wcs:
-                    skydir: {frame: null, lon: null, lat: null}
+                    skydir:
+                        frame: null
+                        lon: null
+                        lat: null
                     binsize: 0.02 deg
-                    width: {width: 5.0 deg, height: 5.0 deg}
+                    width:
+                        width: 5.0 deg
+                        height: 5.0 deg
                     binsize_irf: 0.2 deg
-                selection: {offset_max: 2.5 deg}
+                selection:
+                    offset_max: 2.5 deg
                 axes:
-                    energy: {min: 1.0 TeV, max: 10.0 TeV, nbins: 5}
-                    energy_true: {min: 0.5 TeV, max: 20.0 TeV, nbins: 16}
-            map_selection: [counts, exposure, background, psf, edisp]
+                    energy:
+                        min: 1.0 TeV
+                        max: 10.0 TeV
+                        nbins: 5
+                    energy_true:
+                        min: 0.5 TeV
+                        max: 20.0 TeV
+                        nbins: 16
+            map_selection:
+            - counts
+            - exposure
+            - background
+            - psf
+            - edisp
             background:
                 method: null
                 exclusion: null
                 parameters: {}
             safe_mask:
-                methods: [aeff-default]
+                methods:
+                - aeff-default
                 parameters: {}
-            on_region: {frame: null, lon: null, lat: null, radius: null}
+            on_region:
+                frame: null
+                lon: null
+                lat: null
+                radius: null
             containment_correction: true
         fit:
-            fit_range: {min: null, max: null}
+            fit_range:
+                min: null
+                max: null
         flux_points:
-            energy: {min: null, max: null, nbins: null}
+            energy:
+                min: null
+                max: null
+                nbins: null
             source: source
-            parameters: {selection_optional: all}
+            parameters:
+                selection_optional: all
         excess_map:
             correlation_radius: 0.1 deg
             parameters: {}
-            energy_edges: {min: null, max: null, nbins: null}
+            energy_edges:
+                min: null
+                max: null
+                nbins: null
         light_curve:
-            time_intervals: {start: null, stop: null}
-            energy_edges: {min: null, max: null, nbins: null}
+            time_intervals:
+                start: null
+                stop: null
+            energy_edges:
+                min: null
+                max: null
+                nbins: null
             source: source
-            parameters: {selection_optional: all}
+            parameters:
+                selection_optional: all
+        metadata:
+            creator: Gammapy 1.3.dev1205+g00f44f94ac
+            date: '2024-10-11T13:05:50.513242'
+            origin: null
     
 
 
@@ -468,7 +524,12 @@ One can export/import the `~gammapy.modeling.AnalysisConfig` to/from a YAML file
     AnalysisConfig
 
         general:
-            log: {level: info, filename: null, filemode: null, format: null, datefmt: null}
+            log:
+                level: info
+                filename: null
+                filemode: null
+                format: null
+                datefmt: null
             outdir: .
             n_jobs: 1
             datasets_file: null
@@ -477,47 +538,99 @@ One can export/import the `~gammapy.modeling.AnalysisConfig` to/from a YAML file
             datastore: /Users/mregeard/Workspace/dev/code/gammapy/gammapy-data/hess-dl3-dr1
             obs_ids: []
             obs_file: null
-            obs_cone: {frame: icrs, lon: 83.633 deg, lat: 22.014 deg, radius: 5.0 deg}
-            obs_time: {start: null, stop: null}
-            required_irf: [aeff, edisp, psf, bkg]
+            obs_cone:
+                frame: icrs
+                lon: 83.633 deg
+                lat: 22.014 deg
+                radius: 5.0 deg
+            obs_time:
+                start: null
+                stop: null
+            required_irf:
+            - aeff
+            - edisp
+            - psf
+            - bkg
         datasets:
             type: 3d
             stack: true
             geom:
                 wcs:
-                    skydir: {frame: icrs, lon: 83.633 deg, lat: 22.014 deg}
+                    skydir:
+                        frame: icrs
+                        lon: 83.633 deg
+                        lat: 22.014 deg
                     binsize: 0.02 deg
-                    width: {width: 2.0 deg, height: 2.0 deg}
+                    width:
+                        width: 2.0 deg
+                        height: 2.0 deg
                     binsize_irf: 0.2 deg
-                selection: {offset_max: 2.5 deg}
+                selection:
+                    offset_max: 2.5 deg
                 axes:
-                    energy: {min: 1.0 TeV, max: 10.0 TeV, nbins: 10}
-                    energy_true: {min: 0.5 TeV, max: 20.0 TeV, nbins: 20}
-            map_selection: [counts, exposure, background, psf, edisp]
+                    energy:
+                        min: 1.0 TeV
+                        max: 10.0 TeV
+                        nbins: 10
+                    energy_true:
+                        min: 0.5 TeV
+                        max: 20.0 TeV
+                        nbins: 20
+            map_selection:
+            - counts
+            - exposure
+            - background
+            - psf
+            - edisp
             background:
                 method: fov_background
                 exclusion: /Users/mregeard/Workspace/dev/code/gammapy/gammapy-data/joint-crab/exclusion/exclusion_mask_crab.fits.gz
-                parameters: {method: scale}
+                parameters:
+                    method: scale
             safe_mask:
-                methods: [aeff-default]
+                methods:
+                - aeff-default
                 parameters: {}
-            on_region: {frame: null, lon: null, lat: null, radius: null}
+            on_region:
+                frame: null
+                lon: null
+                lat: null
+                radius: null
             containment_correction: true
         fit:
-            fit_range: {min: 1.0 TeV, max: 10.0 TeV}
+            fit_range:
+                min: 1.0 TeV
+                max: 10.0 TeV
         flux_points:
-            energy: {min: 1.0 TeV, max: 10.0 TeV, nbins: 4}
+            energy:
+                min: 1.0 TeV
+                max: 10.0 TeV
+                nbins: 4
             source: source
-            parameters: {selection_optional: all}
+            parameters:
+                selection_optional: all
         excess_map:
             correlation_radius: 0.1 deg
             parameters: {}
-            energy_edges: {min: null, max: null, nbins: null}
+            energy_edges:
+                min: null
+                max: null
+                nbins: null
         light_curve:
-            time_intervals: {start: null, stop: null}
-            energy_edges: {min: null, max: null, nbins: null}
+            time_intervals:
+                start: null
+                stop: null
+            energy_edges:
+                min: null
+                max: null
+                nbins: null
             source: source
-            parameters: {selection_optional: all}
+            parameters:
+                selection_optional: all
+        metadata:
+            creator: Gammapy 1.3.dev1205+g00f44f94ac
+            date: '2024-10-11T13:05:50.527727'
+            origin: null
     
 
 
@@ -922,7 +1035,7 @@ Now we set the model on the analysis object:
       Temporal model type       : 
       Parameters:
         index                         :      2.000   +/-    0.00             
-        amplitude                     :   1.00e-12   +/- 0.0e+00 1 / (TeV s cm2)
+        amplitude                     :   1.00e-12   +/- 0.0e+00 1 / (cm2 s TeV)
         reference             (frozen):      1.000       TeV         
         lon_0                         :     83.630   +/-    0.00 deg         
         lat_0                         :     22.014   +/-    0.00 deg         
@@ -971,8 +1084,8 @@ Finally we run the fit:
             method     : migrad
             success    : True
             message    : Optimization terminated successfully.
-            nfev       : 261
-            total stat : 19991.97
+            nfev       : 266
+            total stat : 19991.66
 
     CovarianceResult
 
@@ -987,8 +1100,8 @@ Finally we run the fit:
             method     : migrad
             success    : True
             message    : Optimization terminated successfully.
-            nfev       : 261
-            total stat : 19991.97
+            nfev       : 266
+            total stat : 19991.66
 
     CovarianceResult
 
@@ -1033,12 +1146,12 @@ This is how we can write the model back to file again:
             type: PowerLawSpectralModel
             parameters:
             -   name: index
-                value: 2.5563056941166633
-                error: 0.10317312740967792
+                value: 2.5583960065749958
+                error: 0.10325479959418556
             -   name: amplitude
-                value: 4.550274947859304e-11
-                unit: TeV-1 s-1 cm-2
-                error: 3.733371911097329e-12
+                value: 4.549225051710124e-11
+                unit: cm-2 s-1 TeV-1
+                error: 3.731744565513009e-12
             -   name: reference
                 value: 1.0
                 unit: TeV
@@ -1047,13 +1160,13 @@ This is how we can write the model back to file again:
             frame: icrs
             parameters:
             -   name: lon_0
-                value: 83.61979417454666
+                value: 83.61975347017408
                 unit: deg
-                error: 0.003127260128721721
+                error: 0.0031013879573208603
             -   name: lat_0
-                value: 22.024551454114075
+                value: 22.024720289032167
                 unit: deg
-                error: 0.0029405493913489777
+                error: 0.0029211973367841556
     -   type: FoVBackgroundModel
         datasets_names:
         - stacked
@@ -1061,8 +1174,8 @@ This is how we can write the model back to file again:
             type: PowerLawNormSpectralModel
             parameters:
             -   name: norm
-                value: 0.9864775057297388
-                error: 0.023473566264038848
+                value: 0.9868551951478185
+                error: 0.02347307671313063
             -   name: tilt
                 value: 0.0
             -   name: reference
@@ -1070,8 +1183,8 @@ This is how we can write the model back to file again:
                 unit: TeV
     covariance: model-best-fit_covariance.dat
     metadata:
-        creator: Gammapy 1.3.dev470+g3763fc00d7.d20240613
-        date: '2024-06-13T23:29:09.305720'
+        creator: Gammapy 1.3.dev1205+g00f44f94ac
+        date: '2024-10-11T13:05:56.141792'
         origin: null
 
 
@@ -1134,14 +1247,14 @@ Flux points
     Reoptimize = False ignored for iminuit backend
     Inferred format: gadf-sed
 
-          e_ref                 dnde                 dnde_ul                dnde_err             sqrt_ts      
-           TeV            1 / (TeV s cm2)        1 / (TeV s cm2)        1 / (TeV s cm2)                       
-    ------------------ ---------------------- ---------------------- ---------------------- ------------------
-    1.2589254117941673  2.356263125067027e-11  2.971558381775132e-11  3.829982012121797e-12 24.264514914117463
-    1.9952623149688797  8.855886270992956e-12 1.1493541157759546e-11 1.6272830828609474e-12 22.400018448635596
-    3.1622776601683795  2.488896590277765e-12 3.5012229578909193e-12   6.09704709458123e-13  16.76603394323899
-     5.011872336272724  6.152287614957992e-13  9.994065730808282e-13 2.2073484137852627e-13 11.908701839942562
-     7.943282347242818 2.4393061108010924e-13   4.98996164870089e-13 1.3561683360768673e-13  8.300448220913385
+          e_ref                 dnde                dnde_ul                dnde_err             sqrt_ts      
+           TeV            1 / (cm2 s TeV)       1 / (cm2 s TeV)        1 / (cm2 s TeV)                       
+    ------------------ --------------------- ---------------------- ---------------------- ------------------
+    1.2589254117941673 2.353583066117128e-11 2.9682410558860156e-11 3.8259953201886965e-12 24.262516086138692
+    1.9952623149688797 8.843773194521254e-12 1.1478311291341409e-11 1.6253431042007186e-12 22.394631401871532
+    3.1622776601683795 2.481783914086314e-12  3.491942585159872e-12  6.083642301828799e-13 16.751596944787327
+     5.011872336272724 6.137477869526698e-13  9.973893688888424e-13   2.20398987440999e-13 11.929595922348247
+     7.943282347242818 2.430981367353025e-13  4.977896458104927e-13 1.3536430005946254e-13  8.315663669104254
 
 
 
@@ -1222,11 +1335,6 @@ You can see how to perform a 1D spectral analysis of the same data in
 
 
 
-.. rst-class:: sphx-glr-timing
-
-   **Total running time of the script:** (0 minutes 49.529 seconds)
-
-
 .. _sphx_glr_download_tutorials_starting_analysis_1.py:
 
 .. only:: html
@@ -1247,6 +1355,10 @@ You can see how to perform a 1D spectral analysis of the same data in
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: analysis_1.py <analysis_1.py>`
+
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: analysis_1.zip <analysis_1.zip>`
 
 
 .. only:: html

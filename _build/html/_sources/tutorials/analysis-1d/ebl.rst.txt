@@ -350,10 +350,9 @@ compound model.
 
  .. code-block:: none
 
-    Changing the reference model will change the fluxes. Handle with care.
     SkyModel
 
-      Name                      : s6f3C_6e
+      Name                      : jH6HOHf2
       Datasets names            : None
       Spectral model type       : CompoundSpectralModel
       Spatial  model type       : 
@@ -368,7 +367,7 @@ compound model.
 
     SkyModel
 
-      Name                      : 2tvBPp7v
+      Name                      : 8FdOcKYN
       Datasets names            : None
       Spectral model type       : PowerLawSpectralModel
       Spatial  model type       : 

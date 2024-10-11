@@ -89,14 +89,14 @@ Check setup
     System:
 
             python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python 
-            python_version         : 3.11.9     
+            python_version         : 3.11.10    
             machine                : x86_64     
             system                 : Darwin     
 
 
     Gammapy package:
 
-            version                : 1.3.dev1110+g29931fb8f6 
+            version                : 1.3.dev1205+g00f44f94ac 
             path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy 
 
 
@@ -113,7 +113,7 @@ Check setup
             matplotlib             : 3.9.2      
             pandas                 : not installed 
             healpy                 : 1.17.3     
-            iminuit                : 2.30.0     
+            iminuit                : 2.30.1     
             sherpa                 : 4.16.1     
             naima                  : 0.10.0     
             emcee                  : 3.1.6      
@@ -295,8 +295,8 @@ the analysis, we will programmatically build a config file from scratch.
             parameters:
                 selection_optional: all
         metadata:
-            creator: Gammapy 1.3.dev1110+g29931fb8f6
-            date: '2024-10-07T16:04:59.252967'
+            creator: Gammapy 1.3.dev1205+g00f44f94ac
+            date: '2024-10-11T13:07:28.361064'
             origin: null
     
     AnalysisConfig
@@ -409,8 +409,8 @@ the analysis, we will programmatically build a config file from scratch.
             parameters:
                 selection_optional: all
         metadata:
-            creator: Gammapy 1.3.dev1110+g29931fb8f6
-            date: '2024-10-07T16:04:59.256669'
+            creator: Gammapy 1.3.dev1205+g00f44f94ac
+            date: '2024-10-11T13:07:28.364769'
             origin: null
     
 
@@ -1065,21 +1065,21 @@ Data reduction
     Dataset 0: 
 
       Type       : MapDataset
-      Name       : sekqIiJk
+      Name       : GLpHqtdV
       Instrument : CTA
       Models     : 
 
     Dataset 1: 
 
       Type       : MapDataset
-      Name       : 1QpHA3S_
+      Name       : PW-5sYhJ
       Instrument : CTA
       Models     : 
 
     Dataset 2: 
 
       Type       : MapDataset
-      Name       : ON54GWov
+      Name       : jPuMmZkW
       Instrument : CTA
       Models     : 
 
@@ -1112,7 +1112,7 @@ You can access each one by name or by index, eg:
     MapDataset
     ----------
 
-      Name                            : sekqIiJk 
+      Name                            : GLpHqtdV 
 
       Total counts                    : 40481 
       Total background counts         : 36014.51
@@ -1180,9 +1180,9 @@ map, omit the region argument.
       name   counts       excess           sqrt_ts          background          npred       ...    excess_rate      n_bins n_fit_bins stat_type stat_sum
                                                                                             ...       1 / s                                             
     -------- ------ ----------------- ----------------- ----------------- ----------------- ... ------------------ ------- ---------- --------- --------
-    sekqIiJk  40481 4466.492975803107 23.07280166205047 36014.50702419689 36014.50702419689 ... 2.5320254472158736 1085000     693940      cash      nan
-    1QpHA3S_  40525  4510.50545551649 23.29577792435477 36014.49454448351 36014.49454448351 ... 2.5569758320554064 1085000     693940      cash      nan
-    ON54GWov  40235 4220.480487226261 21.82496388582373 36014.51951277374 36014.51951277374 ... 2.3925625879246923 1085000     693940      cash      nan
+    GLpHqtdV  40481 4466.492975803107 23.07280166205047 36014.50702419689 36014.50702419689 ... 2.5320254472158736 1085000     693940      cash      nan
+    PW-5sYhJ  40525  4510.50545551649 23.29577792435477 36014.49454448351 36014.49454448351 ... 2.5569758320554064 1085000     693940      cash      nan
+    jPuMmZkW  40235 4220.480487226261 21.82496388582373 36014.51951277374 36014.51951277374 ... 2.3925625879246923 1085000     693940      cash      nan
     Models
 
     Component 0: SkyModel
@@ -1203,8 +1203,8 @@ map, omit the region argument.
 
     Component 1: FoVBackgroundModel
 
-      Name                      : sekqIiJk-bkg
-      Datasets names            : ['sekqIiJk']
+      Name                      : GLpHqtdV-bkg
+      Datasets names            : ['GLpHqtdV']
       Spectral model type       : PowerLawNormSpectralModel
       Parameters:
         norm                          :      1.000   +/-    0.00             
@@ -1213,8 +1213,8 @@ map, omit the region argument.
 
     Component 2: FoVBackgroundModel
 
-      Name                      : 1QpHA3S_-bkg
-      Datasets names            : ['1QpHA3S_']
+      Name                      : PW-5sYhJ-bkg
+      Datasets names            : ['PW-5sYhJ']
       Spectral model type       : PowerLawNormSpectralModel
       Parameters:
         norm                          :      1.000   +/-    0.00             
@@ -1223,8 +1223,8 @@ map, omit the region argument.
 
     Component 3: FoVBackgroundModel
 
-      Name                      : ON54GWov-bkg
-      Datasets names            : ['ON54GWov']
+      Name                      : jPuMmZkW-bkg
+      Datasets names            : ['jPuMmZkW']
       Spectral model type       : PowerLawNormSpectralModel
       Parameters:
         norm                          :      1.000   +/-    0.00             
@@ -1339,8 +1339,8 @@ Check best-fit parameters and error estimates:
 
     Component 1: FoVBackgroundModel
 
-      Name                      : sekqIiJk-bkg
-      Datasets names            : ['sekqIiJk']
+      Name                      : GLpHqtdV-bkg
+      Datasets names            : ['GLpHqtdV']
       Spectral model type       : PowerLawNormSpectralModel
       Parameters:
         norm                          :      1.118   +/-    0.01             
@@ -1349,8 +1349,8 @@ Check best-fit parameters and error estimates:
 
     Component 2: FoVBackgroundModel
 
-      Name                      : 1QpHA3S_-bkg
-      Datasets names            : ['1QpHA3S_']
+      Name                      : PW-5sYhJ-bkg
+      Datasets names            : ['PW-5sYhJ']
       Spectral model type       : PowerLawNormSpectralModel
       Parameters:
         norm                          :      1.119   +/-    0.01             
@@ -1359,8 +1359,8 @@ Check best-fit parameters and error estimates:
 
     Component 3: FoVBackgroundModel
 
-      Name                      : ON54GWov-bkg
-      Datasets names            : ['ON54GWov']
+      Name                      : jPuMmZkW-bkg
+      Datasets names            : ['jPuMmZkW']
       Spectral model type       : PowerLawNormSpectralModel
       Parameters:
         norm                          :      1.111   +/-    0.01             
@@ -1489,7 +1489,7 @@ Exercises
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 26.021 seconds)
+   **Total running time of the script:** (0 minutes 25.795 seconds)
 
 
 .. _sphx_glr_download_tutorials_analysis-3d_analysis_3d.py:

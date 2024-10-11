@@ -158,7 +158,7 @@ event lists according to different criteria, as well as to get a quick look of t
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Access and inspect CTA data and instrument response functions (IRFs) using Gammapy.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Access and inspect CTAO data and instrument response functions (IRFs) using Gammapy.">
 
 .. only:: html
 
@@ -169,7 +169,7 @@ event lists according to different criteria, as well as to get a quick look of t
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">CTA with Gammapy</div>
+      <div class="sphx-glr-thumbnail-title">CTAO with Gammapy</div>
     </div>
 
 
@@ -241,7 +241,7 @@ time-dependent analysis with light-curves.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Estimate the CTA sensitivity for a point-like IRF at a fixed zenith angle and fixed offset.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Estimate the CTAO sensitivity for a point-like IRF at a fixed zenith angle and fixed offset.">
 
 .. only:: html
 
@@ -326,18 +326,18 @@ time-dependent analysis with light-curves.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Gamma rays emitted from extra-galactic objects, eg blazars, interact with the photons of the Extragalactic Background Light (EBL) through pair production and are attenuated, thus modifying the intrinsic spectrum.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Simulate a number of spectral on-off observations of a source with a power-law spectral model using the CTA 1DC response and fit them with the assumed spectral model.">
 
 .. only:: html
 
-  .. image:: /tutorials/analysis-1d/images/thumb/sphx_glr_ebl_thumb.png
+  .. image:: /tutorials/analysis-1d/images/thumb/sphx_glr_spectrum_simulation_thumb.png
     :alt:
 
-  :ref:`sphx_glr_tutorials_analysis-1d_ebl.py`
+  :ref:`sphx_glr_tutorials_analysis-1d_spectrum_simulation.py`
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Account for spectral absorption due to the EBL</div>
+      <div class="sphx-glr-thumbnail-title">1D spectrum simulation</div>
     </div>
 
 
@@ -360,18 +360,18 @@ time-dependent analysis with light-curves.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Simulate a number of spectral on-off observations of a source with a power-law spectral model using the CTA 1DC response and fit them with the assumed spectral model.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Gamma rays emitted from extra-galactic objects, eg blazars, interact with the photons of the Extragalactic Background Light (EBL) through pair production and are attenuated, thus modifying the intrinsic spectrum.">
 
 .. only:: html
 
-  .. image:: /tutorials/analysis-1d/images/thumb/sphx_glr_spectrum_simulation_thumb.png
+  .. image:: /tutorials/analysis-1d/images/thumb/sphx_glr_ebl_thumb.png
     :alt:
 
-  :ref:`sphx_glr_tutorials_analysis-1d_spectrum_simulation.py`
+  :ref:`sphx_glr_tutorials_analysis-1d_ebl.py`
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">1D spectrum simulation</div>
+      <div class="sphx-glr-thumbnail-title">Account for spectral absorption due to the EBL</div>
     </div>
 
 
@@ -390,9 +390,9 @@ time-dependent analysis with light-curves.
    /tutorials/analysis-1d/spectral_analysis_hli
    /tutorials/analysis-1d/spectral_analysis_rad_max
    /tutorials/analysis-1d/extended_source_spectral_analysis
-   /tutorials/analysis-1d/ebl
-   /tutorials/analysis-1d/sed_fitting
    /tutorials/analysis-1d/spectrum_simulation
+   /tutorials/analysis-1d/sed_fitting
+   /tutorials/analysis-1d/ebl
 
 2D Image
 --------
@@ -481,23 +481,6 @@ time-dependent analysis with light-curves.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Detect sources, produce a sky image and a spectrum using CTA-1DC data.">
-
-.. only:: html
-
-  .. image:: /tutorials/analysis-3d/images/thumb/sphx_glr_cta_data_analysis_thumb.png
-    :alt:
-
-  :ref:`sphx_glr_tutorials_analysis-3d_cta_data_analysis.py`
-
-.. raw:: html
-
-      <div class="sphx-glr-thumbnail-title">Basic image exploration and fitting</div>
-    </div>
-
-
-.. raw:: html
-
     <div class="sphx-glr-thumbcontainer" tooltip="Perform detailed 3D stacked and joint analysis.">
 
 .. only:: html
@@ -515,18 +498,18 @@ time-dependent analysis with light-curves.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Learn how to estimate flux profiles on a Fermi-LAT dataset.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Detect sources, produce a sky image and a spectrum using CTA-1DC data.">
 
 .. only:: html
 
-  .. image:: /tutorials/analysis-3d/images/thumb/sphx_glr_flux_profiles_thumb.png
+  .. image:: /tutorials/analysis-3d/images/thumb/sphx_glr_cta_data_analysis_thumb.png
     :alt:
 
-  :ref:`sphx_glr_tutorials_analysis-3d_flux_profiles.py`
+  :ref:`sphx_glr_tutorials_analysis-3d_cta_data_analysis.py`
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Flux Profile Estimation</div>
+      <div class="sphx-glr-thumbnail-title">Basic image exploration and fitting</div>
     </div>
 
 
@@ -615,6 +598,23 @@ time-dependent analysis with light-curves.
     </div>
 
 
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Learn how to estimate flux profiles on a Fermi-LAT dataset.">
+
+.. only:: html
+
+  .. image:: /tutorials/analysis-3d/images/thumb/sphx_glr_flux_profiles_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_analysis-3d_flux_profiles.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Flux Profile Estimation</div>
+    </div>
+
+
 .. thumbnail-parent-div-close
 
 .. raw:: html
@@ -625,14 +625,14 @@ time-dependent analysis with light-curves.
 .. toctree::
    :hidden:
 
-   /tutorials/analysis-3d/cta_data_analysis
    /tutorials/analysis-3d/analysis_3d
-   /tutorials/analysis-3d/flux_profiles
+   /tutorials/analysis-3d/cta_data_analysis
    /tutorials/analysis-3d/energy_dependent_estimation
    /tutorials/analysis-3d/analysis_mwl
    /tutorials/analysis-3d/simulate_3d
    /tutorials/analysis-3d/event_sampling
    /tutorials/analysis-3d/event_sampling_nrg_depend_models
+   /tutorials/analysis-3d/flux_profiles
 
 Time
 ----
@@ -697,7 +697,7 @@ Time
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Aim ---">
+    <div class="sphx-glr-thumbcontainer" tooltip="Perform spectral fits of a blazar in different time bins to investigate spectral changes during flares.">
 
 .. only:: html
 
@@ -708,24 +708,7 @@ Time
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">A time resolved spectroscopy estimator</div>
-    </div>
-
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="Produce a phasogram, phased-resolved maps and spectra for pulsar analysis.   Introduction ------------">
-
-.. only:: html
-
-  .. image:: /tutorials/analysis-time/images/thumb/sphx_glr_pulsar_analysis_thumb.png
-    :alt:
-
-  :ref:`sphx_glr_tutorials_analysis-time_pulsar_analysis.py`
-
-.. raw:: html
-
-      <div class="sphx-glr-thumbnail-title">Pulsar analysis</div>
+      <div class="sphx-glr-thumbnail-title">Time resolved spectroscopy estimator</div>
     </div>
 
 
@@ -746,6 +729,23 @@ Time
     </div>
 
 
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Produce a phasogram, phased-resolved maps and spectra for pulsar analysis.   Introduction ------------">
+
+.. only:: html
+
+  .. image:: /tutorials/analysis-time/images/thumb/sphx_glr_pulsar_analysis_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_analysis-time_pulsar_analysis.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Pulsar analysis</div>
+    </div>
+
+
 .. thumbnail-parent-div-close
 
 .. raw:: html
@@ -760,8 +760,8 @@ Time
    /tutorials/analysis-time/light_curve_flare
    /tutorials/analysis-time/variability_estimation
    /tutorials/analysis-time/time_resolved_spectroscopy
-   /tutorials/analysis-time/pulsar_analysis
    /tutorials/analysis-time/light_curve_simulation
+   /tutorials/analysis-time/pulsar_analysis
 
 Package / API
 =============

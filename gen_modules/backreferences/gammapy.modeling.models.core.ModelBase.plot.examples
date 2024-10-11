@@ -15,6 +15,27 @@ Examples using ``gammapy.modeling.models.core.ModelBase.plot``
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="This model parametrises a piecewise spatial correction with a free norm parameter at each fixed node in longitude, latitude and optionaly energy.">
+
+.. only:: html
+
+  .. image:: /user-guide/model-gallery/spatial/images/thumb/sphx_glr_plot_piecewise_norm_spatial_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_user-guide_model-gallery_spatial_plot_piecewise_norm_spatial.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Piecewise norm spatial model</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_user-guide_model-gallery_spatial_plot_piecewise_norm_spatial.py`
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="This model parametrises a cutoff power law spectral correction with a norm parameter.">
 
 .. only:: html
@@ -36,45 +57,24 @@ Examples using ``gammapy.modeling.models.core.ModelBase.plot``
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This model parametrises a log parabola spectral correction with a norm parameter.">
+    <div class="sphx-glr-thumbcontainer" tooltip="This model is formed by the arithmetic combination of any two other spectral models.">
 
 .. only:: html
 
-  .. image:: /user-guide/model-gallery/spectral/images/thumb/sphx_glr_plot_logparabola_norm_spectral_thumb.png
+  .. image:: /user-guide/model-gallery/spectral/images/thumb/sphx_glr_plot_compound_thumb.png
     :alt:
 
-  :ref:`sphx_glr_user-guide_model-gallery_spectral_plot_logparabola_norm_spectral.py`
+  :ref:`sphx_glr_user-guide_model-gallery_spectral_plot_compound.py`
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Log parabola spectral norm model</div>
+      <div class="sphx-glr-thumbnail-title">Compound spectral model</div>
     </div>
 
 
 .. only:: not html
 
- * :ref:`sphx_glr_user-guide_model-gallery_spectral_plot_logparabola_norm_spectral.py`
-
-.. raw:: html
-
-    <div class="sphx-glr-thumbcontainer" tooltip="This model parametrises a power law spectral correction with a norm and tilt parameter.">
-
-.. only:: html
-
-  .. image:: /user-guide/model-gallery/spectral/images/thumb/sphx_glr_plot_powerlaw_norm_spectral_thumb.png
-    :alt:
-
-  :ref:`sphx_glr_user-guide_model-gallery_spectral_plot_powerlaw_norm_spectral.py`
-
-.. raw:: html
-
-      <div class="sphx-glr-thumbnail-title">Power law norm spectral model</div>
-    </div>
-
-
-.. only:: not html
-
- * :ref:`sphx_glr_user-guide_model-gallery_spectral_plot_powerlaw_norm_spectral.py`
+ * :ref:`sphx_glr_user-guide_model-gallery_spectral_plot_compound.py`
 
 .. raw:: html
 
@@ -99,6 +99,279 @@ Examples using ``gammapy.modeling.models.core.ModelBase.plot``
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="This model parametrises a log parabola spectral correction with a norm parameter.">
+
+.. only:: html
+
+  .. image:: /user-guide/model-gallery/spectral/images/thumb/sphx_glr_plot_logparabola_norm_spectral_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_user-guide_model-gallery_spectral_plot_logparabola_norm_spectral.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Log parabola spectral norm model</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_user-guide_model-gallery_spectral_plot_logparabola_norm_spectral.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This model evaluates absorbed spectral model.">
+
+.. only:: html
+
+  .. image:: /user-guide/model-gallery/spectral/images/thumb/sphx_glr_plot_absorbed_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_user-guide_model-gallery_spectral_plot_absorbed.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">EBL absorption spectral model</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_user-guide_model-gallery_spectral_plot_absorbed.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This model parametrises a power law spectral correction with a norm and tilt parameter.">
+
+.. only:: html
+
+  .. image:: /user-guide/model-gallery/spectral/images/thumb/sphx_glr_plot_powerlaw_norm_spectral_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_user-guide_model-gallery_spectral_plot_powerlaw_norm_spectral.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Power law norm spectral model</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_user-guide_model-gallery_spectral_plot_powerlaw_norm_spectral.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This model parametrises a time model of sinusoidal modulation.">
+
+.. only:: html
+
+  .. image:: /user-guide/model-gallery/temporal/images/thumb/sphx_glr_plot_sine_temporal_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_sine_temporal.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Sine temporal model</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_sine_temporal.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This model parametrises a PhaseCurve time model, i.e. with a template phasogram and timing parameters">
+
+.. only:: html
+
+  .. image:: /user-guide/model-gallery/temporal/images/thumb/sphx_glr_plot_template_phase_temporal_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_template_phase_temporal.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Phase curve temporal model</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_template_phase_temporal.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This model parametrises a power-law time model.">
+
+.. only:: html
+
+  .. image:: /user-guide/model-gallery/temporal/images/thumb/sphx_glr_plot_powerlaw_temporal_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_powerlaw_temporal.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">PowerLaw temporal model</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_powerlaw_temporal.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This model parametrises a gaussian time model.">
+
+.. only:: html
+
+  .. image:: /user-guide/model-gallery/temporal/images/thumb/sphx_glr_plot_gaussian_temporal_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_gaussian_temporal.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Gaussian temporal model</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_gaussian_temporal.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This model parametrises a generalized Gaussian time model.">
+
+.. only:: html
+
+  .. image:: /user-guide/model-gallery/temporal/images/thumb/sphx_glr_plot_generalized_gaussian_temporal_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_generalized_gaussian_temporal.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Generalized Gaussian temporal model</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_generalized_gaussian_temporal.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This model parametrises a constant time model.">
+
+.. only:: html
+
+  .. image:: /user-guide/model-gallery/temporal/images/thumb/sphx_glr_plot_constant_temporal_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_constant_temporal.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Constant temporal model</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_constant_temporal.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This model parametrises an ExpDecay time model.">
+
+.. only:: html
+
+  .. image:: /user-guide/model-gallery/temporal/images/thumb/sphx_glr_plot_expdecay_temporal_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_expdecay_temporal.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">ExpDecay temporal model</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_expdecay_temporal.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This model parametrises a LightCurve time model.">
+
+.. only:: html
+
+  .. image:: /user-guide/model-gallery/temporal/images/thumb/sphx_glr_plot_template_temporal_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_template_temporal.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Light curve temporal model</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_template_temporal.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This model parametrises a linear time model.">
+
+.. only:: html
+
+  .. image:: /user-guide/model-gallery/temporal/images/thumb/sphx_glr_plot_linear_temporal_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_linear_temporal.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Linear temporal model</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_user-guide_model-gallery_temporal_plot_linear_temporal.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Introduction to basic data structures handling.">
+
+.. only:: html
+
+  .. image:: /tutorials/starting/images/thumb/sphx_glr_overview_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_starting_overview.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Data structures</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_starting_overview.py`
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Introduction to Gammapy analysis using the low level API.">
 
 .. only:: html
@@ -117,6 +390,48 @@ Examples using ``gammapy.modeling.models.core.ModelBase.plot``
 .. only:: not html
 
  * :ref:`sphx_glr_tutorials_starting_analysis_2.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Perform a point like spectral analysis with energy dependent offset cut.">
+
+.. only:: html
+
+  .. image:: /tutorials/analysis-1d/images/thumb/sphx_glr_spectral_analysis_rad_max_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_analysis-1d_spectral_analysis_rad_max.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Spectral analysis with energy-dependent directional cuts</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_analysis-1d_spectral_analysis_rad_max.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Fit spectral models to combined Fermi-LAT and IACT flux points tables.">
+
+.. only:: html
+
+  .. image:: /tutorials/analysis-1d/images/thumb/sphx_glr_sed_fitting_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_analysis-1d_sed_fitting.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Flux point fitting</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_analysis-1d_sed_fitting.py`
 
 .. raw:: html
 
@@ -141,6 +456,48 @@ Examples using ``gammapy.modeling.models.core.ModelBase.plot``
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Joint 3D analysis using 3D Fermi datasets, a H.E.S.S. reduced spectrum and HAWC flux points.">
+
+.. only:: html
+
+  .. image:: /tutorials/analysis-3d/images/thumb/sphx_glr_analysis_mwl_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_analysis-3d_analysis_mwl.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Multi instrument joint 3D and 1D analysis</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_analysis-3d_analysis_mwl.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This notebook shows how to sample events of sources whose model evolves in energy and time.">
+
+.. only:: html
+
+  .. image:: /tutorials/analysis-3d/images/thumb/sphx_glr_event_sampling_nrg_depend_models_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_analysis-3d_event_sampling_nrg_depend_models.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Sample a source with energy-dependent temporal evolution</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_analysis-3d_event_sampling_nrg_depend_models.py`
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Produce a phasogram, phased-resolved maps and spectra for pulsar analysis.   Introduction ------------">
 
 .. only:: html
@@ -162,27 +519,6 @@ Examples using ``gammapy.modeling.models.core.ModelBase.plot``
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Learn how the model, dataset and fit Gammapy classes work together in a detailed modeling and fitting use-case.">
-
-.. only:: html
-
-  .. image:: /tutorials/api/images/thumb/sphx_glr_fitting_thumb.png
-    :alt:
-
-  :ref:`sphx_glr_tutorials_api_fitting.py`
-
-.. raw:: html
-
-      <div class="sphx-glr-thumbnail-title">Fitting</div>
-    </div>
-
-
-.. only:: not html
-
- * :ref:`sphx_glr_tutorials_api_fitting.py`
-
-.. raw:: html
-
     <div class="sphx-glr-thumbcontainer" tooltip="The sub-package modeling contains all the functionality related to modeling and fitting data. This includes spectral, spatial and temporal model classes, as well as the fit and parameter API.The models follow a naming scheme which contains the category as a suffix to the class name. An overview of all the available models can be found in the model-gallery.">
 
 .. only:: html
@@ -201,6 +537,48 @@ Examples using ``gammapy.modeling.models.core.ModelBase.plot``
 .. only:: not html
 
  * :ref:`sphx_glr_tutorials_api_models.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Convenience methods for dark matter high level analyses.">
+
+.. only:: html
+
+  .. image:: /tutorials/api/images/thumb/sphx_glr_astro_dark_matter_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_api_astro_dark_matter.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Dark matter spatial and spectral models</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_api_astro_dark_matter.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Learn how the model, dataset and fit Gammapy classes work together in a detailed modeling and fitting use-case.">
+
+.. only:: html
+
+  .. image:: /tutorials/api/images/thumb/sphx_glr_fitting_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_api_fitting.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Fitting</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_api_fitting.py`
 
 .. thumbnail-parent-div-close
 

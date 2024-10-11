@@ -198,37 +198,37 @@ Check setup
 
     System:
 
-            python_executable      : /Users/mregeard/anaconda3/envs/gammapy-dev/bin/python 
-            python_version         : 3.11.9     
+            python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python 
+            python_version         : 3.11.10    
             machine                : x86_64     
             system                 : Darwin     
 
 
     Gammapy package:
 
-            version                : 1.3.dev468+g4c56d91f9e.d20240613 
-            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/gammapy 
+            version                : 1.3.dev1205+g00f44f94ac 
+            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy 
 
 
     Other packages:
 
             numpy                  : 1.26.4     
-            scipy                  : 1.13.1     
-            astropy                : 6.1.0      
-            regions                : 0.9        
+            scipy                  : 1.14.1     
+            astropy                : 5.2.2      
+            regions                : 0.10       
             click                  : 8.1.7      
-            yaml                   : 6.0.1      
-            IPython                : 8.25.0     
-            jupyterlab             : 3.5.3      
-            matplotlib             : 3.8.4      
-            pandas                 : 2.2.2      
-            healpy                 : 1.16.6     
-            iminuit                : 2.25.2     
+            yaml                   : 6.0.2      
+            IPython                : 8.28.0     
+            jupyterlab             : not installed 
+            matplotlib             : 3.9.2      
+            pandas                 : not installed 
+            healpy                 : 1.17.3     
+            iminuit                : 2.30.1     
             sherpa                 : 4.16.1     
             naima                  : 0.10.0     
             emcee                  : 3.1.6      
             corner                 : 2.2.2      
-            ray                    : 2.24.0     
+            ray                    : 2.37.0     
 
 
     Gammapy environment variables:
@@ -481,7 +481,7 @@ map:
 
  .. code-block:: none
 
-    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/gammapy/visualization/datasets.py:84: UserWarning: Setting the 'color' property will override the edgecolor or facecolor properties.
+    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy/visualization/datasets.py:84: UserWarning: Setting the 'color' property will override the edgecolor or facecolor properties.
       handle = Patch(**plot_kwargs)
 
 
@@ -533,7 +533,7 @@ Fit spectrum
 
  .. code-block:: none
 
-    /Users/mregeard/anaconda3/envs/gammapy-dev/lib/python3.11/site-packages/numpy/core/fromnumeric.py:88: RuntimeWarning: overflow encountered in reduce
+    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/numpy/core/fromnumeric.py:88: RuntimeWarning: overflow encountered in reduce
       return ufunc.reduce(obj, axis, dtype, out, **passkwargs)
 
 
@@ -607,12 +607,12 @@ and check the best-fit parameters
 
  .. code-block:: none
 
-    model type    name     value         unit        error   min max frozen is_norm link prior
-    ----- ---- --------- ---------- -------------- --------- --- --- ------ ------- ---- -----
-     crab      amplitude 4.2903e-11 TeV-1 s-1 cm-2 3.443e-12 nan nan  False    True           
-     crab      reference 1.0000e+00            TeV 0.000e+00 nan nan   True   False           
-     crab          alpha 2.5819e+00                1.088e-01 nan nan  False   False           
-     crab           beta 1.9580e-01                6.591e-02 nan nan  False   False           
+    model type    name     value         unit        error   min max frozen link prior
+    ----- ---- --------- ---------- -------------- --------- --- --- ------ ---- -----
+     crab      amplitude 4.2903e-11 cm-2 s-1 TeV-1 3.443e-12 nan nan  False           
+     crab      reference 1.0000e+00            TeV 0.000e+00 nan nan   True           
+     crab          alpha 2.5819e+00                1.088e-01 nan nan  False           
+     crab           beta 1.9580e-01                6.591e-02 nan nan  False           
 
 
 
@@ -745,12 +745,14 @@ provide a good distribution of the background.
 
  .. code-block:: none
 
-      model   type    name     value         unit        error   min max frozen is_norm link prior
-    --------- ---- --------- ---------- -------------- --------- --- --- ------ ------- ---- -----
-    simulated      amplitude 4.1816e-11 TeV-1 s-1 cm-2 3.309e-12 nan nan  False    True           
-    simulated      reference 1.0000e+00            TeV 0.000e+00 nan nan   True   False           
-    simulated          alpha 2.5341e+00                9.053e-02 nan nan  False   False           
-    simulated           beta 1.2497e-01                5.499e-02 nan nan  False   False           
+    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/astropy/units/quantity.py:673: RuntimeWarning: invalid value encountered in divide
+      result = super().__array_ufunc__(function, method, *arrays, **kwargs)
+      model   type    name     value         unit        error   min max frozen link prior
+    --------- ---- --------- ---------- -------------- --------- --- --- ------ ---- -----
+    simulated      amplitude 4.3297e-11 cm-2 s-1 TeV-1 3.367e-12 nan nan  False           
+    simulated      reference 1.0000e+00            TeV 0.000e+00 nan nan   True           
+    simulated          alpha 2.4335e+00                8.043e-02 nan nan  False           
+    simulated           beta 1.0371e-01                5.127e-02 nan nan  False           
 
 
 
@@ -776,6 +778,10 @@ provide a good distribution of the background.
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: spectral_analysis_rad_max.py <spectral_analysis_rad_max.py>`
+
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: spectral_analysis_rad_max.zip <spectral_analysis_rad_max.zip>`
 
 
 .. only:: html

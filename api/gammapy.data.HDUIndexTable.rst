@@ -79,7 +79,6 @@ HDUIndexTable
       ~HDUIndexTable.reverse
       ~HDUIndexTable.round
       ~HDUIndexTable.row_idx
-      ~HDUIndexTable.setdefault
       ~HDUIndexTable.show_in_browser
       ~HDUIndexTable.show_in_notebook
       ~HDUIndexTable.sort
@@ -158,7 +157,6 @@ HDUIndexTable
    .. automethod:: reverse
    .. automethod:: round
    .. automethod:: row_idx
-   .. automethod:: setdefault
    .. automethod:: show_in_browser
    .. automethod:: show_in_notebook
    .. automethod:: sort

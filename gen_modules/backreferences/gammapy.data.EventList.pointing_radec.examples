@@ -15,7 +15,7 @@ Examples using ``gammapy.data.EventList.pointing_radec``
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Access and inspect CTA data and instrument response functions (IRFs) using Gammapy.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Access and inspect CTAO data and instrument response functions (IRFs) using Gammapy.">
 
 .. only:: html
 
@@ -26,7 +26,7 @@ Examples using ``gammapy.data.EventList.pointing_radec``
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">CTA with Gammapy</div>
+      <div class="sphx-glr-thumbnail-title">CTAO with Gammapy</div>
     </div>
 
 

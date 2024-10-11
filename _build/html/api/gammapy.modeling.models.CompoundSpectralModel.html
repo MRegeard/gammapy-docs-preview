@@ -1,10 +1,3 @@
-<!--
-# -*- coding: utf-8 -*-
-# Licensed under a 3-clause BSD style license - see LICENSE.rst
-#
-# Gammapy documentation layout configuration file.
--->
-
 
 <!DOCTYPE html>
 
@@ -36,8 +29,8 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
-    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css?v=7f9a90b1" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css?v=d2d258e8" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css?v=f4aeca0c" />
@@ -54,11 +47,11 @@
     <script src="../_static/jquery.js?v=5d32c60e"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
     <script src="../_static/documentation_options.js?v=1f75dfce"></script>
-    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=30646c52"></script>
-    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'api/gammapy.modeling.models.CompoundSpectralModel';</script>
     <script>
@@ -67,36 +60,15 @@
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
         </script>
+    <script src="../_static/matomo.js?v=52704cab"></script>
     <link rel="icon" href="../_static/gammapy_logo.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="ConstantFluxSpatialModel" href="gammapy.modeling.models.ConstantFluxSpatialModel.html" />
     <link rel="prev" title="BrokenPowerLawSpectralModel" href="gammapy.modeling.models.BrokenPowerLawSpectralModel.html" />
-
-   
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="08 Oct 2024"/>
-
-   <!-- Matomo -->
-
-   <script>
-     var _paq = window._paq = window._paq || [];
-     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-     _paq.push(['trackPageView']);
-     _paq.push(['enableLinkTracking']);
-     (function() {
-     var u="https://apcstatview.in2p3.fr/";
-     _paq.push(['setTrackerUrl', u+'matomo.php']);
-     _paq.push(['setSiteId', '3']);
-     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-     })();
-   </script>
-
-   <!-- End Matomo Code -->
-
-
+    <meta name="docbuild:last-update" content="11 Oct 2024"/>
   </head>
   
   
@@ -1006,13 +978,16 @@ document.write(`
 <tr class="row-odd"><td><p><a class="reference internal" href="#gammapy.modeling.models.CompoundSpectralModel.parameters" title="gammapy.modeling.models.CompoundSpectralModel.parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parameters</span></code></a></p></td>
 <td><p>Parameters as a <a class="reference internal" href="gammapy.modeling.Parameters.html#gammapy.modeling.Parameters" title="gammapy.modeling.Parameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Parameters</span></code></a> object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#gammapy.modeling.models.CompoundSpectralModel.pivot_energy" title="gammapy.modeling.models.CompoundSpectralModel.pivot_energy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pivot_energy</span></code></a></p></td>
-<td><p>Pivot or decorrelation energy, for a given spectral model calculated numerically.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#gammapy.modeling.models.CompoundSpectralModel.tag" title="gammapy.modeling.models.CompoundSpectralModel.tag"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tag</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#gammapy.modeling.models.CompoundSpectralModel.parameters_unique_names" title="gammapy.modeling.models.CompoundSpectralModel.parameters_unique_names"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parameters_unique_names</span></code></a></p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#gammapy.modeling.models.CompoundSpectralModel.type" title="gammapy.modeling.models.CompoundSpectralModel.type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#gammapy.modeling.models.CompoundSpectralModel.pivot_energy" title="gammapy.modeling.models.CompoundSpectralModel.pivot_energy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pivot_energy</span></code></a></p></td>
+<td><p>Pivot or decorrelation energy, for a given spectral model calculated numerically.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#gammapy.modeling.models.CompoundSpectralModel.tag" title="gammapy.modeling.models.CompoundSpectralModel.tag"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tag</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#gammapy.modeling.models.CompoundSpectralModel.type" title="gammapy.modeling.models.CompoundSpectralModel.type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code></a></p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -1114,6 +1089,11 @@ document.write(`
 <dl class="py attribute">
 <dt class="sig sig-object py" id="gammapy.modeling.models.CompoundSpectralModel.parameters">
 <span class="sig-name descname"><span class="pre">parameters</span></span><a class="headerlink" href="#gammapy.modeling.models.CompoundSpectralModel.parameters" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="gammapy.modeling.models.CompoundSpectralModel.parameters_unique_names">
+<span class="sig-name descname"><span class="pre">parameters_unique_names</span></span><a class="headerlink" href="#gammapy.modeling.models.CompoundSpectralModel.parameters_unique_names" title="Link to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -1572,6 +1552,7 @@ Default is 1e-5.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gammapy.modeling.models.CompoundSpectralModel.frozen"><code class="docutils literal notranslate"><span class="pre">CompoundSpectralModel.frozen</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gammapy.modeling.models.CompoundSpectralModel.is_norm_spectral_model"><code class="docutils literal notranslate"><span class="pre">CompoundSpectralModel.is_norm_spectral_model</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gammapy.modeling.models.CompoundSpectralModel.parameters"><code class="docutils literal notranslate"><span class="pre">CompoundSpectralModel.parameters</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gammapy.modeling.models.CompoundSpectralModel.parameters_unique_names"><code class="docutils literal notranslate"><span class="pre">CompoundSpectralModel.parameters_unique_names</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gammapy.modeling.models.CompoundSpectralModel.pivot_energy"><code class="docutils literal notranslate"><span class="pre">CompoundSpectralModel.pivot_energy</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gammapy.modeling.models.CompoundSpectralModel.tag"><code class="docutils literal notranslate"><span class="pre">CompoundSpectralModel.tag</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gammapy.modeling.models.CompoundSpectralModel.type"><code class="docutils literal notranslate"><span class="pre">CompoundSpectralModel.type</span></code></a></li>
@@ -1641,19 +1622,28 @@ Default is 1e-5.</p>
   </p>
 </div>
       
-        <div class="footer-item">
-
-  <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.0.2.
-    <br/>
-  </p>
-</div>
+    </div>
+  
+  
+    <div class="footer-items__center">
+      
+        <div class="footer-item"><p class="last-updated">
+  Last updated on 11 Oct 2024.
+  <br/>
+</p></div>
       
     </div>
   
   
-  
     <div class="footer-items__end">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.0.
+    <br/>
+  </p>
+</div>
       
         <div class="footer-item">
 <p class="theme-version">

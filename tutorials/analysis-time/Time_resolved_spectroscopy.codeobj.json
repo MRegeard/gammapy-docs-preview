@@ -2472,7 +2472,7 @@
    "name": "colorbar"
   }
  ],
- "plt.plot": [
+ "plt.errorbar": [
   {
    "is_class": false,
    "is_explicit": false,
@@ -2485,7 +2485,7 @@
    "is_explicit": false,
    "module": "matplotlib.pyplot",
    "module_short": "matplotlib.pyplot",
-   "name": "plot"
+   "name": "errorbar"
   }
  ],
  "plt.scatter": [

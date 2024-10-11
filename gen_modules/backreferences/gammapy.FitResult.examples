@@ -15,6 +15,27 @@ Examples using ``gammapy.FitResult``
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Introduction to 3D analysis using the Gammapy high level interface.">
+
+.. only:: html
+
+  .. image:: /tutorials/starting/images/thumb/sphx_glr_analysis_1_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_starting_analysis_1.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">High level interface</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_starting_analysis_1.py`
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Introduction to Gammapy analysis using the low level API.">
 
 .. only:: html
@@ -57,24 +78,66 @@ Examples using ``gammapy.FitResult``
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Gamma rays emitted from extra-galactic objects, eg blazars, interact with the photons of the Extragalactic Background Light (EBL) through pair production and are attenuated, thus modifying the intrinsic spectrum.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Perform a full region based on-off spectral analysis and fit the resulting datasets.">
 
 .. only:: html
 
-  .. image:: /tutorials/analysis-1d/images/thumb/sphx_glr_ebl_thumb.png
+  .. image:: /tutorials/analysis-1d/images/thumb/sphx_glr_spectral_analysis_thumb.png
     :alt:
 
-  :ref:`sphx_glr_tutorials_analysis-1d_ebl.py`
+  :ref:`sphx_glr_tutorials_analysis-1d_spectral_analysis.py`
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Account for spectral absorption due to the EBL</div>
+      <div class="sphx-glr-thumbnail-title">Spectral analysis</div>
     </div>
 
 
 .. only:: not html
 
- * :ref:`sphx_glr_tutorials_analysis-1d_ebl.py`
+ * :ref:`sphx_glr_tutorials_analysis-1d_spectral_analysis.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Introduction to 1D analysis using the Gammapy high level interface.">
+
+.. only:: html
+
+  .. image:: /tutorials/analysis-1d/images/thumb/sphx_glr_spectral_analysis_hli_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_analysis-1d_spectral_analysis_hli.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Spectral analysis with the HLI</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_analysis-1d_spectral_analysis_hli.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Perform a point like spectral analysis with energy dependent offset cut.">
+
+.. only:: html
+
+  .. image:: /tutorials/analysis-1d/images/thumb/sphx_glr_spectral_analysis_rad_max_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_analysis-1d_spectral_analysis_rad_max.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Spectral analysis with energy-dependent directional cuts</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_analysis-1d_spectral_analysis_rad_max.py`
 
 .. raw:: html
 
@@ -99,24 +162,45 @@ Examples using ``gammapy.FitResult``
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Perform a full region based on-off spectral analysis and fit the resulting datasets.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Fit spectral models to combined Fermi-LAT and IACT flux points tables.">
 
 .. only:: html
 
-  .. image:: /tutorials/analysis-1d/images/thumb/sphx_glr_spectral_analysis_thumb.png
+  .. image:: /tutorials/analysis-1d/images/thumb/sphx_glr_sed_fitting_thumb.png
     :alt:
 
-  :ref:`sphx_glr_tutorials_analysis-1d_spectral_analysis.py`
+  :ref:`sphx_glr_tutorials_analysis-1d_sed_fitting.py`
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Spectral analysis</div>
+      <div class="sphx-glr-thumbnail-title">Flux point fitting</div>
     </div>
 
 
 .. only:: not html
 
- * :ref:`sphx_glr_tutorials_analysis-1d_spectral_analysis.py`
+ * :ref:`sphx_glr_tutorials_analysis-1d_sed_fitting.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Gamma rays emitted from extra-galactic objects, eg blazars, interact with the photons of the Extragalactic Background Light (EBL) through pair production and are attenuated, thus modifying the intrinsic spectrum.">
+
+.. only:: html
+
+  .. image:: /tutorials/analysis-1d/images/thumb/sphx_glr_ebl_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_analysis-1d_ebl.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Account for spectral absorption due to the EBL</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_analysis-1d_ebl.py`
 
 .. raw:: html
 
@@ -159,6 +243,48 @@ Examples using ``gammapy.FitResult``
 .. only:: not html
 
  * :ref:`sphx_glr_tutorials_analysis-3d_cta_data_analysis.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Joint 3D analysis using 3D Fermi datasets, a H.E.S.S. reduced spectrum and HAWC flux points.">
+
+.. only:: html
+
+  .. image:: /tutorials/analysis-3d/images/thumb/sphx_glr_analysis_mwl_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_analysis-3d_analysis_mwl.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Multi instrument joint 3D and 1D analysis</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_analysis-3d_analysis_mwl.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Simulate a 3D observation of a source with the CTA 1DC response and fit it with the assumed source model.">
+
+.. only:: html
+
+  .. image:: /tutorials/analysis-3d/images/thumb/sphx_glr_simulate_3d_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_analysis-3d_simulate_3d.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">3D map simulation</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_analysis-3d_simulate_3d.py`
 
 .. raw:: html
 

@@ -116,7 +116,7 @@ The following shows how to implement extrapolation of a template spectral model:
  .. code-block:: none
 
 
-    <matplotlib.legend.Legend object at 0x1381764d0>
+    <matplotlib.legend.Legend object at 0x136e7a610>
 
 
 
@@ -203,8 +203,8 @@ Here is an example YAML file using the model:
                 - 3.9e-39
                 unit: 1 / (cm2 MeV s)
     metadata:
-        creator: Gammapy 1.3.dev1110+g29931fb8f6
-        date: '2024-10-07T16:03:33.160502'
+        creator: Gammapy 1.3.dev1205+g00f44f94ac
+        date: '2024-10-11T13:05:30.693512'
         origin: null
 
 

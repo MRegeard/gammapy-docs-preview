@@ -15,24 +15,45 @@ Examples using ``gammapy.datasets.spectrum.PlotMixin.models``
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Gamma rays emitted from extra-galactic objects, eg blazars, interact with the photons of the Extragalactic Background Light (EBL) through pair production and are attenuated, thus modifying the intrinsic spectrum.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Perform a full region based on-off spectral analysis and fit the resulting datasets.">
 
 .. only:: html
 
-  .. image:: /tutorials/analysis-1d/images/thumb/sphx_glr_ebl_thumb.png
+  .. image:: /tutorials/analysis-1d/images/thumb/sphx_glr_spectral_analysis_thumb.png
     :alt:
 
-  :ref:`sphx_glr_tutorials_analysis-1d_ebl.py`
+  :ref:`sphx_glr_tutorials_analysis-1d_spectral_analysis.py`
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Account for spectral absorption due to the EBL</div>
+      <div class="sphx-glr-thumbnail-title">Spectral analysis</div>
     </div>
 
 
 .. only:: not html
 
- * :ref:`sphx_glr_tutorials_analysis-1d_ebl.py`
+ * :ref:`sphx_glr_tutorials_analysis-1d_spectral_analysis.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Perform a point like spectral analysis with energy dependent offset cut.">
+
+.. only:: html
+
+  .. image:: /tutorials/analysis-1d/images/thumb/sphx_glr_spectral_analysis_rad_max_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_analysis-1d_spectral_analysis_rad_max.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Spectral analysis with energy-dependent directional cuts</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_analysis-1d_spectral_analysis_rad_max.py`
 
 .. raw:: html
 
@@ -57,24 +78,45 @@ Examples using ``gammapy.datasets.spectrum.PlotMixin.models``
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Perform a full region based on-off spectral analysis and fit the resulting datasets.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Simulate a number of spectral on-off observations of a source with a power-law spectral model using the CTA 1DC response and fit them with the assumed spectral model.">
 
 .. only:: html
 
-  .. image:: /tutorials/analysis-1d/images/thumb/sphx_glr_spectral_analysis_thumb.png
+  .. image:: /tutorials/analysis-1d/images/thumb/sphx_glr_spectrum_simulation_thumb.png
     :alt:
 
-  :ref:`sphx_glr_tutorials_analysis-1d_spectral_analysis.py`
+  :ref:`sphx_glr_tutorials_analysis-1d_spectrum_simulation.py`
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Spectral analysis</div>
+      <div class="sphx-glr-thumbnail-title">1D spectrum simulation</div>
     </div>
 
 
 .. only:: not html
 
- * :ref:`sphx_glr_tutorials_analysis-1d_spectral_analysis.py`
+ * :ref:`sphx_glr_tutorials_analysis-1d_spectrum_simulation.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Gamma rays emitted from extra-galactic objects, eg blazars, interact with the photons of the Extragalactic Background Light (EBL) through pair production and are attenuated, thus modifying the intrinsic spectrum.">
+
+.. only:: html
+
+  .. image:: /tutorials/analysis-1d/images/thumb/sphx_glr_ebl_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_analysis-1d_ebl.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Account for spectral absorption due to the EBL</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_analysis-1d_ebl.py`
 
 .. raw:: html
 
@@ -141,27 +183,6 @@ Examples using ``gammapy.datasets.spectrum.PlotMixin.models``
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Learn how the model, dataset and fit Gammapy classes work together in a detailed modeling and fitting use-case.">
-
-.. only:: html
-
-  .. image:: /tutorials/api/images/thumb/sphx_glr_fitting_thumb.png
-    :alt:
-
-  :ref:`sphx_glr_tutorials_api_fitting.py`
-
-.. raw:: html
-
-      <div class="sphx-glr-thumbnail-title">Fitting</div>
-    </div>
-
-
-.. only:: not html
-
- * :ref:`sphx_glr_tutorials_api_fitting.py`
-
-.. raw:: html
-
     <div class="sphx-glr-thumbcontainer" tooltip="Learn how you can include prior knowledge into the fitting by setting priors on single parameters.">
 
 .. only:: html
@@ -180,6 +201,27 @@ Examples using ``gammapy.datasets.spectrum.PlotMixin.models``
 .. only:: not html
 
  * :ref:`sphx_glr_tutorials_api_priors.py`
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Learn how the model, dataset and fit Gammapy classes work together in a detailed modeling and fitting use-case.">
+
+.. only:: html
+
+  .. image:: /tutorials/api/images/thumb/sphx_glr_fitting_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_tutorials_api_fitting.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Fitting</div>
+    </div>
+
+
+.. only:: not html
+
+ * :ref:`sphx_glr_tutorials_api_fitting.py`
 
 .. thumbnail-parent-div-close
 

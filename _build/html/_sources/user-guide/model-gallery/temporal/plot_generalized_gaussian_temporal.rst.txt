@@ -132,8 +132,8 @@ Here is an example YAML file using the model:
                 value: 0.6666666666666666
             scale: utc
     metadata:
-        creator: Gammapy 1.3.dev468+g4c56d91f9e.d20240613
-        date: '2024-06-13T21:05:07.662629'
+        creator: Gammapy 1.3.dev1205+g00f44f94ac
+        date: '2024-10-11T13:05:44.706768'
         origin: null
 
 
@@ -161,6 +161,10 @@ Here is an example YAML file using the model:
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: plot_generalized_gaussian_temporal.py <plot_generalized_gaussian_temporal.py>`
+
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: plot_generalized_gaussian_temporal.zip <plot_generalized_gaussian_temporal.zip>`
 
 
 .. only:: html

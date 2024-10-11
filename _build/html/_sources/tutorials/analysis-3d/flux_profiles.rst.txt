@@ -123,37 +123,37 @@ Check setup
 
     System:
 
-            python_executable      : /Users/mregeard/anaconda3/envs/gammapy-dev/bin/python 
-            python_version         : 3.11.9     
+            python_executable      : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/bin/python 
+            python_version         : 3.11.10    
             machine                : x86_64     
             system                 : Darwin     
 
 
     Gammapy package:
 
-            version                : 1.3.dev468+g4c56d91f9e.d20240613 
-            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/gammapy 
+            version                : 1.3.dev1205+g00f44f94ac 
+            path                   : /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/gammapy 
 
 
     Other packages:
 
             numpy                  : 1.26.4     
-            scipy                  : 1.13.1     
-            astropy                : 6.1.0      
-            regions                : 0.9        
+            scipy                  : 1.14.1     
+            astropy                : 5.2.2      
+            regions                : 0.10       
             click                  : 8.1.7      
-            yaml                   : 6.0.1      
-            IPython                : 8.25.0     
-            jupyterlab             : 3.5.3      
-            matplotlib             : 3.8.4      
-            pandas                 : 2.2.2      
-            healpy                 : 1.16.6     
-            iminuit                : 2.25.2     
+            yaml                   : 6.0.2      
+            IPython                : 8.28.0     
+            jupyterlab             : not installed 
+            matplotlib             : 3.9.2      
+            pandas                 : not installed 
+            healpy                 : 1.17.3     
+            iminuit                : 2.30.1     
             sherpa                 : 4.16.1     
             naima                  : 0.10.0     
             emcee                  : 3.1.6      
             corner                 : 2.2.2      
-            ray                    : 2.24.0     
+            ray                    : 2.37.0     
 
 
     Gammapy environment variables:
@@ -316,7 +316,7 @@ the counts image:
 
  .. code-block:: none
 
-    /Users/mregeard/anaconda3/envs/gammapy-dev/lib/python3.11/site-packages/regions/shapes/rectangle.py:207: UserWarning: Setting the 'color' property will override the edgecolor or facecolor properties.
+    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/regions/shapes/rectangle.py:205: UserWarning: Setting the 'color' property will override the edgecolor or facecolor properties.
       return Rectangle(xy=xy, width=width, height=height,
 
 
@@ -374,11 +374,11 @@ We can see the full configuration by printing the estimator object:
     --------------------
 
       energy_edges           : [  10. 2000.] GeV
-      fit                    : <gammapy.modeling.fit.Fit object at 0x17ec3f790>
+      fit                    : <gammapy.modeling.fit.Fit object at 0x143dbaa10>
       n_jobs                 : None
       n_sigma                : 1
       n_sigma_ul             : 2
-      norm                   : Parameter(name='norm', value=1.0, factor=1.0, scale=1.0, unit=Unit(dimensionless), min=nan, max=nan, frozen=False, prior=None, id=0x186166ed0)
+      norm                   : Parameter(name='norm', value=1.0, factor=1.0, scale=1.0, unit=Unit(dimensionless), min=nan, max=nan, frozen=False, prior=None, id=0x143e28450)
       null_value             : 0
       parallel_backend       : None
       reoptimize             : False
@@ -705,7 +705,7 @@ Again we first illustrate the regions:
 
  .. code-block:: none
 
-    /Users/mregeard/anaconda3/envs/gammapy-dev/lib/python3.11/site-packages/regions/core/compound.py:160: UserWarning: Setting the 'color' property will override the edgecolor or facecolor properties.
+    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/regions/core/compound.py:160: UserWarning: Setting the 'color' property will override the edgecolor or facecolor properties.
       patch = mpatches.PathPatch(path, **mpl_kwargs)
 
 
@@ -850,7 +850,7 @@ And now plot the points together with the likelihood profiles:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 10.573 seconds)
+   **Total running time of the script:** (0 minutes 10.712 seconds)
 
 
 .. _sphx_glr_download_tutorials_analysis-3d_flux_profiles.py:
@@ -873,6 +873,10 @@ And now plot the points together with the likelihood profiles:
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: flux_profiles.py <flux_profiles.py>`
+
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: flux_profiles.zip <flux_profiles.zip>`
 
 
 .. only:: html

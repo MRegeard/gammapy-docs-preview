@@ -180,7 +180,7 @@ We will simulate using the CTA-1DC IRFs shipped with gammapy
 
  .. code-block:: none
 
-    /Users/mregeard/anaconda3/envs/gammapy-dev/lib/python3.11/site-packages/astropy/units/core.py:2157: UnitsWarning: '1/s/MeV/sr' did not parse as fits unit: Numeric factor not supported by FITS If this is meant to be a custom unit, define it with 'u.def_unit'. To have it recognized inside a file reader or other code, enable it with 'u.add_enabled_units'. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html
+    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/.tox/build_docs/lib/python3.11/site-packages/astropy/units/core.py:2097: UnitsWarning: '1/s/MeV/sr' did not parse as fits unit: Numeric factor not supported by FITS If this is meant to be a custom unit, define it with 'u.def_unit'. To have it recognized inside a file reader or other code, enable it with 'u.add_enabled_units'. For details, see https://docs.astropy.org/en/latest/units/combining_and_defining.html
       warnings.warn(msg, UnitsWarning)
     Models
 
@@ -193,7 +193,7 @@ We will simulate using the CTA-1DC IRFs shipped with gammapy
       Temporal model type       : 
       Parameters:
         index                         :      3.000   +/-    0.00             
-        amplitude                     :   1.00e-11   +/- 0.0e+00 1 / (TeV s cm2)
+        amplitude                     :   1.00e-11   +/- 0.0e+00 1 / (cm2 s TeV)
         reference             (frozen):      1.000       TeV         
         lon_0                         :      0.200   +/-    0.00 deg         
         lat_0                         :      0.100   +/-    0.00 deg         
@@ -303,13 +303,13 @@ the `selection` of the maps that you want to produce
 
       Name                            : dataset-simu 
 
-      Total counts                    : 169871 
+      Total counts                    : 169967 
       Total background counts         : 161250.95
-      Total excess counts             : 8620.05
+      Total excess counts             : 8716.05
 
-      Predicted counts                : 169871.61
+      Predicted counts                : 169871.64
       Predicted background counts     : 161250.95
-      Predicted excess counts         : 8620.66
+      Predicted excess counts         : 8620.69
 
       Exposure min                    : 4.08e+02 m2 s
       Exposure max                    : 3.58e+10 m2 s
@@ -318,7 +318,7 @@ the `selection` of the maps that you want to produce
       Number of fit bins              : 804492 
 
       Fit statistic type              : cash
-      Fit statistic value (-2 log(L)) : 562511.90
+      Fit statistic value (-2 log(L)) : 563466.96
 
       Number of models                : 2 
       Number of parameters            : 11
@@ -333,7 +333,7 @@ the `selection` of the maps that you want to produce
         Temporal model type       : 
         Parameters:
           index                         :      3.000   +/-    0.00             
-          amplitude                     :   1.00e-11   +/- 0.0e+00 1 / (TeV s cm2)
+          amplitude                     :   1.00e-11   +/- 0.0e+00 1 / (cm2 s TeV)
           reference             (frozen):      1.000       TeV         
           lon_0                         :      0.200   +/-    0.00 deg         
           lat_0                         :      0.100   +/-    0.00 deg         
@@ -436,7 +436,7 @@ the reconstructed parameters.
       Temporal model type       : 
       Parameters:
         index                         :      3.000   +/-    0.00             
-        amplitude                     :   1.00e-11   +/- 0.0e+00 1 / (TeV s cm2)
+        amplitude                     :   1.00e-11   +/- 0.0e+00 1 / (cm2 s TeV)
         reference             (frozen):      1.000       TeV         
         lon_0                         :      0.200   +/-    0.00 deg         
         lat_0                         :      0.100   +/-    0.00 deg         
@@ -518,7 +518,7 @@ Compare the injected and fitted models:
       Temporal model type       : 
       Parameters:
         index                         :      3.000   +/-    0.00             
-        amplitude                     :   1.00e-11   +/- 0.0e+00 1 / (TeV s cm2)
+        amplitude                     :   1.00e-11   +/- 0.0e+00 1 / (cm2 s TeV)
         reference             (frozen):      1.000       TeV         
         lon_0                         :      0.200   +/-    0.00 deg         
         lat_0                         :      0.100   +/-    0.00 deg         
@@ -537,12 +537,12 @@ Compare the injected and fitted models:
       Spatial  model type       : GaussianSpatialModel
       Temporal model type       : 
       Parameters:
-        index                         :      2.977   +/-    0.02             
-        amplitude                     :   1.03e-11   +/- 3.3e-13 1 / (TeV s cm2)
+        index                         :      2.997   +/-    0.02             
+        amplitude                     :   1.02e-11   +/- 3.3e-13 1 / (cm2 s TeV)
         reference             (frozen):      1.000       TeV         
-        lon_0                         :      0.197   +/-    0.01 deg         
-        lat_0                         :      0.093   +/-    0.01 deg         
-        sigma                         :      0.297   +/-    0.00 deg         
+        lon_0                         :      0.195   +/-    0.01 deg         
+        lat_0                         :      0.109   +/-    0.01 deg         
+        sigma                         :      0.304   +/-    0.00 deg         
         e                     (frozen):      0.000                   
         phi                   (frozen):      0.000       deg         
 
@@ -570,19 +570,19 @@ Get the errors on the fitted parameters from the parameter table
 
  .. code-block:: none
 
-    type    name     value         unit        error      min        max    frozen is_norm link prior
-    ---- --------- ---------- -------------- --------- ---------- --------- ------ ------- ---- -----
-             index 2.9773e+00                1.925e-02        nan       nan  False   False           
-         amplitude 1.0290e-11 TeV-1 s-1 cm-2 3.304e-13        nan       nan  False    True           
-         reference 1.0000e+00            TeV 0.000e+00        nan       nan   True   False           
-             lon_0 1.9739e-01            deg 5.770e-03        nan       nan  False   False           
-             lat_0 9.2636e-02            deg 5.820e-03 -9.000e+01 9.000e+01  False   False           
-             sigma 2.9711e-01            deg 3.978e-03  0.000e+00       nan  False   False           
-                 e 0.0000e+00                0.000e+00  0.000e+00 1.000e+00   True   False           
-               phi 0.0000e+00            deg 0.000e+00        nan       nan   True   False           
-              norm 1.0000e+00                0.000e+00        nan       nan   True    True           
-              tilt 0.0000e+00                0.000e+00        nan       nan   True   False           
-         reference 1.0000e+00            TeV 0.000e+00        nan       nan   True   False           
+    type    name     value         unit        error      min        max    frozen link prior
+    ---- --------- ---------- -------------- --------- ---------- --------- ------ ---- -----
+             index 2.9972e+00                1.924e-02        nan       nan  False           
+         amplitude 1.0185e-11 cm-2 s-1 TeV-1 3.288e-13        nan       nan  False           
+         reference 1.0000e+00            TeV 0.000e+00        nan       nan   True           
+             lon_0 1.9534e-01            deg 5.884e-03        nan       nan  False           
+             lat_0 1.0866e-01            deg 5.933e-03 -9.000e+01 9.000e+01  False           
+             sigma 3.0409e-01            deg 4.017e-03  0.000e+00       nan  False           
+                 e 0.0000e+00                0.000e+00  0.000e+00 1.000e+00   True           
+               phi 0.0000e+00            deg 0.000e+00        nan       nan   True           
+              norm 1.0000e+00                0.000e+00        nan       nan   True           
+              tilt 0.0000e+00                0.000e+00        nan       nan   True           
+         reference 1.0000e+00            TeV 0.000e+00        nan       nan   True           
 
 
 
@@ -608,6 +608,10 @@ Get the errors on the fitted parameters from the parameter table
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: simulate_3d.py <simulate_3d.py>`
+
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: simulate_3d.zip <simulate_3d.zip>`
 
 
 .. only:: html

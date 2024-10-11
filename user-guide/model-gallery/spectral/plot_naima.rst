@@ -10,8 +10,8 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_user-guide_model-gallery_spectral_plot_naima.py>`
-        to download the full example code or to run this example in your browser via Binder
+        :ref:`Go to the end <sphx_glr_download_user-guide_model-gallery_spectral_plot_naima.py>`
+        to download the full example code. or to run this example in your browser via Binder
 
 .. rst-class:: sphx-glr-example-title
 
@@ -47,7 +47,7 @@ electron distribution with an `InverseCompton` radiative model, in the presence 
 
 .. GENERATED FROM PYTHON SOURCE LINES 30-63
 
-.. code-block:: python3
+.. code-block:: Python
 
 
     from astropy import units as u
@@ -102,7 +102,7 @@ Here is an example YAML file using the model:
 
 .. GENERATED FROM PYTHON SOURCE LINES 67-72
 
-.. code-block:: python3
+.. code-block:: Python
 
 
     model = SkyModel(spectral_model=model, name="naima-model")
@@ -132,7 +132,6 @@ Here is an example YAML file using the model:
                 frozen: false
                 interp: lin
                 scale_method: scale10
-                is_norm: true
             -   name: e_0
                 value: 10.0
                 unit: TeV
@@ -142,7 +141,6 @@ Here is an example YAML file using the model:
                 frozen: false
                 interp: lin
                 scale_method: scale10
-                is_norm: false
             -   name: alpha
                 value: 3.0
                 unit: ''
@@ -152,7 +150,6 @@ Here is an example YAML file using the model:
                 frozen: false
                 interp: lin
                 scale_method: scale10
-                is_norm: false
             -   name: e_cutoff
                 value: 30.0
                 unit: TeV
@@ -162,7 +159,6 @@ Here is an example YAML file using the model:
                 frozen: false
                 interp: lin
                 scale_method: scale10
-                is_norm: false
             -   name: beta
                 value: 1.0
                 unit: ''
@@ -172,11 +168,19 @@ Here is an example YAML file using the model:
                 frozen: false
                 interp: lin
                 scale_method: scale10
-                is_norm: false
+    metadata:
+        creator: Gammapy 1.3.dev1205+g00f44f94ac
+        date: '2024-10-11T13:05:42.512038'
+        origin: null
 
 
 
 
+
+
+.. rst-class:: sphx-glr-timing
+
+   **Total running time of the script:** (0 minutes 10.298 seconds)
 
 
 .. _sphx_glr_download_user-guide_model-gallery_spectral_plot_naima.py:
@@ -185,21 +189,24 @@ Here is an example YAML file using the model:
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
-
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/gammapy/gammapy-webpage/master?urlpath=lab/tree/notebooks/dev/user-guide/model-gallery/spectral/plot_naima.ipynb
+        :target: https://mybinder.org/v2/gh/gammapy/gammapy-webpage/main?urlpath=lab/tree/notebooks/dev/user-guide/model-gallery/spectral/plot_naima.ipynb
         :alt: Launch binder
         :width: 150 px
+
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
+
+      :download:`Download Jupyter notebook: plot_naima.ipynb <plot_naima.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: plot_naima.py <plot_naima.py>`
 
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
+    .. container:: sphx-glr-download sphx-glr-download-zip
 
-      :download:`Download Jupyter notebook: plot_naima.ipynb <plot_naima.ipynb>`
+      :download:`Download zipped: plot_naima.zip <plot_naima.zip>`
 
 
 .. only:: html

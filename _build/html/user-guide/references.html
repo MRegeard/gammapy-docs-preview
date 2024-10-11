@@ -1,10 +1,3 @@
-<!--
-# -*- coding: utf-8 -*-
-# Licensed under a 3-clause BSD style license - see LICENSE.rst
-#
-# Gammapy documentation layout configuration file.
--->
-
 
 <!DOCTYPE html>
 
@@ -36,8 +29,8 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=fd3f3429" />
-    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css?v=7f9a90b1" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/plot_directive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css?v=d2d258e8" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css?v=f4aeca0c" />
@@ -54,11 +47,11 @@
     <script src="../_static/jquery.js?v=5d32c60e"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
     <script src="../_static/documentation_options.js?v=1f75dfce"></script>
-    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=30646c52"></script>
-    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user-guide/references';</script>
     <script>
@@ -67,36 +60,15 @@
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
         </script>
+    <script src="../_static/matomo.js?v=52704cab"></script>
     <link rel="icon" href="../_static/gammapy_logo.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Tutorials" href="../tutorials/index.html" />
     <link rel="prev" title="Linear temporal model" href="model-gallery/temporal/plot_linear_temporal.html" />
-
-   
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="08 Oct 2024"/>
-
-   <!-- Matomo -->
-
-   <script>
-     var _paq = window._paq = window._paq || [];
-     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-     _paq.push(['trackPageView']);
-     _paq.push(['enableLinkTracking']);
-     (function() {
-     var u="https://apcstatview.in2p3.fr/";
-     _paq.push(['setTrackerUrl', u+'matomo.php']);
-     _paq.push(['setSiteId', '3']);
-     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-     })();
-   </script>
-
-   <!-- End Matomo Code -->
-
-
+    <meta name="docbuild:last-update" content="11 Oct 2024"/>
   </head>
   
   
@@ -709,7 +681,7 @@ provides a Data Format for gamma-ray data that is currently used by many IACT ex
 and by HAWC. Gammapy I/O functions are compliant with this format.</p>
 </dd>
 <dt id="term-GTI">GTI<a class="headerlink" href="#term-GTI" title="Link to this term">#</a></dt><dd><p>Short for “good time interval”: it indicates a continuous time interval of data
-acquisition. In CTA, it also represents a time interval in which the IRFs are
+acquisition. In the GADF DL3 format, it also represents a time interval in which the IRFs are
 supposed to be constant.</p>
 </dd>
 <dt id="term-IRF">IRF<a class="headerlink" href="#term-IRF" title="Link to this term">#</a></dt><dd><p>Short for “instrument response function”: they are used to model the probability
@@ -744,23 +716,6 @@ in which the dataset mask is True.</p>
 <dt id="term-SED">SED<a class="headerlink" href="#term-SED" title="Link to this term">#</a></dt><dd><p>Short for “spectral energy distribution”. For a spectral model or flux points
 object, the type of plot (e.g. <span class="math notranslate nohighlight">\(dN/dE\)</span>, <span class="math notranslate nohighlight">\(E^2\ dN/dE\)</span>) is typically adjusted
 through the <code class="xref py py-obj docutils literal notranslate"><span class="pre">sed_type</span></code> quantity. See <a class="reference internal" href="estimators.html#sedtypes"><span class="std std-ref">SED types</span></a> for a list of options.</p>
-</dd>
-<dt id="term-Stacked-Analysis">Stacked Analysis<a class="headerlink" href="#term-Stacked-Analysis" title="Link to this term">#</a></dt><dd><p>In a stacked analysis individual observations are reduced to datasets which
-are then stacked to produce a single reduced dataset. The latter is then used
-to obtain physical information through model fitting. Some approximations must
-be made to perform dataset stacking (e.g. loss of individual background normalization,
-averaging of instrument responses, loss of information outside region of interest etc),
-but this can reduce very significantly the computing and memory cost. For details, see <a class="reference internal" href="datasets/index.html#stack"><span class="std std-ref">Stacking Multiple Datasets</span></a></p>
-</dd>
-<dt id="term-True-Energy">True Energy<a class="headerlink" href="#term-True-Energy" title="Link to this term">#</a></dt><dd><p>The true energy (often written <code class="xref py py-obj docutils literal notranslate"><span class="pre">e_true</span></code>) is the energy of the incident photon
-by contrast with the energy reconstructed by the instrument. Instrument response
-functions are represented along a true energy axis.</p>
-</dd>
-<dt id="term-TS">TS<a class="headerlink" href="#term-TS" title="Link to this term">#</a></dt><dd><p>Short for “test statistics”. See <a class="reference internal" href="stats/index.html#ts"><span class="std std-ref">Estimating TS</span></a> and <a class="reference internal" href="stats/fit_statistics.html#fit-statistics"><span class="std std-ref">Fit statistics</span></a>.</p>
-</dd>
-<dt id="term-WStat">WStat<a class="headerlink" href="#term-WStat" title="Link to this term">#</a></dt><dd><p>The WStat is a Poisson fit statistic usually used for ON-OFF analysis. It is
-based on the profile likelihood method where the unknown background parameters
-are marginalized. See <a class="reference internal" href="stats/fit_statistics.html#wstat"><span class="std std-ref">WStat : Poisson data with background measurement</span></a> in <a class="reference internal" href="stats/fit_statistics.html#fit-statistics"><span class="std std-ref">fit statistics</span></a>.</p>
 </dd>
 </dl>
 </section>
@@ -911,19 +866,28 @@ systematic uncertainty into a test of the background-only hypothesis for a Poiss
   </p>
 </div>
       
-        <div class="footer-item">
-
-  <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.0.2.
-    <br/>
-  </p>
-</div>
+    </div>
+  
+  
+    <div class="footer-items__center">
+      
+        <div class="footer-item"><p class="last-updated">
+  Last updated on 11 Oct 2024.
+  <br/>
+</p></div>
       
     </div>
   
   
-  
     <div class="footer-items__end">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.0.
+    <br/>
+  </p>
+</div>
       
         <div class="footer-item">
 <p class="theme-version">

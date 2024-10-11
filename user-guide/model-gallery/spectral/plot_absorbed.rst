@@ -11,7 +11,7 @@
         :class: sphx-glr-download-link-note
 
         :ref:`Go to the end <sphx_glr_download_user-guide_model-gallery_spectral_plot_absorbed.py>`
-        to download the full example code or to run this example in your browser via Binder
+        to download the full example code. or to run this example in your browser via Binder
 
 .. rst-class:: sphx-glr-example-title
 
@@ -45,7 +45,7 @@ Here is an example plot of the model:
 
 .. GENERATED FROM PYTHON SOURCE LINES 26-97
 
-.. code-block:: python3
+.. code-block:: Python
 
 
     from astropy import units as u
@@ -132,8 +132,6 @@ Here is an example plot of the model:
  .. code-block:: none
 
     dict_keys(['franceschini', 'dominguez', 'finke', 'franceschini17', 'saldana-lopez21'])
-    /Users/mregeard/Workspace/dev/code/gammapy/gammapy/examples/models/spectral/plot_absorbed.py:95: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
-      plt.show()
 
 
 
@@ -146,7 +144,7 @@ Here is an example YAML file using the model:
 
 .. GENERATED FROM PYTHON SOURCE LINES 101-106
 
-.. code-block:: python3
+.. code-block:: Python
 
 
     model = SkyModel(spectral_model=model, name="absorbed-model")
@@ -187,8 +185,8 @@ Here is an example YAML file using the model:
                 filename: /Users/mregeard/Workspace/dev/code/gammapy/gammapy-data/ebl/ebl_dominguez11.fits.gz
             operator: mul
     metadata:
-        creator: Gammapy 1.1.dev2321+g6e2a70531.d20231201
-        date: '2023-12-01 11:05:20.367'
+        creator: Gammapy 1.3.dev1205+g00f44f94ac
+        date: '2024-10-11T13:05:31.745365'
         origin: null
 
 
@@ -202,23 +200,24 @@ Here is an example YAML file using the model:
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
-
     .. container:: binder-badge
 
       .. image:: images/binder_badge_logo.svg
-        :target: https://mybinder.org/v2/gh/gammapy/gammapy-webpage/master?urlpath=lab/tree/notebooks/dev/user-guide/model-gallery/spectral/plot_absorbed.ipynb
+        :target: https://mybinder.org/v2/gh/gammapy/gammapy-webpage/main?urlpath=lab/tree/notebooks/dev/user-guide/model-gallery/spectral/plot_absorbed.ipynb
         :alt: Launch binder
         :width: 150 px
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
+      :download:`Download Jupyter notebook: plot_absorbed.ipynb <plot_absorbed.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: plot_absorbed.py <plot_absorbed.py>`
 
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
+    .. container:: sphx-glr-download sphx-glr-download-zip
 
-      :download:`Download Jupyter notebook: plot_absorbed.ipynb <plot_absorbed.ipynb>`
+      :download:`Download zipped: plot_absorbed.zip <plot_absorbed.zip>`
 
 
 .. only:: html
